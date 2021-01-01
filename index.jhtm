@@ -8,7 +8,7 @@ ${{description}} = 'This website contains assignments and resources for various 
     <div id="page">
         <header>
             <div class="content">
-                {{MAIN-LOGO}}
+                {{LOGO/MAIN}}
                 <div id="mobile-nav-button">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -23,7 +23,7 @@ ${{description}} = 'This website contains assignments and resources for various 
                     </p>
                 </section>
                 <aside id="sidebar">
-                    {{MAIN-NAV}}
+                    {{NAVIGATION/MAIN}}
                     {{COMPILED}}
                 </aside>
             </div>

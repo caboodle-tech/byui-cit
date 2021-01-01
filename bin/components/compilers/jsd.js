@@ -1,6 +1,6 @@
 const { match } = require('assert');
-const fs   = require( 'fs' );
-const path = require('path');
+const fs        = require( 'fs' );
+const path      = require('path');
 
 // Improve performance by caching heavily used regular expressions.
 const regex = {
@@ -94,6 +94,13 @@ module.exports = function( location, data, passBack ) {
                     case 'img':
                         line = line.replace( startTag, imageOpenElement( startTag ) );
                         break;
+                    case 'math':
+                        line = line.replace( startTag, mathOpenElement( startTag ) );
+                        break;
+                    case 'mermaid':
+                    case 'diagram':
+                        line = line.replace( startTag, diagramOpenElement( startTag ) );
+                        break;
                     case 'td':
                     case 'th':
                         line = line.replace( startTag, tableDataOpenElement( startTag, tag ) );
@@ -139,7 +146,14 @@ module.exports = function( location, data, passBack ) {
                         line = line.replace( endTag, headerCloseElement( endTag ) );
                         break;
                     case 'hr':
-                        line = line.replace( endTag, genericElementOpen( endTag, 'hr' ) );
+                        line = line.replace( endTag, genericElementClose( endTag, 'hr' ) );
+                        break;
+                    case 'math':
+                        line = line.replace( endTag, genericElementClose( 'div', 'div' ) );
+                        break;
+                    case 'mermaid':
+                    case 'diagram':
+                        line = line.replace( endTag, genericElementClose( 'div', 'div' ) );
                         break;
                     case 'video':
                         line = line.replace( endTag, genericElementClose( 'a' ) );
@@ -227,6 +241,28 @@ module.exports = function( location, data, passBack ) {
     }
 }
 
+function diagramOpenElement( content ) {
+    let elem  = '<div ';
+    elem     += getAttributes( content );
+    if ( elem.includes( 'class="' ) ) {
+        elem.replace( 'class="', 'class="mermaid ' );
+    } else {
+        elem += ' class="mermaid"';
+    }
+    return elem + '>';
+}
+
+function mathOpenElement( content ) {
+    let elem  = '<div ';
+    elem     += getAttributes( content );
+    if ( elem.includes( 'class="' ) ) {
+        elem.replace( 'class="', 'class="katex ' );
+    } else {
+        elem += ' class="katex"';
+    }
+    return elem + '>';
+}
+
 function tableDataOpenElement( content, tag ) {
     let elem = '';
     if ( tag == 'th' ) {
@@ -242,17 +278,12 @@ function tableDataOpenElement( content, tag ) {
 
 function imageOpenElement( content ) {
     let elem  = '<img src="' + getUrl( content ) + '"';
+    elem     += getMap( content );
     elem     += getAttributes( content );
     elem     += getAlt( content );
     elem     += getTitle( content );
     elem     += getWidth( content );
     elem     += getHeight( content );
-
-    let m = content.match( regex.map );
-    if ( m!= null ){
-        elem += ' usemap="' + m[1] + '"';
-    }
-
     return elem + '>';
 }
 

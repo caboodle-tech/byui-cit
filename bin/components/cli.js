@@ -34,6 +34,11 @@ class CLI {
         this.initialize();
     }
 
+    /**
+     * Reads the compiler(s) from the setting file and attempts to
+     * add them to the CLI. If a compiler is not found we send its
+     * calls to the default compiler.
+     */
     buildCompilers() {
         let compilers = {
             'outputs': this.settings.output,
@@ -55,11 +60,15 @@ class CLI {
         this.compilers = compilers;
     }
 
+    /**
+     * Checks if any template files have changed, if they have we
+     * should force a compile.
+     */
     checkForceCompile() {
-
-        // Loop through all the template files and see it one has changed.
+        // Loop through all the template files and see if one has changed.
         let items = fs.readdirSync( 'templates' );
         items.forEach( item => {
+            // TODO: This does not skip dirs and does not support recursion.
             let location = path.join( 'templates', item );
             let hash     = md5( location );
             let mtime    = new Date( fs.statSync( location ).mtime );
@@ -68,15 +77,20 @@ class CLI {
                 this.forceCompile = true;
             }
         } );
-
     }
 
+    /**
+     * Try to close the database properly.
+     */
     closeDatabase() {
         try {
             this.DB.close();
         } catch( err ){}
     }
 
+    /**
+     * The compiling operation. Attempts to compile the site.
+     */
     compile() {
 
         // Make the release directory if its missing.
@@ -157,9 +171,6 @@ class CLI {
         this.saveDatabase();
         this.closeDatabase();
 
-        // Remove the release dir from the stats count.
-
-
         // Record process time.
         this.stats.time = this.getStatTimestamp( process.hrtime( this.stats.time ) );
 
@@ -183,6 +194,11 @@ class CLI {
      * END ADDING COMPILER CALLS
      */
 
+    /**
+     * Copies the specified file to the release directory.
+     * 
+     * @param {string} location The location of the file in question.
+     */
     copyFileToRelease( location ) {
 
         let dest    = path.join( this.settings.releaseDir, location );
@@ -211,7 +227,7 @@ class CLI {
 
     /**
      * @deprecated
-     */
+     *
     deleteRelease( dir ) {
         if ( dir.substring( 0, 7 ) === this.settings.releaseDir ) {
             try {
@@ -233,12 +249,23 @@ class CLI {
             }
         }
     }
+    */
 
+    /**
+     * Show an error to the user.
+     * 
+     * @param {string} err The error text to show.
+     */
     errorDisplay( err ) {
         err = this.wrap( err, 80 );
         console.log( '\x1B[0;31m' + err + '\x1B[0m' );
     }
 
+    /**
+     * Show an error to the user and kill the application.
+     * 
+     * @param {string} err The error text to show.
+     */
     errorOut( err ) {
         err = this.wrap( err, 80 );
         console.log( '\x1B[0;31m' + err + '\x1B[0m' );
@@ -246,6 +273,12 @@ class CLI {
         process.exit();
     }
 
+    /**
+     * Check if a file or directory has been modified based on our records.
+     * 
+     * @param {string}  hash  A MD5 hash of the file or directory in question.
+     * @param {integer} mtime The last modified time we pulled from the file.
+     */
     getFileTrackingStatus( hash, mtime ) {
 
         // Check if this file needs compiling based on its modified time.
@@ -273,9 +306,12 @@ class CLI {
 
     }
 
+    /**
+     * Print out the stats for this compile operation.
+     */
     getStatBlock() {
         
-let block = `
+    let block = `
 ====================================
 Files that were compiled:       ${this.stats.fcompiled}
 Files skipped compiling:        ${this.stats.fskipped}
@@ -287,11 +323,44 @@ New folders created in release: ${this.stats.dcopied}
 Existing folders in release:    ${this.stats.dignored}
 ====================================
 Compile completed in: ${this.stats.time}
-`;
+    `;
 
         return block;
     }
 
+    /**
+     * Create a human readable UTC like timestamp: YYYY-MM-DD @ HH:MM:SS
+     */
+    getTimestamp() {
+
+        let d = new Date();
+
+        let dy = d.getDate();
+        if ( dy < 10 ){ dy = '0' + dy; }
+
+        let mm = d.getMonth() + 1;
+        if ( mm < 10 ){ mm = '0' + mm; }
+
+        let hr = d.getHours();
+        if ( hr < 10 ){ hr = '0' + hr; }
+
+        let mn = d.getMinutes();
+        if ( mn < 10 ){ mn = '0' + mn; }
+
+        let sc = d.getSeconds();
+        if ( sc < 10 ){ sc = '0' + sc; }
+
+        let timestamp  = d.getFullYear() + '-' + mm + '-' + dy;
+        timestamp     += ' @ ' + hr + ':' + mn + ':' + sc;
+
+        return timestamp;
+    }
+
+    /**
+     * Create a human readable timestamp that supports hours, minutes, seconds, and milliseconds.
+     * 
+     * @param {*} ary 
+     */
     getStatTimestamp( ary ) {
 
         let sec = ary[0];
@@ -318,31 +387,9 @@ Compile completed in: ${this.stats.time}
 
     }
 
-    getTimestamp() {
-
-        let d = new Date();
-
-        let dy = d.getDate();
-        if ( dy < 10 ){ dy = '0' + dy; }
-
-        let mm = d.getMonth() + 1;
-        if ( mm < 10 ){ mm = '0' + mm; }
-
-        let hr = d.getHours();
-        if ( hr < 10 ){ hr = '0' + hr; }
-
-        let mn = d.getMinutes();
-        if ( mn < 10 ){ mn = '0' + mn; }
-
-        let sc = d.getSeconds();
-        if ( sc < 10 ){ sc = '0' + sc; }
-
-        let timestamp  = d.getFullYear() + '-' + mm + '-' + dy;
-        timestamp     += ' @ ' + hr + ':' + mn + ':' + sc;
-
-        return timestamp;
-    }
-
+    /**
+     * Start the application and make sure everything is in place or error out.
+     */
     initialize() {
 
         let that = this;
@@ -409,6 +456,13 @@ Compile completed in: ${this.stats.time}
         this.loadGlobals();
     }
 
+    /**
+     * Checks if the application is ready to be used. Will trigger the error
+     * out message if the app does not start in a timely manner. If the app
+     * is ready any stacked commands will be run.
+     * 
+     * @param {function} cmd A command the application is trying to run.
+     */
     isReady( cmd ) {
         // Is the application ready?
         if ( this.ready ) {
@@ -431,6 +485,10 @@ Compile completed in: ${this.stats.time}
         }
     }
 
+    /**
+     * Add any global variables to the application now so we don't have
+     * to keep reloading them every time a file is compiled.
+     */
     loadGlobals() {
 
         let gls = '';
@@ -447,18 +505,35 @@ Compile completed in: ${this.stats.time}
         
     }
 
-    loadTemplates() {
-        let templates = {};
-        let files = fs.readdirSync( 'templates' );
+    /**
+     * Load all the template files into memory.
+     */
+    loadTemplates( base ) {
+        if ( ! base || base.substring( 0, 9 ) != 'templates' ) {
+            base = 'templates';
+        }
+        let files = fs.readdirSync( base );
         files.forEach( file => {
-            let name = path.parse( file ).name.toUpperCase();
-            templates[ name ] = fs.readFileSync( 'templates' + path.sep + file, {
-                encoding: 'utf8'
-            } );
+            let stats = fs.statSync( base + path.sep + file );
+            if ( stats.isDirectory() ) {
+                this.loadTemplates( base + path.sep + file );
+            } else {
+                let name = base + path.sep + path.parse( file ).name;
+                name     = name.replace( /templates(\/|\\{1,2})/, '' );
+                this.templates[ name.toUpperCase() ] = fs.readFileSync(
+                    base + path.sep + file,
+                    {
+                        encoding: 'utf8'
+                    }
+                );
+            }
         } );
-        this.templates = templates;
     }
 
+    /**
+     * A file needs compiling, process and record it.
+     * @param {string} location The path to the file in question.
+     */
     needsCompile( location ) {
 
         // Setup key variables.
@@ -500,6 +575,15 @@ Compile completed in: ${this.stats.time}
 
     }
 
+    /**
+     * Recursively (if enabled) loop through a directory and process
+     * all its files. If a directory does not exist create it in the
+     * release directory.
+     * 
+     * @param {string}  dir       The directory in question.
+     * @param {boolean} recursive False (null) by default, only process current dir.
+     *                            True process recursively.
+     */
     processDirs( dir, recursive ) {
 
         // Create this directory in the release folder if its missing.
@@ -511,11 +595,14 @@ Compile completed in: ${this.stats.time}
             this.stats.dignored += 1;
         }
 
+        // TODO: Need to add better checks here for skipping files and dirs in the compile.
+
         // Loop through all items in this directory and process accordingly.
         let items = fs.readdirSync( dir );
         items.forEach( item => {
             let location = path.join( dir, item );
             let stats    = fs.statSync( location );
+            
             // Is this a directory?
             if ( stats.isDirectory() && recursive == true ) {
                 // Yes. Only continue if this is a safe (requested) directory.
@@ -523,23 +610,30 @@ Compile completed in: ${this.stats.time}
                     this.processDirs( location, true );
                 }
             } else {
-                // No. Compile the file if its extension is in the compile list.
-                let ext = path.parse( location ).ext.replace( '.', '' );
-                if ( this.compilers.types.includes( ext ) ) {
-                    // Does this file actually need to be compiled?
-                    if ( this.needsCompile( location ) ) {
-                        let compiler = this.compilers[ ext ];
-                        this[ compiler ]( location );
+                // TODO: Improve this.
+                if ( ! this.settings.ignoreFile.includes( location ) ) {
+                    // No. Compile the file if its extension is in the compile list.
+                    let ext = path.parse( location ).ext.replace( '.', '' );
+                    if ( this.compilers.types.includes( ext ) ) {
+                        // Does this file actually need to be compiled?
+                        if ( this.needsCompile( location ) ) {
+                            let compiler = this.compilers[ ext ];
+                            this[ compiler ]( location );
+                        }
+                    } else if ( this.settings.safeFileExtensions.includes( ext ) ) {
+                        // If this file is in the safe list copy it to release; no compile needed.
+                        this.copyFileToRelease( location );
                     }
-                } else if ( this.settings.safeFileExtensions.includes( ext ) ) {
-                    // If this file is in the safe list copy it to release; no compile needed.
-                    this.copyFileToRelease( location );
                 }
             }
         } );
 
     }
 
+    /**
+     * Attempt to run the users command.
+     * @param {string} cmd The command the user would like to run.
+     */
     runCmd( cmd ) {
 
         switch( cmd ) {
@@ -568,6 +662,12 @@ Compile completed in: ${this.stats.time}
 
     }
 
+    /**
+     * Save a compiled file to the release directory.
+     * 
+     * @param {string} file The contents of the compiled file.
+     * @param {string} dest The location in the release directory to save this file.
+     */
     saveCompiledFile( file, dest ) {
 
         // Save the file to disk.
@@ -582,6 +682,9 @@ Compile completed in: ${this.stats.time}
         }
     }
 
+    /**
+     * Save (write) the current database from memory to disk.
+     */
     saveDatabase() {
         let location = path.normalize( './bin/components/db.sqlite' );
         let data     = this.DB.export();
@@ -589,10 +692,18 @@ Compile completed in: ${this.stats.time}
         fs.writeFileSync( location, buffer );
     }
 
+    /**
+     * Show the help (man) page in console.
+     */
     showHelp() {
         console.log( 'Help page coming soon!' );
     }
 
+    /**
+     * Pull key value pairs our of files with JamED variable assignments in them.
+     * 
+     * @param {string} file The contents of a file to pull variables from (if any). 
+     */
     stripVariables( file ) {
 
         let vars = {};
@@ -613,11 +724,17 @@ Compile completed in: ${this.stats.time}
         };
     }
 
-    // Dynamic Width (Build Regex)
-    // https://stackoverflow.com/a/51506718/3193156
+    /**
+     * Break a long line of text up into multiple lines based on a supplied
+     * text width; this is a line wrap function.
+     * 
+     * Source: @see {@link https://stackoverflow.com/a/51506718/3193156|StackOverflow}
+     * @param {string}         s The string of text to wrap.
+     * @param {string|integer} w The width to wrap each line of text at.
+     */
     wrap( s, w ) {
         return s.replace(
-            new RegExp(`(?![^\\n]{1,${w}}$)([^\\n]{1,${w}})\\s`, 'g'),
+            new RegExp( `(?![^\\n]{1,${w}}$)([^\\n]{1,${w}})\\s`, 'g' ),
             '$1\n'
         );
     }

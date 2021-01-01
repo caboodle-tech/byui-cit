@@ -136,6 +136,7 @@ body {
   text-align: center;
   color: #006eb6;
   text-decoration: none;
+  margin-top: 15px;
 }
 #page main #sidebar .main-link .icon {
   margin-right: 0.6rem;
@@ -171,7 +172,6 @@ body {
 #page main #sidebar nav ul li a,
 #page main #sidebar nav ul li .link {
   flex: 1;
-  color: #006eb6;
   text-decoration: none;
   cursor: pointer;
 }
@@ -180,6 +180,9 @@ body {
   display: block;
   font-size: 0.8rem;
   line-height: 0.8rem;
+}
+#page main #sidebar nav ul li a {
+  color: #006eb6;
 }
 #page main #sidebar nav ul li .more {
   position: relative;
@@ -246,6 +249,9 @@ body {
     overflow: unset;
     background-color: unset;
     border-left: unset;
+  }
+  #page main #sidebar .main-link {
+    margin-top: 0;
   }
   #page main #sidebar nav {
     border: 3px double #006eb6;
