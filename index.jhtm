@@ -19,7 +19,7 @@ ${{description}} = 'This website contains assignments and resources for various 
                 <section id="main-content">
                     <h1>Computer Information Technology</h1>
                     <p>
-                        This website contains assignments and resources for various course taught in the Computer Information Technology (CIT) department at Brigham Young University Idaho (BYUI). If you find this site from an internet search please note that these courses are meant for Brother Keers' classes. If you have another professor you should only use these resources if you were explicitly told to.
+                        This website contains assignments and resources for various course taught in the Computer Information Technology (CIT) department at Brigham Young University Idaho (BYUI). If you find this site from an internet search please note that these courses are meant for <strong>Brother Keers'</strong> classes. If you have another professor you should only use these resources if you were explicitly told to do so.
                     </p>
                 </section>
                 <aside id="sidebar">
