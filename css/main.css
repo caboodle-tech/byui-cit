@@ -39,6 +39,42 @@ body {
   overflow-y: auto;
   padding-top: 6rem;
 }
+#page p {
+  margin: 15px 0;
+}
+#page p code {
+  display: inline;
+  color: #b58900;
+  font-weight: bold;
+}
+#page a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#page hr {
+  margin: 22.5px 0 30px 0;
+  border: 1px dashed #8d98a3;
+}
+#page h1 {
+  font-size: 2.1rem;
+  line-height: 2.58rem;
+  font-weight: bold;
+  border-bottom: 2px solid #9ba5ae;
+}
+#page h2,
+#page h3 {
+  font-size: 1.8rem;
+  line-height: 2.22rem;
+  font-weight: bold;
+  border-bottom: 2px solid #9ba5ae;
+}
+#page h4,
+#page h5,
+#page h6 {
+  font-size: 1.5rem;
+  line-height: 1.86rem;
+  font-weight: bold;
+}
 #page .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,25 +88,27 @@ body {
   line-height: 1.2rem;
   opacity: .5;
 }
-#page h1 {
-  font-size: 2.1rem;
-  line-height: 2.58rem;
-  font-weight: bold;
-  border-bottom: 2px solid #eaeaea;
+#page .line-break {
+  display: block;
+  width: 100%;
+  height: 1.2rem;
 }
-#page h2,
-#page h3 {
-  font-size: 1.8rem;
-  line-height: 2.22rem;
-  font-weight: bold;
-  border-bottom: 2px solid #eaeaea;
+#page .highlight {
+  background-color: rgba(255, 243, 141, 0.4);
 }
-#page h4,
-#page h5,
-#page h6 {
-  font-size: 1.5rem;
-  line-height: 1.86rem;
-  font-weight: bold;
+#page #go-back {
+  z-index: 50;
+  height: 0;
+  padding: 15px 15px 0 0;
+  overflow: visible;
+  font-size: 2rem;
+  text-align: right;
+}
+#page #go-back a {
+  color: #006eb6;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 #page header {
   position: fixed;
@@ -97,6 +135,187 @@ body {
 #page main {
   flex: 1;
 }
+#page main figure {
+  display: block;
+  margin: 15px auto;
+}
+#page main figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main figure figcaption {
+  text-align: center;
+  margin: 7.5px 0 0 0;
+}
+#page main blockquote {
+  position: relative;
+  margin: 15px 0;
+  padding: 1rem 0.75rem 1rem 4rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main blockquote:before {
+  position: absolute;
+  top: 3.5rem;
+  left: 0.6rem;
+  content: '\201C';
+  font-size: 6rem;
+  line-height: 1rem;
+  font-family: Georgia, serif;
+}
+#page main blockquote cite {
+  display: block;
+  font-size: 1.05rem;
+  margin-top: 0.75rem;
+}
+#page main blockquote cite:before {
+  content: "\2014 \2009";
+}
+#page main h2 a,
+#page main h3 a,
+#page main h4 a,
+#page main h5 a,
+#page main h6 a {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+#page main .collapsible {
+  position: relative;
+  color: #ffffff;
+  background-color: #006eb6;
+  padding: 15px 3rem 15px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+#page main .collapsible:after {
+  position: absolute;
+  content: '+';
+  top: 7.5px;
+  right: 15px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+#page main .collapsible.open:after {
+  content: 'x';
+}
+#page main .collapsible.open + .collapsible-content {
+  max-height: none;
+  padding: 15px;
+  border-top: 2px solid #006eb6;
+  border-bottom: 2px solid #006eb6;
+  background-color: rgba(0, 110, 182, 0.05);
+}
+#page main .collapsible-content {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  margin: -2px -15px 0px;
+  transition: max-height 0.2s ease-out;
+}
+#page main .callout {
+  padding: 7.5px 15px;
+  margin: 15px 0;
+  background-color: #fffbdb;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main .callout h2,
+#page main .callout h3,
+#page main .callout h4,
+#page main .callout h5,
+#page main .callout h6 {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.38rem;
+  text-transform: capitalize;
+  color: #212529;
+}
+#page main .rubric {
+  padding: 7.5px 15px;
+  margin: 15px 0;
+  background-color: #ebffcc;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main .rubric h2,
+#page main .rubric h3,
+#page main .rubric h4,
+#page main .rubric h5,
+#page main .rubric h6 {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.38rem;
+  text-transform: capitalize;
+  color: #0e72a9;
+}
+#page main .license {
+  position: relative;
+  margin: 15px 0;
+  padding: 7.5px 15px 7.5px 4.8rem;
+  background-color: #ffecec;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main .license:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0.6rem;
+  bottom: 0;
+  width: 3.6rem;
+  content: '\00A9';
+  font-size: 2.4rem;
+  font-family: Georgia, serif;
+}
+#page main .license h2,
+#page main .license h3,
+#page main .license h4,
+#page main .license h5,
+#page main .license h6 {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.38rem;
+  text-transform: capitalize;
+  color: #212529;
+}
+#page main .video {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 15px 0 1rem 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+#page main .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#page main .video-fallback {
+  font-style: italic;
+  margin: 7.5px 0;
+}
 #page main .content {
   position: relative;
   min-height: 100%;
@@ -106,6 +325,170 @@ body {
 #page main #main-content {
   flex: 1;
   padding: 30px 15px;
+  overflow: hidden;
+}
+#page main #main-content a {
+  color: #006eb6;
+  border-bottom: 3px double #006eb6;
+}
+#page main #main-content a:hover {
+  color: #005892;
+}
+#page main #main-content li h2,
+#page main #main-content li h3,
+#page main #main-content li h4,
+#page main #main-content li h5,
+#page main #main-content li h6 {
+  border: none;
+  margin: 0;
+  display: inline-block;
+}
+#page main #main-content li p {
+  margin: 10px 0;
+}
+#page main #main-content dl dt {
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-bottom: 7.5px;
+}
+#page main #main-content dl dt a {
+  color: #006eb6;
+  text-decoration: none;
+  border: 0;
+}
+#page main #main-content dl dd {
+  padding-bottom: 7.5px;
+}
+#page main #main-content ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: custom-counter;
+}
+#page main #main-content ol > li {
+  counter-increment: custom-counter;
+  margin: 3rem 0 2rem 0;
+}
+#page main #main-content ol > li:before {
+  content: counter(custom-counter);
+  margin-right: 0.5rem;
+  color: #212529;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1rem;
+}
+#page main #main-content ol > li:nth-child(-n + 9):before {
+  content: '0' counter(custom-counter);
+}
+#page main #main-content ol > li:first-of-type {
+  margin: 2rem 0 2rem 0;
+}
+#page main #main-content ol ol li {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ol ol li p {
+  display: inline-block;
+}
+#page main #main-content ol ol li:before {
+  font-size: 1.2rem;
+}
+#page main #main-content ol ol li:first-of-type {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ol ul li {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ol ul li p {
+  display: inline-block;
+}
+#page main #main-content ol ul li:before {
+  content: '\2299';
+  font-size: 1.2rem;
+  margin-top: -5px;
+}
+#page main #main-content ol ul li:first-of-type {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ol.smaller li {
+  margin: 0.5rem 0 0.5rem 0;
+}
+#page main #main-content ol.smaller li p {
+  display: inline-block;
+}
+#page main #main-content ol.smaller li:before {
+  font-size: 1.2rem;
+  margin-top: -6px;
+}
+#page main #main-content ol.smaller li ol li,
+#page main #main-content ol.smaller li ul li {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ol.indent li {
+  margin: 0.5rem 0 0.5rem 30px;
+}
+#page main #main-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#page main #main-content ul > li {
+  margin: 3rem 0 2rem 0;
+}
+#page main #main-content ul > li:before {
+  content: '\27A4';
+  display: inline-block;
+  margin-top: -0.9rem;
+  margin-right: 0.5rem;
+  color: #212529;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 0;
+  vertical-align: middle;
+}
+#page main #main-content ul > li:first-of-type {
+  margin: 2rem 0 2rem 0;
+}
+#page main #main-content ul ul li {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ul ul li p {
+  display: inline-block;
+}
+#page main #main-content ul ul li:before {
+  content: '\2299';
+  font-size: 1.2rem;
+}
+#page main #main-content ul ul li:first-of-type {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ul ol li {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ul ol li p {
+  display: inline-block;
+}
+#page main #main-content ul ol li:before {
+  font-size: 1.2rem;
+}
+#page main #main-content ul ol li:first-of-type {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ul.smaller li {
+  margin: 0.5rem 0 0.5rem 0;
+}
+#page main #main-content ul.smaller li p {
+  display: inline-block;
+}
+#page main #main-content ul.smaller li:before {
+  font-size: 1.2rem;
+  margin-top: -6px;
+}
+#page main #main-content ul.smaller li ol li,
+#page main #main-content ul.smaller li ul li {
+  margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ul.indent li {
+  margin: 0.5rem 0 0.5rem 30px;
 }
 #page main #sidebar {
   position: absolute;
@@ -157,7 +540,7 @@ body {
 }
 #page main #sidebar nav ul li {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 7.5px 0;
 }
@@ -179,7 +562,7 @@ body {
 #page main #sidebar nav ul li .link .sub {
   display: block;
   font-size: 0.8rem;
-  line-height: 0.8rem;
+  line-height: 1.04347826rem;
 }
 #page main #sidebar nav ul li a {
   color: #006eb6;
@@ -234,6 +617,20 @@ body {
 #page footer a:hover {
   color: #0c6291;
 }
+@media (min-width: 768px) {
+  #page main blockquote {
+    margin: 15px 22.5px;
+  }
+  #page main .callout {
+    margin: 15px 22.5px;
+  }
+  #page main .rubric {
+    margin: 15px 22.5px;
+  }
+  #page main .license {
+    margin: 15px 22.5px;
+  }
+}
 @media (min-width: 1024px) {
   #page {
     padding-top: 0;
@@ -243,6 +640,16 @@ body {
   }
   #page header #mobile-nav-button {
     display: none;
+  }
+  #page main figure.left {
+    float: left;
+    margin: 15px 22.5px 15px 0;
+    max-width: 50%;
+  }
+  #page main figure.right {
+    float: right;
+    margin: 15px 0 15px 22.5px;
+    max-width: 50%;
   }
   #page main #sidebar {
     position: unset;
