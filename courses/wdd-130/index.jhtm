@@ -1,14 +1,15 @@
-${{author}}      = 'Christopher Keers';
-${{title}}       = 'WDD 130 Web Fundamentals - BYUI';
-${{keywords}}    = 'WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, Git, GitHub, CIT, BYUI';
-${{description}} = 'Welcome to WDD 130! This course introduces students to the Word Wide Web and to careers in web design and development. The course is hand on with students participating in simple web designs and programming. ';
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "WDD 130 Web Fundamentals - BYUI";
+${{keywords}}    = "WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, Git, GitHub, CIT, BYUI";
+${{description}} = "Welcome to WDD 130! This course introduces students to the Word Wide Web and to careers in web design and development. The course is hand on with students participating in simple web designs and programming.";
 
 {{HEAD}}
 <body>
     <div id="page">
         <header>
             <div class="content">
-                {{WDD-130-LOGO}}
+                {{LOGO/COURSE}}
                 <div id="mobile-nav-button">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -27,8 +28,8 @@ ${{description}} = 'Welcome to WDD 130! This course introduces students to the W
                     </p>
                 </section>
                 <aside id="sidebar">
-                    {{MAIN-SITE-LINK}}
-                    {{WDD-130-NAV}}
+                    {{NAVIGATION/MAIN-LINK}}
+                    {{NAVIGATION/WDD-130}} 
                     {{COMPILED}}
                 </aside>
             </div>

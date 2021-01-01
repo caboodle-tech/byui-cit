@@ -144,6 +144,7 @@ body {
                 text-align: center;
                 color: @link-primary-color;
                 text-decoration: none;
+                margin-top: @spacing;
 
                 .icon {
                     margin-right: @font-size / 2;
@@ -183,7 +184,6 @@ body {
 
                         a, .link {
                             flex: 1;
-                            color: @header-bg-color;
                             text-decoration: none;
                             cursor: pointer;
 
@@ -192,6 +192,10 @@ body {
                                 font-size: @font-size / 1.5;
                                 line-height: @font-size / 1.5;
                             }
+                        }
+
+                        a {
+                            color: @header-bg-color;
                         }
 
                         .more {
@@ -285,6 +289,10 @@ body {
                 overflow: unset;
                 background-color: unset;
                 border-left: unset;
+                
+                .main-link {
+                    margin-top: 0;
+                }
 
                 nav {
                     border: 3px double @header-bg-color;
