@@ -18,13 +18,9 @@ ${{description}} = "Welcome to WDD 130! This course introduces students to the W
         <main>
             <div class="content">
                 <section id="main-content">
-                    <h1>WDD 130: Web Fundamentals Syllabus</h1>
+                    <h1>WDD 130: Web Fundamentals</h1>
                     <p>
                         Welcome to WDD 130! This course introduces students to the Word Wide Web and to careers in web design and development. The course is hand on with students participating in simple web designs and programming. Students are also introduced to version control tools using git and GitHub, wire framing, and other design related tools. It is anticipated that students who complete this course will understand the fields of web design and development, have an understanding of the various industry roles, and have a good idea if they want to pursue this degree as a major.
-                    </p>
-                    <h2>Syllabus Sections</h2>
-                    <p>
-                        Coming later.
                     </p>
                 </section>
                 <aside id="sidebar">

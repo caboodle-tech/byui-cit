@@ -47,6 +47,12 @@ body {
   color: #b58900;
   font-weight: bold;
 }
+#page li > code,
+#page dd > code {
+  display: inline;
+  color: #b58900;
+  font-weight: bold;
+}
 #page a {
   text-decoration: none;
   cursor: pointer;

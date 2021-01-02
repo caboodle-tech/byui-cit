@@ -55,6 +55,14 @@ body {
         }
     }
 
+    li, dd {
+        &> code {
+            display: inline;
+            color: @inline-code-color;
+            font-weight: bold;
+        }
+    }
+
     a {
         text-decoration: none;
         cursor: pointer;

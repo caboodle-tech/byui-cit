@@ -30,7 +30,7 @@ ${{description}} = "This is a style guide reference page for developers working 
                         <!-- Add needed space for the go back demo. -->
                     </p>
                     <p>
-                        You should use the back link on pages or assignments where it makes sense to aid the users navigation between content. If you have a page or assignment you wish to leave detached from everything else please leave this off. Notice that we only use relative navigation in this link (<code>../</code>). You will need to add the following code between the pages <code>header</code> and <code>main</code> section: 
+                        You should use the back link on pages or assignments where it makes sense to aid the users navigation between content; an assignment page with the navigation removed for example. If you have a page or assignment you wish to leave detached from everything else please leave this off. Notice that we only use relative navigation in this link (<code>../</code>). You will need to add the following code just before your pages <code>h1</code> tag, the first child of the main content section:
                     </p>
 <pre>
 <code>&lt;div id="go-back"&gt;
