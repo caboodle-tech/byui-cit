@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Start Setup
+    name: Compile Updated Website
     
     steps:
       - uses: actions/checkout@v2
@@ -18,5 +18,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: node ./bin/cli "compile"
-      - run: ls
+      - name: Compiling website
+      - run: node ./bin/cli compile
+      - name: Pushing to gh pages
+      - run: |
+          echo "Stash release files up 1 directory"
+          mv release/ ../release
+          git config --global user.name 'Caboodle Tech Inc'
+          git config --global user.email 'blizzardengle@users.noreply.github.com'
+          git checkout website
+          git rm -r *
+          ehco "Copy release files into website branch"
+          cp ../release/* .
+          rm ../release -r
+          git add .
+          git commit -m "auto update"
+          git push
