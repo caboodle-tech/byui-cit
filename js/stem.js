@@ -30,6 +30,12 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
         count--;
     }
 
+    // Before we load the mermaid script add the correct class to all diagrams
+    var diagrams = document.querySelectorAll( '.diagram' );
+    diagrams.forEach( function( d ) {
+        d.classList.add( 'mermaid' );
+    } );
+
     // Load the Highlight JS stylesheet into the current page.
     var tag  = document.createElement( 'LINK' );
     tag.rel  = 'stylesheet';
@@ -71,7 +77,7 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
             return;
         }
 
-        if ( typeof mermaid !== 'undefined' ) {
+        if ( typeof hljs !== 'undefined' ) {
 
             // Initialize Highlight.js to format all code examples on the page.
             var tag  = document.createElement( 'SCRIPT' );
@@ -91,11 +97,13 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
             return;
         }
 
-        if ( typeof mermaid !== 'undefined' ) { 
+        if ( typeof mermaid !== 'undefined' ) {
+
             var tag  = document.createElement( 'SCRIPT' );
             tag.type = 'text/javascript';
             tag.innerHTML = 'mermaid.initialize( { startOnLoad: true } );';
             document.head.appendChild( tag );
+            
         } else {
             setTimeout( loadMermaid.bind( null, count++ ), 100 );
         }
