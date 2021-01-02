@@ -18,6 +18,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: echo "Run Compile Script"
-      - run: node ./bin/cli compile
+      - run: node -v
       - run: echo "Test Done"
