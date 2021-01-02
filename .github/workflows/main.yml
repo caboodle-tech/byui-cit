@@ -18,19 +18,20 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
+
       - name: Compiling website
         run: node ./bin/cli compile
+      
+      - name: Checkout website branch
+        uses: actions/checkout@v2
+        with:
+          repository: caboodle-tech/byui-cit
+          path: byui-cit
+
       - name: Pushing to gh pages
         run: |
           echo "Stash release files up 1 directory"
           mv release/ ../release
           git config --global user.name 'Caboodle Tech Inc'
           git config --global user.email 'blizzardengle@users.noreply.github.com'
-          git checkout website
-          git rm -r *
-          ehco "Copy release files into website branch"
-          cp ../release/* .
-          rm ../release -r
-          git add .
-          git commit -m "auto update"
-          git push
+          git branch
