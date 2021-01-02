@@ -38,13 +38,13 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     HTML tags are key words surrounded by angle brackets. For example here is the opening <code>body</code> tag:
-        <pre class="lang-html">
-        <code class="lang-html">&lt;body&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;body&gt;
+</code></pre>
                                     and here is the closing <code>/body</code> tag:
-        <pre class="lang-html">
-        <code class="lang-html">&lt;/body&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;/body&gt;
+</code></pre>
                                     Not all tags need a matching closing tag.
                                 </dd>
                                 <dt>
@@ -52,51 +52,51 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     An HTML element usually consists of a start tag and end tag, with the content inserted in between:
-        <pre class="lang-html">
-        <code class="lang-html">&lt;p&gt;Hello!&lt;/p&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;p&gt;Hello!&lt;/p&gt;
+</code></pre>
                                 </dd>
                                 <dt>
                                     Nesting
                                 </dt>
                                 <dd>
                                     Elements placed inside of other elements are called nested. Nested Elements are indented to make it easier to see which elements are inside of others. Well formatted code (good nesting) makes it easier for the developer to read their code, maintain it, and troubleshoot it.
-        <pre class="lang-html">
-        <code class="lang-html">&lt;div&gt;
-            &lt;p&gt;Content.&lt;/p&gt;
-        &lt;/div&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;div&gt;
+    &lt;p&gt;Content.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
                                 </dd>
                                 <dt>
                                     Parent
                                 </dt>
                                 <dd>
                                     In nesting the parent is the element that contains other elements.
-        <pre class="lang-html">
-        <code class="lang-html">&lt;div&gt; &lt;!-- Parent --&gt;
-            &lt;p&gt;Content.&lt;/p&gt;
-        &lt;/div&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;div&gt; &lt;!-- Parent --&gt;
+    &lt;p&gt;Content.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
                                 </dd>
                                 <dt>
                                     Child
                                 </dt>
                                 <dd>
                                     In nesting a child element is contained inside of another element.
-        <pre class="lang-html">
-        <code class="lang-html">&lt;div&gt;
-            &lt;p&gt;Content.&lt;/p&gt; &lt;!-- Child --&gt;
-        &lt;/div&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;div&gt;
+    &lt;p&gt;Content.&lt;/p&gt; &lt;!-- Child --&gt;
+&lt;/div&gt;
+</code></pre>
                                 </dd>
                                 <dt>
                                     Attribute
                                 </dt>
                                 <dd>
                                     Attributes provide additional information about HTML elements. They are placed inside of the opening tag. The value of the attribute should be wrapped in quotes. Here is a paragraph tag with a title attribute:
-        <pre class="lang-html">
-        <code class="lang-html">&lt;p title="paragraph"&gt;Idaho.&lt;/p&gt;
-        </code></pre>
+<pre class="lang-html">
+<code class="lang-html">&lt;p title="paragraph"&gt;Idaho.&lt;/p&gt;
+</code></pre>
                                 </dd>
                                 <dt>
                                     Semantics
