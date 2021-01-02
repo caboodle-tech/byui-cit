@@ -19,9 +19,9 @@ jobs:
         with:
           node-version: '14'
       - name: Compiling website
-      - run: node ./bin/cli compile
+        run: node ./bin/cli compile
       - name: Pushing to gh pages
-      - run: |
+        run: |
           echo "Stash release files up 1 directory"
           mv release/ ../release
           git config --global user.name 'Caboodle Tech Inc'
