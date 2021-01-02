@@ -46,7 +46,18 @@ var byui = ( function() {
 
     var attachListeners = function() {
 
-        document.getElementById( 'mobile-nav-button' ).addEventListener( 'click', toggleNav );
+        // Is the sidebar on this page?
+        if ( document.getElementById('sidebar' ) ) {
+            // Yes, if it exists attach the listener to the mobile nav button.
+            if ( document.getElementById('mobile-nav-button' ) ) {
+                document.getElementById( 'mobile-nav-button' ).addEventListener( 'click', toggleNav );
+            }
+        } else {
+            // No, hide the mobile nav button if it exists.
+            if ( document.getElementById('mobile-nav-button' ) ) {
+                document.getElementById( 'mobile-nav-button' ).style.display = 'none';
+            }
+        }
 
         var mores = document.querySelectorAll( 'nav .more' );
         mores.forEach( function( more ) {
@@ -60,6 +71,34 @@ var byui = ( function() {
                 // Pass click over to the more button, this is a placeholder link.
                 link.addEventListener( 'click', passToMore );
             }
+        } );
+
+    };
+
+    var convertImages = function() {
+
+        var images = document.querySelectorAll( '#main-content img' );
+        images.forEach( function( img ) {
+            var cls = '';
+            if ( img.classList.contains( 'left' ) ) {
+                cls = 'left';
+                img.classList.remove( 'left' );
+            } else if ( img.classList.contains( 'right' ) ) {
+                cls = 'right';
+                img.classList.remove( 'right' );
+            } else {
+                cls = 'center';
+                img.classList.remove( 'center' );
+            }
+            var fig = document.createElement( 'FIGURE' );
+            fig.classList.add( cls );
+            fig.innerHTML = img.outerHTML;
+
+            if ( img.dataset.caption ) {
+                fig.innerHTML = fig.innerHTML + '<figcaption>' + img.dataset.caption + '</figcaption>';
+            }
+
+            img.parentNode.replaceChild( fig, img );
         } );
 
     };
@@ -112,10 +151,9 @@ var byui = ( function() {
 
         attachCollapsible();
 
-        convertVideoLinks();
+        convertImages();
 
-        // Initialize Highlight.js to format all code examples on the page.
-        hljs.initHighlightingOnLoad();
+        convertVideoLinks();
 
     };
 
