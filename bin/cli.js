@@ -9,6 +9,8 @@ if ( cmd[0] ) {
     cmd = '';
 }
 
+console.log( 'Called' );
+
 /**
  * Create a new CLI instance and run the command. This will
  * change the working directory to the projects root.
