@@ -18,6 +18,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: pwd
-      - run: ls
+      - run: cd bin && node cli compile
       - run: echo "Test Done"
