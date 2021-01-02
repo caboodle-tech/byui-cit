@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   line-height: 1.98rem;
   overflow-y: auto;
   padding-top: 6rem;
@@ -58,8 +58,8 @@ body {
   cursor: pointer;
 }
 #page hr {
-  margin: 22.5px 0 30px 0;
-  border: 1px dashed #8d98a3;
+  margin: 37.5px 0 45px 0;
+  border: 1px dashed #1a1a1a;
 }
 #page h1 {
   font-size: 2.1rem;
@@ -80,6 +80,15 @@ body {
   font-size: 1.5rem;
   line-height: 1.86rem;
   font-weight: bold;
+}
+#page > h1,
+#page h2,
+#page h3,
+#page h3,
+#page h4,
+#page h5,
+#page h6 {
+  margin: 45px 0 30px 0;
 }
 #page .content {
   max-width: 1200px;
@@ -103,9 +112,11 @@ body {
   background-color: rgba(255, 243, 141, 0.4);
 }
 #page #go-back {
+  position: absolute;
+  right: 15px;
+  margin-top: -15px;
   z-index: 50;
   height: 0;
-  padding: 15px 15px 0 0;
   overflow: visible;
   font-size: 2rem;
   text-align: right;
@@ -140,23 +151,6 @@ body {
 }
 #page main {
   flex: 1;
-}
-#page main figure {
-  display: block;
-  margin: 15px auto;
-}
-#page main figure img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
-#page main figure figcaption {
-  text-align: center;
-  margin: 7.5px 0 0 0;
 }
 #page main blockquote {
   position: relative;
@@ -250,6 +244,7 @@ body {
   font-size: 1.38rem;
   text-transform: capitalize;
   color: #212529;
+  border: 0;
 }
 #page main .rubric {
   padding: 7.5px 15px;
@@ -269,6 +264,7 @@ body {
   font-size: 1.38rem;
   text-transform: capitalize;
   color: #0e72a9;
+  border: 0;
 }
 #page main .license {
   position: relative;
@@ -329,16 +325,52 @@ body {
   flex-direction: row;
 }
 #page main #main-content {
+  position: relative;
   flex: 1;
   padding: 30px 15px;
   overflow: hidden;
 }
 #page main #main-content a {
   color: #006eb6;
-  border-bottom: 3px double #006eb6;
 }
 #page main #main-content a:hover {
   color: #005892;
+}
+#page main #main-content p {
+  overflow: auto;
+}
+#page main #main-content figure {
+  display: inline-block;
+}
+#page main #main-content figure img {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main #main-content figure.left {
+  max-width: 50%;
+  float: left;
+  margin: 15px 15px 15px 0;
+}
+#page main #main-content figure.right {
+  max-width: 50%;
+  float: right;
+  margin: 15px 0 15px 15px;
+}
+#page main #main-content figure.center {
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+}
+#page main #main-content figure.center img {
+  width: auto;
+  max-width: 90%;
+}
+#page main #main-content figure figcaption {
+  text-align: center;
+  margin: 7.5px 0 0 0;
 }
 #page main #main-content li h2,
 #page main #main-content li h3,
@@ -463,6 +495,7 @@ body {
 #page main #main-content ul ul li:before {
   content: '\2299';
   font-size: 1.2rem;
+  vertical-align: text-top;
 }
 #page main #main-content ul ul li:first-of-type {
   margin: 0.5rem 0 0.5rem 22.5px;
@@ -475,6 +508,7 @@ body {
 }
 #page main #main-content ul ol li:before {
   font-size: 1.2rem;
+  vertical-align: text-top;
 }
 #page main #main-content ul ol li:first-of-type {
   margin: 0.5rem 0 0.5rem 22.5px;
@@ -566,6 +600,7 @@ body {
 }
 #page main #sidebar nav ul li a .sub,
 #page main #sidebar nav ul li .link .sub {
+  color: #000000;
   display: block;
   font-size: 0.8rem;
   line-height: 1.04347826rem;
@@ -624,6 +659,9 @@ body {
   color: #0c6291;
 }
 @media (min-width: 768px) {
+  #page {
+    font-size: 1.2rem;
+  }
   #page main blockquote {
     margin: 15px 22.5px;
   }
