@@ -1,0 +1,178 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "CSS Vocabulary - BYUI";
+${{keywords}}    = "CSS Vocabulary, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>CSS Vocabulary</h1>
+                    <p>
+                        Learning the vocabulary for CSS will be vital for your success in this class. Like any language it is impossible to learn everything all at once, you should however memorize the following core terms. You will have a hard time making sense of the instruction given in this course if you don't understand these terms.
+                    </p>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Core Terms</h2>
+                            <p>
+                                Make sure you have read, understood, and memorized the following terms:
+                            </p>
+                            <dl>
+                                <dt>
+                                    Selector
+                                </dt>
+                                <dd>
+                                    How you specify to the browser which HTML element(s) should be changed. We will focus primarily on 3 kinds of selectors in this class:
+                                    <ol>
+                                        <li>element</li>
+                                        <li>.class</li>
+                                        <li>#id</li>
+                                    </ol>
+                                    For example, if we have the following HTML:
+<pre class="lang-html">
+<code class="lang-html">&lt;p&gt;No class or id on this paragraph&lt;/p&gt;
+&lt;p class="green"&gt;This paragraph has a class&lt;/p&gt;
+&lt;p class="green" id="paragraph3"&gt;This paragraph has a class and an id&lt;/p&gt;
+</code></pre>
+                                    We could select all of the paragraphs by using the element selector <code>p</code>. Notice that there is no preface such as <code>.</code> or <code>#</code>, we simply use the tag name.
+                                    <br><br>
+                                    We could select just the second and third paragraphs by using the class attribute on them as a selector like this: <code>.green</code> Notice that we preface the class name with a period this time.
+                                    <br><br>
+                                    We could also select just the last paragraph by using its ID as a selector like this: <code>#paragraph3</code> Notice that we preface the ID with a number sign (hashtag) this time.
+<pre class="lang-html">
+<code class="lang-html">p /* element selector: all paragraphs */
+.green /* class selector: all paragraphs with an attribute class="green" */
+#paragraph3 /* id selector: the paragraph with the attribute id="paragraph3" */
+</code></pre>
+                                </dd>
+                                <dt>
+                                    Property
+                                </dt>
+                                <dd>
+                                    What we want to change about the element(s) selected by our selector. For example:
+<pre class="lang-html">
+<code class="lang-html">background-color
+</code></pre>
+                                </dd>
+                                <dt>
+                                    Value
+                                </dt>
+                                <dd>
+                                    How we want to change a property. For example here we provide a value of green for the background-color property:
+<pre class="lang-html">
+<code class="lang-html">background-color: green;
+</code></pre>
+                                </dd>
+                                <dt>
+                                    Declaration
+                                </dt>
+                                <dd>
+                                    A combination of a property and it's value with a colon. Declarations must 
+<pre class="lang-html">
+<code class="lang-html">background-color: green;
+</code></pre>
+                                </dd>
+                                <dt>
+                                    Declaration Block
+                                </dt>
+                                <dd>
+                                    One or more declarations will be combined into a block using curly braces ({}):
+<pre class="lang-html">
+<code class="lang-html">{
+    background-color: green;
+    margin: 5px;    
+}
+</code></pre>
+                                </dd>
+                                <dt>
+                                    Rule (or Rule-set)
+                                </dt>
+                                <dd>
+                                    A rule is the combination of a selector and declaration block. The example below would select all elements with a class="green" and turn their background green:
+<pre class="lang-html">
+<code class="lang-html">.green {
+    background-color: green;
+    margin: 5px;    
+}
+</code></pre>
+                                </dd>
+                                <dt>
+                                    Units
+                                </dt>
+                                <dd>
+                                    Many properties require a value with units. Some units are absolute meaning that they are always the same size. Other units are relative meaning that their size changes based on something else; like the size of the text or the width or the browser or an element. Common CSS units are: px (absolute), em (relative, based off of font size), and % (relative, based off of width).
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <h2>Additional Study</h2>
+                            <p>
+                                Review the following resources and spend time practicing with the hands on tutorials by clicking on the <i>Try It Yourself</i> buttons:
+                            </p>
+                            <ul>
+                                <li>
+                                  <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank" rel="noopener noreferrer">Introduction to CSS</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/css/css_syntax.asp" target="_blank" rel="noopener noreferrer">CSS Syntax</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank" rel="noopener noreferrer">CSS Units</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank" rel="noopener noreferrer">CSS Selectors</a> (pay particular attention to the element,
+                                  class, and id selectors)
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/cssref/default.asp" target="_blank" rel="noopener noreferrer">CSS Properties</a>
+                                </li>
+                            </ul>
+                            <div class="callout">
+                                <h2>Note:</h2>
+                                <p>
+                                    We do not expect you to memorize all of the tags or materials in these links yet. The goal is to familiarize yourself with the concepts and learn to recognize instances of the terms above. Keep in mind that <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> is a great resource for learning/reviewing HTML and CSS concepts in general.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>Review</h2>
+                            <p>
+                                Visit this <a href="http://apps.workflower.fi/vocabs/css/en#unit" target="_blank">CSS Vocabulary</a> site and see how many instances of the terms you learned above you can find. After looking on your own, select each term from our list one at a time on the right and see if you found all the instances. This list has more vocabulary on it than we asked you to learn. Don't let this overwhelm or distract you. Focus on the list above.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Complete Quiz</h2>
+                            <p>
+                                Follow the instructions in canvas to prove you have completed this assignment.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    By the end of the week you will need to complete the Week 1 Vocabulary quiz in Canvas. This quiz will test your knowledge of HTML and CSS so make sure you have completed both assignments before starting the quiz.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                    {{COMPILED}}
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

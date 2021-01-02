@@ -1,4 +1,8 @@
-// https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach
+/**
+ * Polyfill forEach.
+ * 
+ * {@link https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach|Source Code}
+ */
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
         thisArg = thisArg || window;
