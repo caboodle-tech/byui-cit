@@ -216,8 +216,7 @@ class CLI {
             // Copy file to release directory.
             fs.copyFileSync(
                 location,
-                path.join( this.settings.releaseDir, location ),
-                { encoding: 'utf8' }
+                path.join( this.settings.releaseDir, location )
             );
 
         } else {

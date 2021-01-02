@@ -9,9 +9,6 @@ if ( cmd[0] ) {
     cmd = '';
 }
 
-console.log( process.argv )
-console.log( 'Called with cmd: [' + cmd + ']' );
-
 /**
  * Create a new CLI instance and run the command. This will
  * change the working directory to the projects root.
