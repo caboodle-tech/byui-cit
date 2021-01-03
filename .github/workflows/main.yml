@@ -34,4 +34,10 @@ jobs:
         run: |
           git config --global user.name 'Caboodle Tech Inc'
           git config --global user.email 'blizzardengle@users.noreply.github.com'
-          git branch
+          git rm -r *
+          ehco "Copy release files into website branch"
+          cp ../release/* .
+          rm ../release -r
+          git add .
+          git commit -m "auto update"
+          git push
