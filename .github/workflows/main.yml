@@ -25,8 +25,7 @@ jobs:
       - name: Checkout website branch
         uses: actions/checkout@v2
         with:
-          repository: caboodle-tech/byui-cit
-          path: byui-cit
+          ref: website
 
       - name: Pushing to gh pages
         run: |
