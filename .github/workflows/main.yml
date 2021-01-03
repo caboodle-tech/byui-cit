@@ -20,7 +20,10 @@ jobs:
           node-version: '14'
 
       - name: Compiling website
-        run: node ./bin/cli compile
+        run: |
+          node ./bin/cli compile
+          echo "Stash release files up 1 directory"
+          mv release/ ../release
       
       - name: Checkout website branch
         uses: actions/checkout@v2
@@ -29,8 +32,6 @@ jobs:
 
       - name: Pushing to gh pages
         run: |
-          echo "Stash release files up 1 directory"
-          mv release/ ../release
           git config --global user.name 'Caboodle Tech Inc'
           git config --global user.email 'blizzardengle@users.noreply.github.com'
           git branch
