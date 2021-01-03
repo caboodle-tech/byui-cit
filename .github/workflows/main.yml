@@ -36,7 +36,7 @@ jobs:
           git config --global user.email "blizzardengle@users.noreply.github.com"
           rm * -r
           echo "Copy release files into website branch"
-          cp ../release/* .
+          cp ../release/* . -r
           rm ../release -r
           git add .
           git commit -m "auto update"
