@@ -1,38 +1,44 @@
 # Workflow Name
 name: Compile Updated Website
 
-# Controls when the action will run. 
+# Control when the action will run:
 on:
-  # Triggers the workflow on push events to the main branch
+  # Trigger the workflow on push events to the main branch
   push:
     branches: [ main ]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab on GitHub
   workflow_dispatch:
 
+# Controls what to do:
 jobs:
-  build:
+  compile: # Used as the job name if the workflow wasn't named
+    # Stop if the commit message that triggered this workflow contains the words "skip ci"
     if: "!contains(github.event.commits[0].message, 'skip ci')"
     runs-on: ubuntu-latest
     
     steps:
+      # Add and setup Node
       - uses: actions/checkout@v2
       - name: Install Node v14.#.#
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-
+      
+      # Using the commit that triggered this workflow run the JamED compiler
       - name: Compiling website
         run: |
           node ./bin/cli compile
           echo "Stash release files up 1 directory"
           mv release/ ../release
       
+      # Checkout the website (gh pages) branch
       - name: Checkout website branch
         uses: actions/checkout@v2
         with:
           ref: website
 
+      # Delete all files in the website branch and replace with the files we just compiled
       - name: Pushing to gh pages
         run: |
           git config --global user.name "Caboodle Tech Inc"
