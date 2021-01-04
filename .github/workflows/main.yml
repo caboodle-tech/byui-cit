@@ -30,6 +30,23 @@ jobs:
           node ./bin/cli compile
           echo "Stash release files up 1 directory"
           mv release/ ../release
+
+      # Create a shell script that creates the website branch if it does not exist
+      - name: Checking if website branch exists
+        run: |
+          git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+          git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+          touch wbc.sh
+          echo "#!/bin/bash" >> wbc.sh
+          echo "check=git branch | grep website" >> wbc.sh
+          echo "if [ -z \"$check\" ] >> wbc.sh
+          echo "then" >> wbc.sh
+          echo "  echo \"Website branch does not exist, creating now\"" >> wbc.sh
+          echo "  git checkout -b website" >> wbc.sh
+          echo "  git push --set-upstream origin website" >> wbc.sh
+          echo "else" >> wbc.sh
+          echo "  echo \"Website branch exists\"" >> wbc.sh
+          echo "fi" >> wbc.sh
       
       # Checkout the website (gh pages) branch
       - name: Checkout website branch
