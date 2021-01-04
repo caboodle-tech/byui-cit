@@ -41,8 +41,6 @@ jobs:
       # Delete all files in the website branch and replace with the files we just compiled
       - name: Pushing to gh pages
         run: |
-          git config --global user.name "Caboodle Tech Inc"
-          git config --global user.email "blizzardengle@users.noreply.github.com"
           rm * -r
           echo "Copy release files into website branch"
           cp ../release/* . -r
