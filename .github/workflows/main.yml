@@ -39,7 +39,7 @@ jobs:
           touch wbc.sh
           echo "#!/bin/bash" >> wbc.sh
           echo "check=\"$(git branch --all | grep website)"\" >> wbc.sh
-          echo "ehco \$check" >> wbc.sh
+          echo "echo \$check" >> wbc.sh
           chmod +x wbc.sh
           ./wbc.sh
           rm wbc.sh
