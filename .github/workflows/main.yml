@@ -39,14 +39,17 @@ jobs:
           touch wbc.sh
           echo "#!/bin/bash" >> wbc.sh
           echo "check=git branch | grep website" >> wbc.sh
-          echo "if [ -z \"$check\" ] >> wbc.sh
+          echo "if [ -z '$check' ] >> wbc.sh
           echo "then" >> wbc.sh
-          echo "  echo \"Website branch does not exist, creating now\"" >> wbc.sh
+          echo "  echo 'Website branch does not exist, creating now'" >> wbc.sh
           echo "  git checkout -b website" >> wbc.sh
           echo "  git push --set-upstream origin website" >> wbc.sh
           echo "else" >> wbc.sh
-          echo "  echo \"Website branch exists\"" >> wbc.sh
+          echo "  echo 'Website branch exists'" >> wbc.sh
           echo "fi" >> wbc.sh
+          chmod +x wbc.sh
+          ./wbc.sh
+          rm wbc.sh
       
       # Checkout the website (gh pages) branch
       - name: Checkout website branch
