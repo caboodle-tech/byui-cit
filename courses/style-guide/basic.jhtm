@@ -69,7 +69,7 @@ ${{description}} = "This is a style guide reference page for developers working 
                     </div>
                     <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
 <pre class="lang-html">
-<code class="lang-html">&lt;href="https://video-source.com" target="_blank" data-video="YouTube"&gt;
+<code class="lang-html">&lt;a href="https://video-source.com" target="_blank" data-video="YouTube"&gt;
     Title of the video / video information.
 &lt;/a&gt;
 </code></pre>
