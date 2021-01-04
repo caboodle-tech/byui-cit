@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Christopher Keers">
+    <meta name="keywords" content="Glitch, Introduction, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+    <meta name="description" content="This is a homework assignment for WDD 130.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glitch Introduction - BYUI</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../../js/stem.js"></script>
+    <script src="../../../js/main.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                <a href="../../../courses/wdd-130/index.html">
+    <img src="../../../assets/byui-logo.jpg" alt="BYUI Logo" id="logo">
+</a>
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <h1>Glitch Introduction</h1>
+                    <p>
+                        One of our goals for this class is to allow you to create a real website accessible with a browser. This, as you will discover in the readings and videos for this week, requires you to have what is known as a host. Most hosts cost money, but not all. For this class, we will be using a free service called <a href="https://glitch.com" target="_blank" rel="noopener noreferrer">Glitch.com</a>. Using this service allows you to create your website with their text editor, save the website, upload images for the website, and even share the website with an instructor or fellow student for collaboration.
+                    </p>
+                    <ol>
+                        <li>
+                            <h2>Glitch Login</h2>
+                            <div class="callout">
+                                <h2>Wait:</h2>
+                                <p>
+                                    Do not start this activity unless you have completed the W01 Assignment: Accounts and Software setup in Canvas. You need a Glitch account before you can continue.
+                                </p>
+                            </div>
+                            <p>
+                                Visit the Glitch website and click on the Sign in button in the top right corner of the screen. Glitch lets you sign in using either Facebook, Google, email, or GitHub; all are free to use. GitHub might be the easiest option to use. Click on the Sign in button for the account you would like to use. You may see a screen requesting permission for Glitch to access the account you have chosen to use.
+                            </p>
+                            <p>
+                                In the past the spam filter for BYUI blocked the registration emails for Glitch. This issue should be fixed now but if you register with the email option using your student email and never receive the verification email, please try again with another email or a different registration option.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Remix (copy) the Starter Project</h2>
+                            <p>
+                                Next we need to create a project for you to use this semester. Glitch gives you the ability to use an existing project as a starting point. After logging in to Glitch, <a href="https://glitch.com/edit/#!/brother-keers-starter?path=README.md%3A1%3A0" rel="noopener noreferrer">visit this project</a> and click on the <strong>Remix to Edit</strong> button on the screen. This will create a copy of the project that you own and can edit.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Become Familiar with the Glitch Interface</h2>
+                            <p>
+                                After creating a project you should see something similar to the following:
+                                <img src="assets/glitch-tour.jpeg" alt="Glitch Project Tour" class="center" data-caption="Glitch Project Tour">
+                            </p>
+                            <ol>
+                                <li>
+                                    This is the random name that Glitch chose for your project. You can change this by clicking on the name. You will also find settings that effect the editor (changing theme, wrap text, etc) in here. Checking the "Wrap Text" box is recommended.
+                                </li>
+                                <li>
+                                    This is the list of files in the project. Notice that <code>index.html</code> is selected and open in the editor. The <code>README.md</code> file contains information about the different files in the project. Click on the filename to open it in the editor and spend a few minutes reading through that.
+                                </li>
+                                <li>
+                                    This is the code editor. It is where we will spend most of our time writing HTML and CSS
+                                </li>
+                                <li>
+                                    This is where you will click to preview your page. It will either open a new tab or a new pane next to the editor where you can see the results of the code you write.
+                                </li>
+                                <li>
+                                    This is where you can add a new file to your project.
+                                </li>
+                            </ol>
+                            <p>
+                                Make sure to click on and read the <code>README.md</code> page.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Your First Edits: index.html</h2>
+                            <p>
+                                With your remixed (copied) project open in Glitch, click on the <code>index.html</code> file. Please make the following changes to this file in Glitch's editor:
+                            </p>
+                            <ol>
+                                <li>
+                                    <h2>Add a Sentence</h2>
+                                    <p>
+                                        Remove <code>[SENTENCE]</code> and replace it with your own sentence or two. For example your could add something like: <i>This is the first edit I ever made to my Glitch website. I added this simple sentence.</i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>Correct the Year</h2>
+                                    <p>
+                                        Replace <code>[YEAR]</code> with the current year.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>Add your Name</h2>
+                                    <p>
+                                        Replace <code>[NAME]</code> with your first and last name.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>Update the Logo</h2>
+                                    <p>
+                                        In the index.html file you should see a line of code simiar to the following:
+                                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;div class="logo-box"&gt;
+    &lt;img src="https://via.placeholder.com/300x200"&gt;
+&lt;/div&gt;
+</code></pre>
+                                    <p>
+                                        To change the logo being shown on the page you need to update the images source attribute. The source attribute <code>src="..."</code> tells your web browser where to load (source) the image from by providing a URL to it. Please do a <a href="https://google.com" rel="noopener noreferrer" target="_blank"> Google Search</a> for any appropriate picture you like, copy it's source (URL), and replace it in Glitch. For example here is an updated logo with a new source that points to a picture of puppies instead:
+                                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;img src="https://dogtime.com/assets/uploads/2011/03/puppy-development.jpg"&gt;
+</code></pre>
+                                    <p>
+                                        If you need help finding and using the source of an image on the internet the following video can help:
+                                    </p>
+                                    <a href="https://youtu.be/eYH3xRvTQEU" target="_blank" data-video="YouTube">
+                                        How to get a URL of an image on Google
+                                    </a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Your First Edits: styles.css</h2>
+                            <p>
+                                Style sheets, or CSS files, are what adds styles to your page. To demonstrate how this works please make the following adjustments to the <code>styles.css</code> file:
+                            </p>
+                            <ol>
+                                <li>
+                                    <h2>Wider Logo</h2>
+                                    <p>
+                                        Change the width of the logo image to <code>350px</code> wide. Here is what the original code looks like; this is where you need to change 200px to 350px:
+                                    </p>
+<pre class="lang-css"><code class="lang-css">.logo-box img {
+    width: 200px;
+    height: auto;
+}
+</code></pre>
+                                </li>
+                                <li>
+                                    <h2>Bigger Navigation Text</h2>
+                                    <p>
+                                        Change the size of the navigation text to <code>30px</code> and add the following rule to the navigation rule set: <code>text-transform: uppercase;</code> Here is what the original code looks like; this is where you need to change 18px to 30px and add the provided code:
+                                    </p>
+<pre class="lang-css"><code class="lang-css">header nav ul li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+}
+</code></pre>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Complete Assignment</h2>
+                            <p>
+                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <code>Show</code> in the upper left and then <code>New Window</code>. When the new tab loads with your live site copy the URL from the address bar.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    Before your second class this week you will need to submit the URL to your live Glitch page in Canvas as proof of completing this assignment. <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your live site.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        <footer>
+    <div class="content">
+        This work was created by the <a href="https://www.byui.edu/computer-information-technology" target="_blank">Computer Information Technology Department</a> at <a href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho</a> and is licensed under a <a href="../../../LICENSE-CC-BY-NC-SA.txt" target="_blank">Creative Commons BY-NC-SA 4.0 License</a> unless noted otherwise. The <a href="https://github.com/caboodle-tech/byui-cit" target="_blank">source code</a> for this website is licensed under the <a href="../../../LICENSE-MIT.txt" target="_blank">MIT License</a> unless noted otherwise.
+    </div>
+</footer>
+    </div>
+</body>
+</html>

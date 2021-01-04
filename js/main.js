@@ -112,8 +112,14 @@ var byui = ( function() {
         var videos = document.querySelectorAll( '[data-video]' );
 
         videos.forEach( function( video ) {
-            var type = video.dataset.video
+            var type = video.dataset.video;
             if ( type ) {
+                /**
+                 * Make sure all video links open in new tabs and are marked properly for security.
+                 * This only will effect links that end up not being processed.
+                 */
+                video.setAttribute( 'target', '_blank' );
+                video.setAttribute( 'rel', 'noopener noreferrer' );
                 type = type.trim();
                 processVideo( type.toUpperCase(), video );
             }
@@ -172,6 +178,8 @@ var byui = ( function() {
 
     var processVideo = function( type, link ) {
 
+        console.log( 'A', type, link );
+
         switch ( type ) {
             case 'YOUTUBE':
                 // Get the video source or bail.
@@ -192,10 +200,12 @@ var byui = ( function() {
                 var a = document.createElement( 'A' );
                 a.setAttribute( 'href', link.href );
                 a.setAttribute( 'target', '_blank' );
+                a.setAttribute( 'rel', 'noopener noreferrer' );
+                a.innerHTML = '&#x2139;&nbsp;&nbsp;' + link.innerHTML;
                 // Make the fallback link div and add it after the existing link.
                 var fallback = document.createElement( 'DIV' );
                 fallback.classList.add( 'video-fallback' );
-                fallback.innerHTML = '&mdash;&nbsp;&nbsp;<a href="' + link.href + '" target="_blank">&#x2139;&nbsp;&nbsp;' + link.innerHTML + '</a>';
+                fallback.innerHTML = '&mdash;&nbsp;&nbsp;';
                 fallback.appendChild( a );
                 link.parentElement.insertBefore( fallback, link.nextSibling );
                 // Swap out the link and replace with the video and fallback divs.
