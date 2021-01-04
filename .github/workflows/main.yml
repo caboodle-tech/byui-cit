@@ -32,6 +32,7 @@ jobs:
           mv release/ ../release
 
       # Create a shell script that creates the website branch if it does not exist
+      # I may need to add a stash here
       - name: Checking if website branch exists
         run: |
           git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
