@@ -18,6 +18,9 @@ ${{description}} = "This is a homework assignment for WDD 130.";
         <main>
             <div class="content">
                 <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
                     <h1>Glitch Introduction</h1>
                     <p>
                         One of our goals for this class is to allow you to create a real website accessible with a browser. This, as you will discover in the readings and videos for this week, requires you to have what is known as a host. Most hosts cost money, but not all. For this class, we will be using a free service called <a href="https://glitch.com" target="_blank" rel="noopener noreferrer">Glitch.com</a>. Using this service allows you to create your website with their text editor, save the website, upload images for the website, and even share the website with an instructor or fellow student for collaboration.

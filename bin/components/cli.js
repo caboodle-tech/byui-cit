@@ -61,20 +61,41 @@ class CLI {
     }
 
     /**
+     * Checks if the global file has changed, if it has we should force a compile.
+     */
+    checkGlobalForCompile() {
+        let location = 'bin/globals';
+        let stats    = fs.statSync( location );
+        let hash     = md5( location );
+        let mtime    = new Date( stats.mtime );
+        let result   = this.getFileTrackingStatus( hash, mtime );
+        if ( ! this.forceCompile && ! result ) {
+            this.forceCompile = true;
+        }
+    }
+    
+    /**
      * Checks if any template files have changed, if they have we
      * should force a compile.
      */
-    checkForceCompile() {
+    checkTemplatesForCompile( base ) {
+        if ( ! base || base.substring( 0, 9 ) != 'templates' ) {
+            base = 'templates';
+        }
         // Loop through all the template files and see if one has changed.
-        let items = fs.readdirSync( 'templates' );
+        let items = fs.readdirSync( base );
         items.forEach( item => {
-            // TODO: This does not skip dirs and does not support recursion.
-            let location = path.join( 'templates', item );
-            let hash     = md5( location );
-            let mtime    = new Date( fs.statSync( location ).mtime );
-            let result   = this.getFileTrackingStatus( hash, mtime );
-            if ( ! this.forceCompile && ! result ) {
-                this.forceCompile = true;
+            let location = path.join( base, item );
+            let stats    = fs.statSync( location );
+            if ( stats.isDirectory() ) {
+                this.checkTemplatesForCompile( location );
+            } else {
+                let hash   = md5( location );
+                let mtime  = new Date( stats.mtime );
+                let result = this.getFileTrackingStatus( hash, mtime );
+                if ( ! this.forceCompile && ! result ) {
+                    this.forceCompile = true;
+                }
             }
         } );
     }
@@ -440,7 +461,10 @@ Compile completed in: ${this.stats.time}
                 let filebuffer = fs.readFileSync( location );
                 that.DB = new SQL.Database( filebuffer );
                 // Check if we need to force compile.
-                that.checkForceCompile();
+                that.checkGlobalForCompile();
+                if ( ! that.forceCompile ) {
+                    that.checkTemplatesForCompile();
+                }
             }
             that.ready = true;
         } ).catch( function( err ) {
@@ -513,14 +537,15 @@ Compile completed in: ${this.stats.time}
         }
         let files = fs.readdirSync( base );
         files.forEach( file => {
-            let stats = fs.statSync( base + path.sep + file );
+            let location = path.join( base, file );
+            let stats    = fs.statSync( location );
             if ( stats.isDirectory() ) {
-                this.loadTemplates( base + path.sep + file );
+                this.loadTemplates( location );
             } else {
                 let name = base + path.sep + path.parse( file ).name;
                 name     = name.replace( /templates(\/|\\{1,2})/, '' );
                 this.templates[ name.toUpperCase() ] = fs.readFileSync(
-                    base + path.sep + file,
+                    location,
                     {
                         encoding: 'utf8'
                     }
