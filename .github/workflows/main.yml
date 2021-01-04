@@ -41,6 +41,8 @@ jobs:
       # Delete all files in the website branch and replace with the files we just compiled
       - name: Pushing to gh pages
         run: |
+          git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+          git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
           rm * -r
           echo "Copy release files into website branch"
           cp ../release/* . -r
