@@ -118,6 +118,49 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </li>
                             </ol>
                         </li>
+                        <li>
+                            <h2>Your First Edits: styles.css</h2>
+                            <p>
+                                Style sheets, or CSS files, are what adds styles to your page. To demonstrate how this works please make the following adjustments to the <code>styles.css</code> file:
+                            </p>
+                            <ol>
+                                <li>
+                                    <h2>Wider Logo</h2>
+                                    <p>
+                                        Change the width of the logo image to <code>350px</code> wide. Here is what the original code looks like; this is where you need to change 200px to 350px:
+                                    </p>
+<pre class="lang-css"><code class="lang-css">.logo-box img {
+    width: 200px;
+    height: auto;
+}
+</code></pre>
+                                </li>
+                                <li>
+                                    <h2>Bigger Navigation Text</h2>
+                                    <p>
+                                        Change the size of the navigation text to <code>30px</code> and add the following rule to the navigation rule set: <code>text-transform: uppercase;</code> Here is what the original code looks like; this is where you need to change 18px to 30px and add the provided code:
+                                    </p>
+<pre class="lang-css"><code class="lang-css">header nav ul li {
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+}
+</code></pre>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Complete Assignment</h2>
+                            <p>
+                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <code>Show</code> in the upper left and then <code>New Window</code>. When the new tab loads with your live site copy the URL from the address bar.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    Before your second class this week you will need to submit the URL to your live Glitch page in Canvas as proof of completing this assignment. <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your live site.
+                                </p>
+                            </div>
+                        </li>
                     </ol>
                 </section>
             </div>
