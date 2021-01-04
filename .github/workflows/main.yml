@@ -5,8 +5,6 @@ name: Compile Updated Website
 on:
   push:
     branches: [ main ]
-  merge:
-    branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab on GitHub
   workflow_dispatch:
