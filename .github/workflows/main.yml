@@ -38,9 +38,15 @@ jobs:
           git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
           touch wbc.sh
           echo "#!/bin/bash" >> wbc.sh
-          echo "check=\"$(git branch --all)"\" >> wbc.sh
-          echo "echo \$check" >> wbc.sh
-          echo "echo \"DONE\"" >> wbc.sh
+          echo "check=\"$(git branch -r | grep website)"\" >> wbc.sh
+          echo "if [ -z \"\$check\" ]" >> wbc.sh
+          echo "then" >> wbc.sh
+          echo "  echo \"Website branch does not exist, creating now\"" >> wbc.sh
+          echo "  git checkout -b website" >> wbc.sh
+          echo "  git push --set-upstream origin website" >> wbc.sh
+          echo "else" >> wbc.sh
+          echo "  echo \"Website branch exists\"" >> wbc.sh
+          echo "fi" >> wbc.sh
           chmod +x wbc.sh
           ./wbc.sh
           rm wbc.sh
