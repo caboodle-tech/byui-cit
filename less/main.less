@@ -224,7 +224,7 @@ body {
             &:after {
                 position: absolute;
                 content: '+';
-                top: @spacing / 2;
+                top: @spacing / 4 + 0.5;
                 right: @spacing;
                 font-size: @font-size * 2;
                 font-weight: bold;
@@ -234,14 +234,20 @@ body {
 
                 &:after {
                     content: 'x';
+                    top: @spacing / 4 - 0.5;
                 }
 
                 + .collapsible-content {
                     max-height: none;
                     padding: @spacing;
-                    border-top: 2px solid @header-bg-color;
-                    border-bottom: 2px solid @header-bg-color;
-                    background-color: fade( @header-bg-color, 5% );
+                    
+                    &:after {
+                        content: ' ';
+                        display: block;
+                        height: 3px;
+                        margin: @spacing * 2 0 @spacing 0;
+                        border-bottom: 3px double @header-bg-color;
+                    }
                 }
 
             }
@@ -403,6 +409,12 @@ body {
     
             }
 
+            div.katex, div.mermaid, div.diagram {
+                text-align: center
+            }
+
+
+
             @import "lists.less";
         }
 
@@ -453,10 +465,11 @@ body {
                     list-style-type: none;
 
                     li {
+                        position: relative;
                         display: flex;
                         flex-direction: column;
                         flex-wrap: wrap;
-                        padding: @spacing / 2 0;
+                        padding: @spacing / 3 @spacing @spacing / 3 0;
 
                         .section {
                             display: block;
@@ -486,7 +499,8 @@ body {
                         }
 
                         .more {
-                            position: relative;
+                            position: absolute;
+                            right: -@spacing / 3;
                             padding-left: @spacing / 2;
                             cursor: pointer;
 
@@ -502,6 +516,7 @@ body {
                             }
 
                             &.open {
+                                top: @spacing;
 
                                 .closed {
                                     display: none;

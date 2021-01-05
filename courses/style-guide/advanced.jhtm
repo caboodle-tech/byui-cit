@@ -93,7 +93,7 @@ ${{description}} = "This is a style guide reference page for developers working 
                     </p>
                     <h3>Mermaid (Diagrams)</h3>
                     <p>
-                        Adding a diagram to your page is rather simple, all you need is a div with the <code>diagram</code> class. You will need to learn <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank">Mermaid's syntax</a> in order to create diagrams. There is a <a href="https://mermaid-js.github.io/mermaid-live-editor/#/" target="_blank">live editor</a> you can use to test your diagram code before publishing it. Here is an example of a simple flowchart and its corresponding code:
+                        Adding a diagram to your page is rather simple, all you need is a div with the <code>diagram</code> class; for backwards compatibility you can use the class of <code>mermaid</code> as well. You will need to learn <a href="https://mermaid-js.github.io/mermaid/#/" target="_blank">Mermaid's syntax</a> in order to create diagrams though. There is a <a href="https://mermaid-js.github.io/mermaid-live-editor/#/" target="_blank">live editor</a> you can use to test your diagram code before publishing it. Here is an example of a simple flowchart and its corresponding code:
                     </p>
                     <div class="diagram">
                         graph TD
