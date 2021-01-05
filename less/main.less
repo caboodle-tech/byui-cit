@@ -155,6 +155,7 @@ body {
         #logo {
             height: @header-height * 1.5;
             width: auto;
+            .drop-shadow();
         }
 
         #mobile-nav-button {
@@ -322,28 +323,6 @@ body {
                 color: @footer-bg-color;
             }
         }
-
-        .video {
-            position: relative;
-            height: 0;
-            width: 100%;
-            margin: @spacing 0 1rem 0;
-            padding-bottom: 56.25%;
-            overflow: hidden;
-
-            iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .video-fallback {
-            font-style: italic;
-            margin: @spacing / 2 0;
-        }
         
         .content {
             position: relative;
@@ -360,10 +339,17 @@ body {
             
             a {
                 color: @link-primary-color;
-                border-bottom: 3px solid @link-primary-color;;
+                border-bottom: 3px double @link-primary-color;;
     
                 &:hover {
                     color: darken( @link-primary-color, 7% );
+                }
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+
+                a {
+                    border-bottom: none;
                 }
             }
 
@@ -412,6 +398,33 @@ body {
 
             div.katex, div.mermaid, div.diagram {
                 text-align: center
+            }
+
+            .video {
+                position: relative;
+                height: 0;
+                width: 100%;
+                margin: @spacing 0 1rem 0;
+                padding-bottom: 56.25%;
+                overflow: hidden;
+                .drop-shadow();
+    
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .video-fallback {
+                font-style: italic;
+                margin: @spacing / 2 0;
+    
+                a {
+                    border-bottom: none;
+                }
             }
 
             @import "lists.less";
