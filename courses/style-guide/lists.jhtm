@@ -21,6 +21,12 @@ ${{description}} = "This is a style guide reference page for developers working 
                     <p>
                         There are 3 main styles of lists available for use: ordered lists with numbers, unordered lists with bullets, and definition lists with terms and their definitions. We also support miniature versions of the ordered and unordered lists where the numbers or bullet points are not as large. You can also nest any combination of lists within one another, but this type of use should be limited.
                     </p>
+                    <div class="callout">
+                        <h2>Alternative Styles:</h2>
+                        <p>
+                            The default style for primary (non-nested) lists are rather large. You can add a class of <code>smaller</code> to an <code>ul</code> or <code>ol</code> tag to make them smaller. <code>dt</code> lists do not support this class since the styles are smaller by default for this type of list.
+                        </p>
+                    </div>
                     <h3>OL &ndash; Ordered List</h3>
                     <p>
                         Assignments should be organized inside an <code>ol</code> (ordered list). Below is an example of what this looks like followed by the HTML code for this element. Please note that this website runs a JavaScript function to automatically create an anchor (id) for each step if you used the correct HTML format. These anchors are nice when communicating with students and instructors because you can provide a direct link to the content in question. These links can change if you update the amount of steps in an assignment so they should only be used short term.

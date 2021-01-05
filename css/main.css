@@ -383,18 +383,6 @@ body {
 #page main #main-content div.diagram {
   text-align: center;
 }
-#page main #main-content li h2,
-#page main #main-content li h3,
-#page main #main-content li h4,
-#page main #main-content li h5,
-#page main #main-content li h6 {
-  border: none;
-  margin: 0;
-  display: inline-block;
-}
-#page main #main-content li p {
-  margin: 10px 0;
-}
 #page main #main-content dl dt {
   font-weight: bold;
   text-transform: capitalize;
@@ -433,27 +421,42 @@ body {
   margin: 2rem 0 2rem 0;
 }
 #page main #main-content ol ol li {
-  margin: 0.5rem 0 0.5rem 22.5px;
+  position: relative;
+  margin: 3.75px 0 3.75px 22.5px;
+  padding-left: 37.5px;
 }
-#page main #main-content ol ol li p {
-  display: inline-block;
+#page main #main-content ol ol li p:first-of-type {
+  margin-top: 0;
+}
+#page main #main-content ol ol li p:last-of-type {
+  margin-bottom: 0;
 }
 #page main #main-content ol ol li:before {
   font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 #page main #main-content ol ol li:first-of-type {
   margin: 0.5rem 0 0.5rem 22.5px;
 }
 #page main #main-content ol ul li {
-  margin: 0.5rem 0 0.5rem 22.5px;
+  position: relative;
+  margin: 3.75px 0 3.75px 22.5px;
+  padding-left: 37.5px;
 }
-#page main #main-content ol ul li p {
-  display: inline-block;
+#page main #main-content ol ul li p:first-of-type {
+  margin-top: 0;
+}
+#page main #main-content ol ul li p:last-of-type {
+  margin-bottom: 0;
 }
 #page main #main-content ol ul li:before {
   content: '\2299';
   font-size: 1.2rem;
-  margin-top: -5px;
+  position: absolute;
+  top: 35px;
+  left: 0;
 }
 #page main #main-content ol ul li:first-of-type {
   margin: 0.5rem 0 0.5rem 22.5px;
@@ -497,31 +500,45 @@ body {
 #page main #main-content ul > li:first-of-type {
   margin: 2rem 0 2rem 0;
 }
-#page main #main-content ul ul li {
+#page main #main-content ul ol li {
+  position: relative;
+  margin: 3.75px 0 3.75px 22.5px;
+  padding-left: 37.5px;
+}
+#page main #main-content ul ol li p:first-of-type {
+  margin-top: 0;
+}
+#page main #main-content ul ol li p:last-of-type {
+  margin-bottom: 0;
+}
+#page main #main-content ul ol li:before {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+#page main #main-content ul ol li:first-of-type {
   margin: 0.5rem 0 0.5rem 22.5px;
 }
-#page main #main-content ul ul li p {
-  display: inline-block;
+#page main #main-content ul ul li {
+  position: relative;
+  margin: 3.75px 0 3.75px 22.5px;
+  padding-left: 37.5px;
+}
+#page main #main-content ul ul li p:first-of-type {
+  margin-top: 0;
+}
+#page main #main-content ul ul li p:last-of-type {
+  margin-bottom: 0;
 }
 #page main #main-content ul ul li:before {
   content: '\2299';
   font-size: 1.2rem;
-  vertical-align: text-top;
+  position: absolute;
+  top: 35px;
+  left: 0;
 }
 #page main #main-content ul ul li:first-of-type {
-  margin: 0.5rem 0 0.5rem 22.5px;
-}
-#page main #main-content ul ol li {
-  margin: 0.5rem 0 0.5rem 22.5px;
-}
-#page main #main-content ul ol li p {
-  display: inline-block;
-}
-#page main #main-content ul ol li:before {
-  font-size: 1.2rem;
-  vertical-align: text-top;
-}
-#page main #main-content ul ol li:first-of-type {
   margin: 0.5rem 0 0.5rem 22.5px;
 }
 #page main #main-content ul.smaller li {
@@ -540,6 +557,35 @@ body {
 }
 #page main #main-content ul.indent li {
   margin: 0.5rem 0 0.5rem 30px;
+}
+#page main #main-content li h2,
+#page main #main-content li h3,
+#page main #main-content li h4,
+#page main #main-content li h5,
+#page main #main-content li h6 {
+  border: none;
+  margin: 0;
+  display: inline-block;
+}
+#page main #main-content li p {
+  margin: 10px 0;
+}
+#page main #main-content li li h2,
+#page main #main-content li li h3,
+#page main #main-content li li h4,
+#page main #main-content li li h5,
+#page main #main-content li li h6 {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000000;
+}
+#page main #main-content li li h2 + p,
+#page main #main-content li li h3 + p,
+#page main #main-content li li h4 + p,
+#page main #main-content li li h5 + p,
+#page main #main-content li li h6 + p {
+  display: block;
 }
 #page main #sidebar {
   position: absolute;
