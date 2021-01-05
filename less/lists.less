@@ -113,16 +113,21 @@ ol {
     }
 
     &.smaller {
+
         li {
-            margin: 0.5rem 0 0.5rem 0;
+            position: relative;
+            margin: @spacing / 4 0 @spacing / 4 @spacing * 1.5;
+            padding-left: @spacing * 2.5;
 
             p {
-                display: inline-block;
-            }
-            
-            &:before {
-                font-size: @font-size;
-                margin-top: -6px;
+                
+                &:first-of-type {
+                    margin-top: 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
             }
 
             ol, ul {
@@ -130,6 +135,13 @@ ol {
                 li {
                     margin: 0.5rem 0 0.5rem @spacing * 1.5;
                 }
+            }
+            
+            &:before {
+                font-size: @font-size;
+                position: absolute;
+                top: @spacing - 5;
+                left: 0;
             }
         }
     }
@@ -235,17 +247,21 @@ ul {
     }
 
     &.smaller {
-        
+
         li {
-            margin: 0.5rem 0 0.5rem 0;
+            position: relative;
+            margin: @spacing / 4 0 @spacing / 4 @spacing * 1.5;
+            padding-left: @spacing * 2.5;
 
             p {
-                display: inline-block;
-            }
-            
-            &:before {
-                font-size: @font-size;
-                margin-top: -6px;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
             }
 
             ol, ul {
@@ -253,6 +269,14 @@ ul {
                 li {
                     margin: 0.5rem 0 0.5rem @spacing * 1.5;
                 }
+            }
+            
+            &:before {
+                content: '\2299';
+                font-size: @font-size;
+                position: absolute;
+                top: @spacing * 2 + 5;
+                left: 0;
             }
         }
     }
@@ -268,7 +292,7 @@ ul {
 // Remove default styles from certain elements when they are in a list or nested in a list.
 li {
 
-    h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5, h6 {
         border: none;
         margin: 0;
         display: inline-block;
@@ -280,7 +304,7 @@ li {
 
     li {
 
-        h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6 {
             display: inline-block;
             font-weight: bold;
             font-size: @font-size;

@@ -70,7 +70,7 @@ ${{description}} = "This is a style guide reference page for developers working 
 <code class="lang-html">&lt;span class="katex"&gt;1 + 1 = 2&lt;/span&gt;
 </code></pre>
                     <p>
-                        Here are two advanced examples of Katex. Example example is followed by the code it took to create them:
+                        Here are two advanced examples of Katex. Each example is followed by the code it took to create them:
                     </p> 
                     <div class="katex">
                         f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
@@ -110,7 +110,7 @@ ${{description}} = "This is a style guide reference page for developers working 
         B --> C{Let me think}
         C -->|One| D[Laptop]
         C -->|Two| E[iPhone]
-        C -->|Three| F[fa:fa-car Car]
+        C -->|Three| F[Car]
 &lt;/div&gt;
 </code></pre>
                 </section>

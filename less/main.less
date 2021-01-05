@@ -46,24 +46,6 @@ body {
     overflow-y: auto;
     padding-top: @header-height * 1.5;
 
-    p {
-        margin: @spacing 0;
-
-        code, kbd {
-            display: inline;
-            color: @inline-code-color;
-            font-weight: bold;
-        }
-    }
-
-    li, dd {
-        &> code {
-            display: inline;
-            color: @inline-code-color;
-            font-weight: bold;
-        }
-    }
-
     a {
         text-decoration: none;
         cursor: pointer;
@@ -72,26 +54,6 @@ body {
     hr {
         margin: @spacing * 2.5 0 @spacing * 3 0;
         border: 1px dashed lighten( @primary-font-color, 10% );
-    }
-
-    h1 {
-        font-size: @font-size * 1.75;
-        line-height: @font-size * 2.15;
-        font-weight: bold;
-        border-bottom: 2px solid lighten( @footer-bg-color, 50% );
-    }
-
-    h2, h3 {
-        font-size: @font-size * 1.50;
-        line-height: @font-size * 1.85;
-        font-weight: bold;
-        border-bottom: 2px solid lighten( @footer-bg-color, 50% );
-    }
-
-    h4, h5, h6 {
-        font-size: @font-size * 1.25;
-        line-height: @font-size * 1.55;
-        font-weight: bold;
     }
 
     &> h1, h2, h3, h3, h4, h5, h6 { 
@@ -123,24 +85,6 @@ body {
         background-color: @highlight-color;
     }
 
-    #go-back {
-        position: absolute;
-        right: @spacing;
-        margin-top: -@spacing;
-        z-index: 50;
-        height: 0;
-        overflow: visible;
-        font-size: 2rem;
-        text-align: right;
-
-        a {
-            color: @link-primary-color;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-        }
-    }
-
     header {
         position: fixed;
         top: 0;
@@ -169,160 +113,6 @@ body {
     
     main {
         flex: 1;
-
-        blockquote {
-            position: relative;
-            margin: @spacing 0;
-            padding: 1rem 0.75rem 1rem 4rem;
-            font-style: italic;
-            font-family: Georgia, serif;
-            background-color: @quote-bg-color;
-            .drop-shadow();
-
-            &:before {
-                position: absolute;
-                top: 3.5rem;
-                left: 0.6rem;
-                content: '\201C';
-                font-size: 6rem;
-                line-height: 1rem;
-                font-family: Georgia, serif;
-            }
-
-            cite {
-                display: block;
-                font-size: 1.05rem;
-                margin-top: 0.75rem;
-
-                &:before {
-                    content: "\2014 \2009";
-                }
-            }
-
-        }
-
-        h2, h3, h4, h5, h6 {
-            
-            a {
-                text-decoration: none;
-                border: none;
-                cursor: pointer;
-            }
-        }
-        
-        .collapsible {
-            position: relative;
-            color: @alternate-font-color;
-            background-color: @header-bg-color;
-            padding: @spacing @font-size * 2.5 @spacing @spacing;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-weight: bold;
-            cursor: pointer;
-
-            &:after {
-                position: absolute;
-                content: '+';
-                top: @spacing / 4 + 0.5;
-                right: @spacing;
-                font-size: @font-size * 2;
-                font-weight: bold;
-            }
-
-            &.open {
-
-                &:after {
-                    content: 'x';
-                    top: @spacing / 4 - 0.5;
-                }
-
-                + .collapsible-content {
-                    max-height: none;
-                    padding: @spacing;
-                    
-                    &:after {
-                        content: ' ';
-                        display: block;
-                        height: 3px;
-                        margin: @spacing * 2 0 @spacing 0;
-                        border-bottom: 3px double @header-bg-color;
-                    }
-                }
-
-            }
-        }
-
-        .collapsible-content {
-            position: relative;
-            max-height: 0;
-            overflow: hidden;
-            margin: -2px -@spacing @spacing - @spacing;
-            transition: max-height 0.2s ease-out;
-        }
-
-        .callout {
-            padding: @spacing / 2 @spacing;
-            margin: @spacing 0;
-            background-color: @callout-bg-color;
-            .drop-shadow();
-
-            h2, h3, h4, h5, h6 {
-                display: block;
-                margin: @spacing 0;
-                font-size: @font-size * 1.15;
-                text-transform: capitalize;
-                color: @footer-bg-color;
-                border: 0;
-            }
-        }
-
-        .rubric {
-            padding: @spacing / 2 @spacing;
-            margin: @spacing 0;
-            background-color: @rubric-bg-color;
-            .drop-shadow();
-
-            h2, h3, h4, h5, h6 {
-                display: block;
-                margin: @spacing 0;
-                font-size: @font-size * 1.15;
-                text-transform: capitalize;
-                color: darken( @alternate-link-color, 10% );
-                border: 0;
-            }
-        }
-
-        .license {
-            position: relative;
-            margin: @spacing 0;
-            padding: @spacing / 2 @spacing @spacing / 2 @font-size * 4;
-            background-color: @license-bg-color;
-            .drop-shadow();
-
-            &:before {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                top: 0;
-                left: 0.6rem;
-                bottom: 0;
-                width: @font-size * 3;
-                content: '\00A9';
-                font-size: @font-size * 2;
-                font-family: Georgia, serif;
-            }
-
-            h2, h3, h4, h5, h6 {
-                display: block;
-                margin: @spacing 0;
-                font-size: @font-size * 1.15;
-                text-transform: capitalize;
-                color: @footer-bg-color;
-            }
-        }
         
         .content {
             position: relative;
@@ -337,97 +127,7 @@ body {
             padding: @spacing * 2 @spacing;
             overflow: hidden;
             
-            a {
-                color: @link-primary-color;
-                border-bottom: 3px double @link-primary-color;;
-    
-                &:hover {
-                    color: darken( @link-primary-color, 7% );
-                }
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-
-                a {
-                    border-bottom: none;
-                }
-            }
-
-            p {
-                overflow: auto;
-            }
-
-            figure {
-                display: inline-block;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                    .drop-shadow();
-                }
-
-                &.left {
-                    max-width: 50%;
-                    float: left;
-                    margin: @spacing @spacing @spacing 0;
-                }
-
-                &.right {
-                    max-width: 50%;
-                    float: right;
-                    margin: @spacing 0 @spacing @spacing;
-                }
-
-                &.center {
-                    display: block;
-                    margin: @spacing auto;
-                    text-align: center;
-                    
-                    img {
-                        width: auto;
-                        max-width: 90%;
-                    }
-                }
-    
-                figcaption {
-                    text-align: center;
-                    margin: @spacing / 2 0 0 0;
-                }
-    
-            }
-
-            div.katex, div.mermaid, div.diagram {
-                text-align: center
-            }
-
-            .video {
-                position: relative;
-                height: 0;
-                width: 100%;
-                margin: @spacing 0 1rem 0;
-                padding-bottom: 56.25%;
-                overflow: hidden;
-                .drop-shadow();
-    
-                iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-    
-            .video-fallback {
-                font-style: italic;
-                margin: @spacing / 2 0;
-    
-                a {
-                    border-bottom: none;
-                }
-            }
-
-            @import "lists.less";
+            @import "content.less";
         }
 
         #sidebar {
@@ -600,11 +300,11 @@ body {
                 margin: @spacing @spacing * 1.5;
             }
 
-            .rubric {
+            .license {
                 margin: @spacing @spacing * 1.5;
             }
 
-            .license {
+            .rubric {
                 margin: @spacing @spacing * 1.5;
             }
         }
@@ -663,7 +363,7 @@ body {
         main {
 
             #main-content {
-                padding: @spacing * 2 @spacing @spacing *2 0;
+                padding: @spacing * 2 @spacing @spacing * 2 @spacing;
             }
 
             #sidebar {

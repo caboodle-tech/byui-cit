@@ -22,15 +22,19 @@ ${{description}} = "This is a style guide reference page for developers working 
                         There are a few built in HTML elements you can use on pages. Please pay careful attention to the demo code below. If you are familiar with HTML please note that we do not always use standard HTML for some elements. See the video and image elements for an example of non-standard HTML.
                     </p>
                     <h3>Go Back</h3>
+                    <p>
+                        &nbsp;
+                        <!-- Add needed space for the go back demo. -->
+                    </p>
                     <div id="go-back">
-                        <a href="#go-back">&#10554; Go Back</a>
+                        <a href="{{PATH}}index.html">&#10554; Go Back</a>
                     </div>
                     <p>
                         &nbsp;
                         <!-- Add needed space for the go back demo. -->
                     </p>
                     <p>
-                        You should use the back link on pages or assignments where it makes sense to aid the users navigation between content; an assignment page with the navigation removed for example. If you have a page or assignment you wish to leave detached from everything else please leave this off. Notice that we only use relative navigation in this link (<code>../</code>). You will need to add the following code just before your pages <code>h1</code> tag, the first child of the main content section:
+                        You should use the back link on pages or assignments where it makes sense to aid the users navigation between content; an assignment page with the navigation removed for example. If you have a page or assignment you wish to leave detached from everything else please leave this off. Notice that we only use relative navigation in the demo code (<code>../</code>). You will need to add the following code just before your pages <code>h1</code> tag, the first child of the main content section:
                     </p>
 <pre>
 <code>&lt;div id="go-back"&gt;
@@ -59,7 +63,7 @@ ${{description}} = "This is a style guide reference page for developers working 
 </code></pre>
                     <h3>Video</h3>
                     <p>
-                        You can also easily include videos into your pages or assignments. We use JavaScript to automatically generate the HTML for this to work since the HTML can be rather complex. All you need to add is a link to the video that includes a <code>data</code> attribute of video and a value of the video hosting service. Currently we only support YouTube. The video you see below is made with the code following it. 
+                        You can also easily include videos into your pages or assignments. We use JavaScript to automatically generate the HTML for this to work since the HTML can be rather complex. All you need to add is a link to the video that includes a <code>data-video</code> attribute with a value of the video hosting service. Currently we only support YouTube. The video you see below is made with the code following it. 
                     </p>
                     <div class="callout">
                         <h2>Warning:</h2>
