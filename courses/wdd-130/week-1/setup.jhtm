@@ -1,6 +1,6 @@
 ${{course}}      = "wdd-130";
 ${{author}}      = "Christopher Keers";
-${{title}}       = "Accounts & Software Setup - BYUI";
+${{title}}       = "Accounts and Software Setup - BYUI";
 ${{keywords}}    = "Software, Accounts, Setup, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
 ${{description}} = "This is a homework assignment for WDD 130.";
 
@@ -21,7 +21,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                     <div id="go-back">
                         <a href="../index.html">&#10554; Go Back</a>
                     </div>
-                    <h1>Accounts and Software</h1>
+                    <h1>Accounts and Software Setup</h1>
                     <p>
                         For this class you will need to signup for several free online accounts and install the required code editor. Do this as soon as possible. <strong>Please note that a Chromebook is not acceptable for this class</strong>.
                     </p>

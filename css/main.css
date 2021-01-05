@@ -43,7 +43,8 @@ body {
 #page p {
   margin: 15px 0;
 }
-#page p code {
+#page p code,
+#page p kbd {
   display: inline;
   color: #b58900;
   font-weight: bold;
@@ -338,6 +339,7 @@ body {
 }
 #page main #main-content a {
   color: #006eb6;
+  border-bottom: 3px solid #006eb6;
 }
 #page main #main-content a:hover {
   color: #005892;
@@ -640,7 +642,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 5px 15px 5px 0;
+  padding: 7.5px 15px 7.5px 0;
 }
 #page main #sidebar nav ul li .section {
   display: block;
@@ -655,6 +657,7 @@ body {
   flex: 1;
   text-decoration: none;
   cursor: pointer;
+  line-height: 1.56rem;
 }
 #page main #sidebar nav ul li a .sub,
 #page main #sidebar nav ul li .link .sub {
@@ -669,6 +672,7 @@ body {
 #page main #sidebar nav ul li .more {
   position: absolute;
   right: -5px;
+  top: 0;
   padding-left: 7.5px;
   cursor: pointer;
 }
@@ -683,7 +687,7 @@ body {
   cursor: pointer;
 }
 #page main #sidebar nav ul li .more.open {
-  top: 15px;
+  top: 10px;
 }
 #page main #sidebar nav ul li .more.open .closed {
   display: none;

@@ -24,7 +24,7 @@ ${{description}} = "This is a style guide reference page for developers working 
                     <div class="callout">
                         <h2>Alternative Styles:</h2>
                         <p>
-                            The default style for primary (non-nested) lists are rather large. You can add a class of <code>smaller</code> to an <code>ul</code> or <code>ol</code> tag to make them smaller. <code>dt</code> lists do not support this class since the styles are smaller by default for this type of list.
+                            The default style for primary (non-nested) lists are rather large. You can add a class of <code>smaller</code> to an <code>ul</code> or <code>ol</code> tag to make them smaller. <code>dt</code> lists do not support this class since the styles are smaller by default for this type of list. You may also add the class of <code>indent</code> to any primary (non-nested) list to indent the entire list more; works great when used with the smaller class.
                         </p>
                     </div>
                     <h3>OL &ndash; Ordered List</h3>
