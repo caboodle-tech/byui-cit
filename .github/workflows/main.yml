@@ -65,5 +65,5 @@ jobs:
           cp ../release/* . -r
           rm ../release -r
           git add .
-          git commit -m "auto update"
+          git commit -m "workflow auto compile website"
           git push
