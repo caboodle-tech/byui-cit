@@ -44,7 +44,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         <li>
                             <h2>Remix (copy) the Starter Project</h2>
                             <p>
-                                Next we need to create a project for you to use this semester. Glitch gives you the ability to use an existing project as a starting point. After logging in to Glitch, <a href="https://glitch.com/edit/#!/brother-keers-starter?path=README.md%3A1%3A0" rel="noopener noreferrer">visit this project</a> and click on the <strong>Remix to Edit</strong> button on the screen. This will create a copy of the project that you own and can edit.
+                                Next we need to create a project for you to use this semester. Glitch gives you the ability to use an existing project as a starting point. After logging in to Glitch, <a href="https://glitch.com/edit/#!/brother-keers-starter" rel="noopener noreferrer">visit this project</a> and click on the <strong>Remix to Edit</strong> button on the screen. This will create a copy of the project that you own and can edit.
                             </p>
                         </li>
                         <li>
