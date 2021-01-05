@@ -143,6 +143,9 @@ body {
 #page header #logo {
   height: 6rem;
   width: auto;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 #page header #mobile-nav-button {
   display: block;
@@ -306,25 +309,6 @@ body {
   text-transform: capitalize;
   color: #212529;
 }
-#page main .video {
-  position: relative;
-  height: 0;
-  width: 100%;
-  margin: 15px 0 1rem 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-}
-#page main .video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#page main .video-fallback {
-  font-style: italic;
-  margin: 7.5px 0;
-}
 #page main .content {
   position: relative;
   min-height: 100%;
@@ -339,10 +323,18 @@ body {
 }
 #page main #main-content a {
   color: #006eb6;
-  border-bottom: 3px solid #006eb6;
+  border-bottom: 3px double #006eb6;
 }
 #page main #main-content a:hover {
   color: #005892;
+}
+#page main #main-content h1 a,
+#page main #main-content h2 a,
+#page main #main-content h3 a,
+#page main #main-content h4 a,
+#page main #main-content h5 a,
+#page main #main-content h6 a {
+  border-bottom: none;
 }
 #page main #main-content p {
   overflow: auto;
@@ -384,6 +376,31 @@ body {
 #page main #main-content div.mermaid,
 #page main #main-content div.diagram {
   text-align: center;
+}
+#page main #main-content .video {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 15px 0 1rem 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main #main-content .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#page main #main-content .video-fallback {
+  font-style: italic;
+  margin: 7.5px 0;
+}
+#page main #main-content .video-fallback a {
+  border-bottom: none;
 }
 #page main #main-content dl dt {
   font-weight: bold;

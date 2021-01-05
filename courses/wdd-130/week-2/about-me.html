@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Christopher Keers">
+    <meta name="keywords" content="Glitch, About Me, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+    <meta name="description" content="This is a homework assignment for WDD 130.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glitch About Me - BYUI</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../../js/stem.js"></script>
+    <script src="../../../js/main.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                <a href="../../../courses/wdd-130/index.html">
+    <img src="../../../assets/byui-logo.jpg" alt="BYUI Logo" id="logo">
+</a>
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Glitch About Me</h1>
+                    <p>
+                        Last week you had an opportunity to edit an HTML file by adding text content to it and tweaking the files CSS. This week we are going to continue to learn about HTML and CSS by making bigger changes to your <code>about-me.html</code> file in Glitch. Please open your Glitch project site now and do the following:
+                    </p>
+                    <ol class="smaller indent">
+                        <li>
+                            <p>
+                                Open the <code>about-me.html</code> file in the Glitch editor.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Click on <code>Show</code> in the upper left and then <code>New Window</code> so we have our live site open in a tab. Take a minute to see what the About Me page looks like on your live website.
+                            </p>
+                        </li>
+                    </ol>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Do Things Look Funny?</h2>
+                            <p>
+                                You should notice that your <code>About Me</code> page doesn't quite look right. For starters it's missing the CSS (styles) that your home page (index.html) has. Lets add the external style sheet to this page. External style sheets are CSS files that contain only CSS code. We save the CSS code externally in it's own file or files so it does not take up space in our HTML files; your instructor will demonstrate what inline CSS looks like in class. Just below the <code>title</code> tag add:
+                            </p>
+<pre class="lang-html"><code class="lang-html">&lt;link rel="stylesheet" href="styles.css"&gt;
+</code></pre>
+                            <p>
+                                The <code>link</code> tag tells the web browser we are <i>linking</i> to a resource that should be treated as if it was directly in the HTML file. Notice we have a <code>rel</code> attribute which stands for relevance. The value of this attribute is telling the web browser we are linking to a CSS style sheet. The <code>href</code> attribute is what the web browser will use to locate the file on the internet. Since the value is <code>styles.css</code> this is treated as a relative path, meaning relative to the location this HTML page was loaded from.
+                            </p>
+                            <p>
+                                Absolute and relative paths are an important topic for you to understand. Here is a video you can bookmark to help you remember how they work:
+                            </p>
+                            <a href="https://youtu.be/VViTCJDFYIc" data-video="YouTube" target="_blank" rel="noopener noreferrer">Absolute vs Relative URLs in HTML</a>
+                            <p>
+                                Now lets add the following code just below the <code>title</code> tag but <strong>above</strong> the <code>link</code> tag you just added:
+                            </p>
+<pre class="lang-html"><code class="lang-html">&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</code></pre>
+                            <p>
+                                These are <code>meta</code> tags that provide important information to a users web browser. In short they notify the web browser to use the <code>utf-8</code> encoding and setup the view port (screen) for proper scaling. <strong>Your instructor will discuss this further in class but keep in mind every web page you create should include these two meta tags</strong>.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Images</h2>
+                            <p>
+                                Later in the semester we will cover images in more depth, for now lets practice adding a new image to Glitch and then our web page. Find or take a picture of yourself and make sure it is on the computer you are using for this assignment.
+                            </p>
+                            <p>
+                                Now in the Glitch editor click on <code>assets</code> in the sidebar. A page with a few images should appear in the editors space. In the upper left of the editor you should see a button that says <strong>Upload an Asset</strong>. Click this button and then upload the picture of yourself.
+                            </p>
+                            <p>
+                                Once your picture is done uploading click on it in the assets viewer. You should see a long URL now with a button next to it labeled copy. Click on the copy button and then click on your <code>about-me.html</code> file in the sidebar. Delete the <code>src</code> value for the image (<code>img</code>) on the page and replace it with the URL you just copied (paste it in place). Now when you view the About Me page in your live site you should see your picture.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Add Some Style</h2>
+                            <p>
+                                Later in the semester we will take about image optimization but for now we can add a CSS rule to fix your picture; most students upload a large picture that fills the whole page. CSS won't fix or permanently change the image size but can visually change it for the user. Add the following CSS code to your <code>styles.css</code> file:
+                            </p>
+<pre class="lang-css"><code class="lang-css">.my-picture {
+    max-width: 350px;
+    height: auto;
+}
+</code></pre>
+                            <p>
+                                This code tells the web page to limit the maximum width of your picture to 350px (350 pixels). Height auto tells the web page not to destroy the aspect ratio of the image, this means height will automatically be set based on how much the image had to be resized to fit the 350px max width.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Titles and Headlines</h2>
+                            <p>
+                                A visitor to a website should not have to guess what the page is about. The <code>title</code> tag says <i>All About Me</i>. Although you can see this when looking at the HTML file, it will not show up on the web page.  This is because title is in the <code>head</code> section  of your HTML document and anything in the head is not seen in the users browser window. Only items in the <code>body</code> section are actually seen on the page. The title does show up as the name of the tab or window in web browsers.
+                            </p>
+                            <p>
+                                We can use a headline element on our page so that when someone visits your page, they will know what it's about. There are various sizes of headlines: <code>h1</code> to <code>h6</code>. These can be used to establish a hierarchy for your page. The smaller the number with the h like <code>h1</code> for instance, the larger the text and the more important the headline should be. An <code<h1</code> for example should be used for the most important title on the page. You should only use one h1 on your page.
+                            </p>
+                            <p>
+                                <code>h2</code> tags would be the next level and you can use as many as you need. You should stay in order working from the top of your HTML file down. Don't for example use a <code>h3</code> and later in your document a <code>h2</code>; there is an exception to this rule you will learn later. Here is a code example of what we just explained:
+                            </p>
+<pre class="lang-html"><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-us"&gt;
+&lt;head&gt;
+    &lt;title&gt;My Pages Title&lt;/title&gt; &lt;!-- Not visible on the page --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;main&gt;
+        &lt;h1&gt;My Pages Title&lt;h1&gt; &lt;!-- Visible on the page --&gt;
+        &lt;p&gt;
+            Some content here.
+        &lt;/p&gt;
+        &lt;h2&gt;Another Headline&lt;/h2&gt; &lt;!-- Visible on the page --&gt;
+        &lt;p&gt;
+            More content in another section here.
+        &lt;/p&gt;
+        &lt;h3&gt;Another Headline&lt;/h3&gt; &lt;!-- Visible on the page --&gt;
+        &lt;p&gt;
+            More content in another section here.
+        &lt;/p&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;    
+</code></pre>
+                            <p>
+                                Please make the following changes to the headlines of your <code>about-me.html</code> page:
+                            </p>
+                            <ol>
+                                <li>
+                                    Add the word <i>All</i> to the <code>h1</code> tag. It should now read: <i>All About Me</i>
+                                </li>
+                                <li>
+                                    Change the name in the first <code>h2</code> tag to your full name.
+                                </li>
+                                <li>
+                                    Change the second <code>h2</code> tag to an <code>h3</code>. Don't forget to change both the opening and closing tag. Also change the title (name) in this tag to your own title, preferred name, or nickname.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Paragraphs and Lists</h2>
+                            <p>
+                                Text content in a web page should we wrapped in some kind of element, that way we can easily style it with CSS later. Paragraph tags (<code>p</code>) are one of the most common elements to place text inside of. You should get in the habit of wrapping text content in <code>p</code> tags.
+                            </p>
+                            <p>
+                                You'll notice that we currently have only one paragraph in the About Me page. <strong>After</strong> reading the sentence in this paragraph for help, delete the text and add your own content. You can start by copying your response from the introductory discussion board in Canvas. Please add at least 1 more paragraph to this page; most students will average 3 paragraphs if you copied over your discussion board post.
+                            </p>
+                            <p>
+                                Now edit/ add a few items to the unordered list (<code>ul</code>) that is already in the code for your About Me page. Please delete any extra list items (<code>li</code>) you do not use; there should not be left over items from the original file we gave you.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Stretch Yourself & Additional Study</h2>
+                            <p>
+                                Review the following resources and spend time practicing with the hands on tutorials by clicking on the <i>Try It Yourself</i> buttons. Stretch yourself by adding a few more of these elements to your About Me page. Maybe a few more headings, lists, paragraphs, or a restructuring of the page in general.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.w3schools.com/html/html_headings.asp" target="_blank" rel="noopener noreferrer">HTML Headings</a>
+                                  </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank" rel="noopener noreferrer">HTML Lists</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/html/html_images.asp" target="_blank" rel="noopener noreferrer">Intro to HTML Images</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank" rel="noopener noreferrer">HTML Img Tag</a>
+                                </li>
+                                <li>
+                                  <a href="https://www.w3schools.com/html/html_head.asp" target="_blank" rel="noopener noreferrer">HTML Head Element</a>
+                                </li>
+                              </ul>
+                        </li>
+                        <li>
+                            <h2>Complete Assignment</h2>
+                            <p>
+                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <code>Show</code> in the upper left and then <code>New Window</code>. When the new tab loads navigate to the <code>About Me</code> page and copy the URL from the address bar.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your <code>About Me</code> page on the live site.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        <footer>
+    <div class="content">
+        This work was created by the <a href="https://www.byui.edu/computer-information-technology" target="_blank">Computer Information Technology Department</a> at <a href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho</a> and is licensed under a <a href="../../../LICENSE-CC-BY-NC-SA.txt" target="_blank">Creative Commons BY-NC-SA 4.0 License</a> unless noted otherwise. The <a href="https://github.com/caboodle-tech/byui-cit" target="_blank">source code</a> for this website is licensed under the <a href="../../../LICENSE-MIT.txt" target="_blank">MIT License</a> unless noted otherwise.
+    </div>
+</footer>
+    </div>
+</body>
+</html>
