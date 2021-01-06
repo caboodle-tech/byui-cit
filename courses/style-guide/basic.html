@@ -32,15 +32,19 @@
                         There are a few built in HTML elements you can use on pages. Please pay careful attention to the demo code below. If you are familiar with HTML please note that we do not always use standard HTML for some elements. See the video and image elements for an example of non-standard HTML.
                     </p>
                     <h3>Go Back</h3>
+                    <p>
+                        &nbsp;
+                        <!-- Add needed space for the go back demo. -->
+                    </p>
                     <div id="go-back">
-                        <a href="#go-back">&#10554; Go Back</a>
+                        <a href="../../index.html">&#10554; Go Back</a>
                     </div>
                     <p>
                         &nbsp;
                         <!-- Add needed space for the go back demo. -->
                     </p>
                     <p>
-                        You should use the back link on pages or assignments where it makes sense to aid the users navigation between content; an assignment page with the navigation removed for example. If you have a page or assignment you wish to leave detached from everything else please leave this off. Notice that we only use relative navigation in this link (<code>../</code>). You will need to add the following code just before your pages <code>h1</code> tag, the first child of the main content section:
+                        You should use the back link on pages or assignments where it makes sense to aid the users navigation between content; an assignment page with the navigation removed for example. If you have a page or assignment you wish to leave detached from everything else please leave this off. Notice that we only use relative navigation in the demo code (<code>../</code>). You will need to add the following code just before your pages <code>h1</code> tag, the first child of the main content section:
                     </p>
 <pre>
 <code>&lt;div id="go-back"&gt;
@@ -59,6 +63,27 @@
 &lt;h5&gt;Header 5&lt;/h5&gt;
 &lt;h6&gt;Header 6&lt;/h6&gt;
 </code></pre>
+                    <h3>Horizontal Rule</h3>
+                    <p>
+                        Horizontal rules allow you to draw a line across the page to separate sections of content. You should use this when you want to create space or a break between content and a header does not make sense to use.
+                    </p>
+                    <hr>
+<pre class="lang-html"><code class="lang-html">&lt;hr&gt;</code></pre>
+                    <h3>Mark</h3>
+                    <p>
+                        The mark tag allows you to <mark>highlight</mark> a word or words to call attention to them:
+                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;mark&gt;highlight&lt;/mark&gt;</code></pre>
+                    <h3>Kbd</h3>
+                    <p>
+                        The kdb tag is used to define keyboard input: <kbd>&uarr;</kbd> <kbd>&uarr;</kbd> <kbd>&darr;</kbd> <kbd>&darr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd> <kbd>B</kbd> <kbd>A</kbd>
+                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;kbd&gt;Konami Code&lt;/kbd&gt;</code></pre>
+                    <h3>Code</h3>
+                    <p>
+                        The code tag <code>code</code> can be used for short snippets of inline code. It looks similar to the <kbd>kbd</kbd> tag but uses a monospace font, bold font, and has no drop shadow. If you plan to use larger blocks of code use a <a href="advanced.html#code-block">code block</a> instead:
+                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;code&gt;inline code here&lt;/code&gt;</code></pre>
                     <h3>Images</h3>
                     <p>
                         You can also easily include images into your pages or assignments. We use JavaScript to automatically generate the HTML for this to work since the HTML can be rather complex. All you need to add is a class of <code>left</code>, <code>right</code>, or <code>center</code> and we will handle image alignment for you. If you do not provide a class <code>center</code> will be used automatically. If you would like to add a figure caption to the image you can do so with the <code>data-caption</code> attribute. Below is an example of a centered image using the figure caption. Please note all images should be included relatively if they are in the course content. Absolute URLs should only be used for images outside of the course on other websites.
@@ -69,26 +94,25 @@
 </code></pre>
                     <h3>Video</h3>
                     <p>
-                        You can also easily include videos into your pages or assignments. We use JavaScript to automatically generate the HTML for this to work since the HTML can be rather complex. All you need to add is a link to the video that includes a <code>data</code> attribute of video and a value of the video hosting service. Currently we only support YouTube. The video you see below is made with the code following it. 
+                        You can also easily include videos into your pages or assignments. We use JavaScript to automatically generate the HTML for this to work since the HTML can be rather complex. All you need to add is a link to the video that includes a <code>data-video</code> attribute with a value of the video hosting service. Currently we only support YouTube. The video you see below is made with the code following it. 
                     </p>
                     <div class="callout">
                         <h2>Warning:</h2>
                         <p>
-                            Do not place video links like the one below inside <code>p</code> (paragraph) tags. They should be treated like a <code>div</code> tag.
+                            Do not place video links like the one below inside paragraph (<code>p</code>) tags. They should be treated like a <code>div</code> tag.
                         </p>
                     </div>
-                    <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
+                    <p>
+                        <span>
+                            This is a test:
+                            <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
+                        </span>
+                    </p>
 <pre class="lang-html">
 <code class="lang-html">&lt;a href="https://video-source.com" target="_blank" data-video="YouTube"&gt;
     Title of the video / video information.
 &lt;/a&gt;
 </code></pre>
-                    <h3>Horizontal Rule</h3>
-                    <p>
-                        Horizontal rules allow you to draw a line across the page to separate sections of content. You should use this when you want to create space or a break between content and a header does not make sense to use.
-                    </p>
-                    <hr>
-<pre class="lang-html"><code class="lang-html">&lt;hr&gt;</code></pre>
                 </section>
                 <aside id="sidebar">
                     <nav>
@@ -144,7 +168,7 @@
             <div class="link">
                 <a href="../../courses/style-guide/basic.html">
                     Basic Elements
-                    <span class="sub">Back, Header, Image, Video, Horizontal Rule</span>
+                    <span class="sub">Back, Header, Horizontal Rule, Mark, Kbd, Code, Image, Video</span>
                 </a>
             </div>
         </li>
@@ -158,7 +182,7 @@
         </li>
     </ul>
 </nav> 
-                    <div id="compile-time">Compiled: 2021-01-05 @ 20:18:51</div>
+                    <div id="compile-time">Compiled: 2021-01-06 @ 04:37:31</div>
                 </aside>
             </div>
         </main>

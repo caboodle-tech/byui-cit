@@ -32,17 +32,17 @@
                     </div>
                     <h1>Glitch About Me</h1>
                     <p>
-                        Last week you had an opportunity to edit an HTML file by adding text content to it and tweaking the files CSS. This week we are going to continue to learn about HTML and CSS by making bigger changes to your <code>about-me.html</code> file in Glitch. Please open your Glitch project site now and do the following:
+                        Last week you had an opportunity to edit an HTML file by adding text content to it and tweaking the files CSS. This week we are going to continue to learn about HTML and CSS by making bigger changes to your <mark>about-me.html</mark> file in Glitch. Please open your Glitch project site now and do the following:
                     </p>
                     <ol class="smaller indent">
                         <li>
                             <p>
-                                Open the <code>about-me.html</code> file in the Glitch editor.
+                                Open the <mark>about-me.html</mark> file in the Glitch editor.
                             </p>
                         </li>
                         <li>
                             <p>
-                                Click on <code>Show</code> in the upper left and then <code>New Window</code> so we have our live site open in a tab. Take a minute to see what the About Me page looks like on your live website.
+                                Click on <mark>Show</mark> in the upper left and then <mark>New Window</mark> so we have our live site open in a tab. Take a minute to see what the About Me page looks like on your live website.
                             </p>
                         </li>
                     </ol>
@@ -51,12 +51,12 @@
                         <li>
                             <h2>Do Things Look Funny?</h2>
                             <p>
-                                You should notice that your <code>About Me</code> page doesn't quite look right. For starters it's missing the CSS (styles) that your home page (index.html) has. Lets add the external style sheet to this page. External style sheets are CSS files that contain only CSS code. We save the CSS code externally in it's own file or files so it does not take up space in our HTML files; your instructor will demonstrate what inline CSS looks like in class. Just below the <code>title</code> tag add:
+                                You should notice that your <mark>About Me</mark> page doesn't quite look right. For starters it's missing the CSS (styles) that your home page (index.html) has. Lets add the external style sheet to this page. External style sheets are CSS files that contain only CSS code. We save the CSS code externally in it's own file or files so it does not take up space in our HTML files; your instructor will demonstrate what inline CSS looks like in class. Just below the <code>title</code> tag add:
                             </p>
 <pre class="lang-html"><code class="lang-html">&lt;link rel="stylesheet" href="styles.css"&gt;
 </code></pre>
                             <p>
-                                The <code>link</code> tag tells the web browser we are <i>linking</i> to a resource that should be treated as if it was directly in the HTML file. Notice we have a <code>rel</code> attribute which stands for relevance. The value of this attribute is telling the web browser we are linking to a CSS style sheet. The <code>href</code> attribute is what the web browser will use to locate the file on the internet. Since the value is <code>styles.css</code> this is treated as a relative path, meaning relative to the location this HTML page was loaded from.
+                                The <code>link</code> tag tells the web browser we are <i>linking</i> to a resource that should be treated as if it was directly in the HTML file. Notice we have a <code>rel</code> attribute which stands for relevance. The value of this attribute is telling the web browser we are linking to a CSS style sheet. The <code>href</code> attribute is what the web browser will use to locate the file on the internet. Since the value is <mark>styles.css</mark> this is treated as a relative path, meaning relative to the location this HTML page was loaded from.
                             </p>
                             <p>
                                 Absolute and relative paths are an important topic for you to understand. Here is a video you can bookmark to help you remember how they work:
@@ -69,7 +69,7 @@
 &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
 </code></pre>
                             <p>
-                                These are <code>meta</code> tags that provide important information to a users web browser. In short they notify the web browser to use the <code>utf-8</code> encoding and setup the view port (screen) for proper scaling. <strong>Your instructor will discuss this further in class but keep in mind every web page you create should include these two meta tags</strong>.
+                                These are <code>meta</code> tags that provide important information to a users web browser. In short they notify the web browser to use the <mark>utf-8</mark> encoding and setup the view port (screen) for proper scaling. <strong>Your instructor will discuss this further in class but keep in mind every web page you create should include these two meta tags</strong>.
                             </p>
                         </li>
                         <li>
@@ -78,16 +78,16 @@
                                 Later in the semester we will cover images in more depth, for now lets practice adding a new image to Glitch and then our web page. Find or take a picture of yourself and make sure it is on the computer you are using for this assignment.
                             </p>
                             <p>
-                                Now in the Glitch editor click on <code>assets</code> in the sidebar. A page with a few images should appear in the editors space. In the upper left of the editor you should see a button that says <strong>Upload an Asset</strong>. Click this button and then upload the picture of yourself.
+                                Now in the Glitch editor click on <mark>assets</mark> in the sidebar. A page with a few images should appear in the editors space. In the upper left of the editor you should see a button that says <strong>Upload an Asset</strong>. Click this button and then upload the picture of yourself.
                             </p>
                             <p>
-                                Once your picture is done uploading click on it in the assets viewer. You should see a long URL now with a button next to it labeled copy. Click on the copy button and then click on your <code>about-me.html</code> file in the sidebar. Delete the <code>src</code> value for the image (<code>img</code>) on the page and replace it with the URL you just copied (paste it in place). Now when you view the About Me page in your live site you should see your picture.
+                                Once your picture is done uploading click on it in the assets viewer. You should see a long URL now with a button next to it labeled copy. Click on the copy button and then click on your <mark>about-me.html</mark> file in the sidebar. Delete the <code>src</code> value for the image (<code>img</code>) on the page and replace it with the URL you just copied (paste it in place). Now when you view the About Me page in your live site you should see your picture.
                             </p>
                         </li>
                         <li>
                             <h2>Add Some Style</h2>
                             <p>
-                                Later in the semester we will take about image optimization but for now we can add a CSS rule to fix your picture; most students upload a large picture that fills the whole page. CSS won't fix or permanently change the image size but can visually change it for the user. Add the following CSS code to your <code>styles.css</code> file:
+                                Later in the semester we will take about image optimization but for now we can add a CSS rule to fix your picture; most students upload a large picture that fills the whole page. CSS won't fix or permanently change the image size but can visually change it for the user. Add the following CSS code to your <mark>styles.css</mark> file:
                             </p>
 <pre class="lang-css"><code class="lang-css">.my-picture {
     max-width: 350px;
@@ -104,7 +104,7 @@
                                 A visitor to a website should not have to guess what the page is about. The <code>title</code> tag says <i>All About Me</i>. Although you can see this when looking at the HTML file, it will not show up on the web page.  This is because title is in the <code>head</code> section  of your HTML document and anything in the head is not seen in the users browser window. Only items in the <code>body</code> section are actually seen on the page. The title does show up as the name of the tab or window in web browsers.
                             </p>
                             <p>
-                                We can use a headline element on our page so that when someone visits your page, they will know what it's about. There are various sizes of headlines: <code>h1</code> to <code>h6</code>. These can be used to establish a hierarchy for your page. The smaller the number with the h like <code>h1</code> for instance, the larger the text and the more important the headline should be. An <code<h1</code> for example should be used for the most important title on the page. You should only use one h1 on your page.
+                                We can use a headline element on our page so that when someone visits your page, they will know what it's about. There are various sizes of headlines: <code>h1</code> to <code>h6</code>. These can be used to establish a hierarchy for your page. The smaller the number with the h like <code>h1</code> for instance, the larger the text and the more important the headline should be. An <code>h1</code> for example should be used for the most important title on the page. You should only use one h1 on your page.
                             </p>
                             <p>
                                 <code>h2</code> tags would be the next level and you can use as many as you need. You should stay in order working from the top of your HTML file down. Don't for example use a <code>h3</code> and later in your document a <code>h2</code>; there is an exception to this rule you will learn later. Here is a code example of what we just explained:
@@ -133,7 +133,7 @@
 &lt;/html&gt;    
 </code></pre>
                             <p>
-                                Please make the following changes to the headlines of your <code>about-me.html</code> page:
+                                Please make the following changes to the headlines of your <mark>about-me.html</mark> page:
                             </p>
                             <ol>
                                 <li>
@@ -185,12 +185,12 @@
                         <li>
                             <h2>Complete Assignment</h2>
                             <p>
-                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <code>Show</code> in the upper left and then <code>New Window</code>. When the new tab loads navigate to the <code>About Me</code> page and copy the URL from the address bar.
+                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <mark>Show</mark> in the upper left and then <mark>New Window</mark>. When the new tab loads navigate to the <mark>About Me</mark> page and copy the URL from the address bar.
                             </p>
                             <div class="rubric">
                                 <h2>Grading:</h2>
                                 <p>
-                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your <code>About Me</code> page on the live site.
+                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your <mark>About Me</mark> page on the live site.
                                 </p>
                             </div>
                         </li>

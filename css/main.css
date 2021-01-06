@@ -40,21 +40,6 @@ body {
   overflow-y: auto;
   padding-top: 6rem;
 }
-#page p {
-  margin: 15px 0;
-}
-#page p code,
-#page p kbd {
-  display: inline;
-  color: #b58900;
-  font-weight: bold;
-}
-#page li > code,
-#page dd > code {
-  display: inline;
-  color: #b58900;
-  font-weight: bold;
-}
 #page a {
   text-decoration: none;
   cursor: pointer;
@@ -62,26 +47,6 @@ body {
 #page hr {
   margin: 37.5px 0 45px 0;
   border: 1px dashed #1a1a1a;
-}
-#page h1 {
-  font-size: 2.1rem;
-  line-height: 2.58rem;
-  font-weight: bold;
-  border-bottom: 2px solid #9ba5ae;
-}
-#page h2,
-#page h3 {
-  font-size: 1.8rem;
-  line-height: 2.22rem;
-  font-weight: bold;
-  border-bottom: 2px solid #9ba5ae;
-}
-#page h4,
-#page h5,
-#page h6 {
-  font-size: 1.5rem;
-  line-height: 1.86rem;
-  font-weight: bold;
 }
 #page > h1,
 #page h2,
@@ -111,23 +76,7 @@ body {
   height: 1.2rem;
 }
 #page .highlight {
-  background-color: rgba(255, 243, 141, 0.4);
-}
-#page #go-back {
-  position: absolute;
-  right: 15px;
-  margin-top: -15px;
-  z-index: 50;
-  height: 0;
-  overflow: visible;
-  font-size: 2rem;
-  text-align: right;
-}
-#page #go-back a {
-  color: #006eb6;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
+  background-color: rgba(255, 243, 141, 0.6);
 }
 #page header {
   position: fixed;
@@ -157,158 +106,6 @@ body {
 #page main {
   flex: 1;
 }
-#page main blockquote {
-  position: relative;
-  margin: 15px 0;
-  padding: 1rem 0.75rem 1rem 4rem;
-  font-style: italic;
-  font-family: Georgia, serif;
-  background-color: #f1f1f1;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
-#page main blockquote:before {
-  position: absolute;
-  top: 3.5rem;
-  left: 0.6rem;
-  content: '\201C';
-  font-size: 6rem;
-  line-height: 1rem;
-  font-family: Georgia, serif;
-}
-#page main blockquote cite {
-  display: block;
-  font-size: 1.05rem;
-  margin-top: 0.75rem;
-}
-#page main blockquote cite:before {
-  content: "\2014 \2009";
-}
-#page main h2 a,
-#page main h3 a,
-#page main h4 a,
-#page main h5 a,
-#page main h6 a {
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-#page main .collapsible {
-  position: relative;
-  color: #ffffff;
-  background-color: #006eb6;
-  padding: 15px 3rem 15px 15px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-#page main .collapsible:after {
-  position: absolute;
-  content: '+';
-  top: 4.25px;
-  right: 15px;
-  font-size: 2.4rem;
-  font-weight: bold;
-}
-#page main .collapsible.open:after {
-  content: 'x';
-  top: 3.25px;
-}
-#page main .collapsible.open + .collapsible-content {
-  max-height: none;
-  padding: 15px;
-}
-#page main .collapsible.open + .collapsible-content:after {
-  content: ' ';
-  display: block;
-  height: 3px;
-  margin: 30px 0 15px 0;
-  border-bottom: 3px double #006eb6;
-}
-#page main .collapsible-content {
-  position: relative;
-  max-height: 0;
-  overflow: hidden;
-  margin: -2px -15px 0px;
-  transition: max-height 0.2s ease-out;
-}
-#page main .callout {
-  padding: 7.5px 15px;
-  margin: 15px 0;
-  background-color: #fffbdb;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
-#page main .callout h2,
-#page main .callout h3,
-#page main .callout h4,
-#page main .callout h5,
-#page main .callout h6 {
-  display: block;
-  margin: 15px 0;
-  font-size: 1.38rem;
-  text-transform: capitalize;
-  color: #212529;
-  border: 0;
-}
-#page main .rubric {
-  padding: 7.5px 15px;
-  margin: 15px 0;
-  background-color: #ebffcc;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
-#page main .rubric h2,
-#page main .rubric h3,
-#page main .rubric h4,
-#page main .rubric h5,
-#page main .rubric h6 {
-  display: block;
-  margin: 15px 0;
-  font-size: 1.38rem;
-  text-transform: capitalize;
-  color: #0e72a9;
-  border: 0;
-}
-#page main .license {
-  position: relative;
-  margin: 15px 0;
-  padding: 7.5px 15px 7.5px 4.8rem;
-  background-color: #ffecec;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
-}
-#page main .license:before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0.6rem;
-  bottom: 0;
-  width: 3.6rem;
-  content: '\00A9';
-  font-size: 2.4rem;
-  font-family: Georgia, serif;
-}
-#page main .license h2,
-#page main .license h3,
-#page main .license h4,
-#page main .license h5,
-#page main .license h6 {
-  display: block;
-  margin: 15px 0;
-  font-size: 1.38rem;
-  text-transform: capitalize;
-  color: #212529;
-}
 #page main .content {
   position: relative;
   min-height: 100%;
@@ -328,16 +125,88 @@ body {
 #page main #main-content a:hover {
   color: #005892;
 }
+#page main #main-content blockquote {
+  position: relative;
+  margin: 15px 0;
+  padding: 1rem 0.75rem 1rem 4rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main #main-content blockquote:before {
+  position: absolute;
+  top: 3.5rem;
+  left: 0.6rem;
+  content: '\201C';
+  font-size: 6rem;
+  line-height: 1rem;
+  font-family: Georgia, serif;
+}
+#page main #main-content blockquote cite {
+  display: block;
+  font-size: 1.05rem;
+  margin-top: 0.75rem;
+}
+#page main #main-content blockquote cite:before {
+  content: "\2014 \2009";
+}
+#page main #main-content div.katex {
+  text-align: center;
+}
+#page main #main-content div.mermaid,
+#page main #main-content div.diagram {
+  text-align: center;
+  line-height: normal;
+}
+#page main #main-content h1 {
+  font-size: 2.1rem;
+  line-height: 2.58rem;
+  font-weight: bold;
+  border-bottom: 2px solid #9ba5ae;
+}
+#page main #main-content h2,
+#page main #main-content h3 {
+  font-size: 1.8rem;
+  line-height: 2.22rem;
+  font-weight: bold;
+  border-bottom: 2px solid #9ba5ae;
+}
+#page main #main-content h4,
+#page main #main-content h5,
+#page main #main-content h6 {
+  font-size: 1.8rem;
+  line-height: 1.86rem;
+  font-weight: bold;
+}
 #page main #main-content h1 a,
 #page main #main-content h2 a,
 #page main #main-content h3 a,
 #page main #main-content h4 a,
 #page main #main-content h5 a,
 #page main #main-content h6 a {
-  border-bottom: none;
+  border: none;
+  cursor: pointer;
+}
+#page main #main-content h2 a,
+#page main #main-content h3 a,
+#page main #main-content h4 a,
+#page main #main-content h5 a,
+#page main #main-content h6 a {
+  text-decoration: none;
+}
+#page main #main-content i {
+  padding-right: 5px;
 }
 #page main #main-content p {
   overflow: auto;
+  margin: 15px 0;
+}
+#page main #main-content pre {
+  display: block;
+  clear: both;
 }
 #page main #main-content figure {
   display: inline-block;
@@ -352,12 +221,12 @@ body {
 #page main #main-content figure.left {
   max-width: 50%;
   float: left;
-  margin: 15px 15px 15px 0;
+  margin: 20.25px 30px 20.25px 0;
 }
 #page main #main-content figure.right {
   max-width: 50%;
   float: right;
-  margin: 15px 0 15px 15px;
+  margin: 20.25px 0 20.25px 30px;
 }
 #page main #main-content figure.center {
   display: block;
@@ -372,10 +241,120 @@ body {
   text-align: center;
   margin: 7.5px 0 0 0;
 }
-#page main #main-content div.katex,
-#page main #main-content div.mermaid,
-#page main #main-content div.diagram {
-  text-align: center;
+#page main #main-content .callout {
+  padding: 7.5px 15px;
+  margin: 15px 0;
+  background-color: #fffbdb;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main #main-content .callout h2,
+#page main #main-content .callout h3,
+#page main #main-content .callout h4,
+#page main #main-content .callout h5,
+#page main #main-content .callout h6 {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.38rem;
+  text-transform: capitalize;
+  color: #212529;
+  border: 0;
+}
+#page main #main-content .collapsible {
+  position: relative;
+  color: #ffffff;
+  background-color: #006eb6;
+  padding: 15px 3rem 15px 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+#page main #main-content .collapsible:after {
+  position: absolute;
+  content: '+';
+  top: 4.25px;
+  right: 15px;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+#page main #main-content .collapsible.open:after {
+  content: 'x';
+  top: 2.75px;
+}
+#page main #main-content .collapsible.open + .collapsible-content {
+  max-height: none;
+  padding: 15px;
+}
+#page main #main-content .collapsible.open + .collapsible-content:after {
+  content: ' ';
+  display: block;
+  height: 3px;
+  margin: 30px 0 15px 0;
+  border-bottom: 3px double #006eb6;
+}
+#page main #main-content .collapsible-content {
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  margin: -2px -15px 0px;
+  transition: max-height 0.2s ease-out;
+}
+#page main #main-content .license {
+  position: relative;
+  margin: 15px 0;
+  padding: 7.5px 15px 7.5px 4.8rem;
+  background-color: #ffecec;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main #main-content .license:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0.6rem;
+  bottom: 0;
+  width: 3.6rem;
+  content: '\00A9';
+  font-size: 2.4rem;
+  font-family: Georgia, serif;
+}
+#page main #main-content .license h2,
+#page main #main-content .license h3,
+#page main #main-content .license h4,
+#page main #main-content .license h5,
+#page main #main-content .license h6 {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.38rem;
+  text-transform: capitalize;
+  color: #212529;
+}
+#page main #main-content .rubric {
+  padding: 7.5px 15px;
+  margin: 15px 0;
+  background-color: #ebffcc;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+#page main #main-content .rubric h2,
+#page main #main-content .rubric h3,
+#page main #main-content .rubric h4,
+#page main #main-content .rubric h5,
+#page main #main-content .rubric h6 {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.38rem;
+  text-transform: capitalize;
+  color: #212529;
+  border: 0;
 }
 #page main #main-content .video {
   position: relative;
@@ -401,6 +380,62 @@ body {
 }
 #page main #main-content .video-fallback a {
   border-bottom: none;
+}
+#page main #main-content li > code,
+#page main #main-content dd > code,
+#page main #main-content p > code,
+#page main #main-content li > kbd,
+#page main #main-content dd > kbd,
+#page main #main-content p > kbd,
+#page main #main-content li > mark,
+#page main #main-content dd > mark,
+#page main #main-content p > mark {
+  display: inline;
+  font-size: 1.2rem;
+}
+#page main #main-content li > code,
+#page main #main-content dd > code,
+#page main #main-content p > code {
+  padding: 3px 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: monospace;
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+}
+#page main #main-content li > kbd,
+#page main #main-content dd > kbd,
+#page main #main-content p > kbd {
+  padding: 3px 4px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.02);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.02);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.02);
+}
+#page main #main-content li > mark,
+#page main #main-content dd > mark,
+#page main #main-content p > mark {
+  background-color: unset;
+  color: #b58900;
+  font-weight: bold;
+}
+#page main #main-content #go-back {
+  position: absolute;
+  right: 15px;
+  margin-top: -25px;
+  z-index: 50;
+  height: 0;
+  overflow: visible;
+  font-size: 2rem;
+  text-align: right;
+}
+#page main #main-content #go-back a {
+  color: #006eb6;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 #page main #main-content dl dt {
   font-weight: bold;
@@ -481,18 +516,25 @@ body {
   margin: 0.5rem 0 0.5rem 22.5px;
 }
 #page main #main-content ol.smaller li {
-  margin: 0.5rem 0 0.5rem 0;
+  position: relative;
+  margin: 3.75px 0 3.75px 22.5px;
+  padding-left: 37.5px;
 }
-#page main #main-content ol.smaller li p {
-  display: inline-block;
+#page main #main-content ol.smaller li p:first-of-type {
+  margin-top: 0;
 }
-#page main #main-content ol.smaller li:before {
-  font-size: 1.2rem;
-  margin-top: -6px;
+#page main #main-content ol.smaller li p:last-of-type {
+  margin-bottom: 0;
 }
 #page main #main-content ol.smaller li ol li,
 #page main #main-content ol.smaller li ul li {
   margin: 0.5rem 0 0.5rem 22.5px;
+}
+#page main #main-content ol.smaller li:before {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 #page main #main-content ol.indent li {
   margin: 0.5rem 0 0.5rem 30px;
@@ -561,22 +603,31 @@ body {
   margin: 0.5rem 0 0.5rem 22.5px;
 }
 #page main #main-content ul.smaller li {
-  margin: 0.5rem 0 0.5rem 0;
+  position: relative;
+  margin: 3.75px 0 3.75px 22.5px;
+  padding-left: 37.5px;
 }
-#page main #main-content ul.smaller li p {
-  display: inline-block;
+#page main #main-content ul.smaller li p:first-of-type {
+  margin-top: 0;
 }
-#page main #main-content ul.smaller li:before {
-  font-size: 1.2rem;
-  margin-top: -6px;
+#page main #main-content ul.smaller li p:last-of-type {
+  margin-bottom: 0;
 }
 #page main #main-content ul.smaller li ol li,
 #page main #main-content ul.smaller li ul li {
   margin: 0.5rem 0 0.5rem 22.5px;
 }
+#page main #main-content ul.smaller li:before {
+  content: '\2299';
+  font-size: 1.2rem;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}
 #page main #main-content ul.indent li {
   margin: 0.5rem 0 0.5rem 30px;
 }
+#page main #main-content li h1,
 #page main #main-content li h2,
 #page main #main-content li h3,
 #page main #main-content li h4,
@@ -589,6 +640,7 @@ body {
 #page main #main-content li p {
   margin: 10px 0;
 }
+#page main #main-content li li h1,
 #page main #main-content li li h2,
 #page main #main-content li li h3,
 #page main #main-content li li h4,
@@ -599,6 +651,7 @@ body {
   font-size: 1.2rem;
   color: #000000;
 }
+#page main #main-content li li h1 + p,
 #page main #main-content li li h2 + p,
 #page main #main-content li li h3 + p,
 #page main #main-content li li h4 + p,
@@ -751,10 +804,10 @@ body {
   #page main .callout {
     margin: 15px 22.5px;
   }
-  #page main .rubric {
+  #page main .license {
     margin: 15px 22.5px;
   }
-  #page main .license {
+  #page main .rubric {
     margin: 15px 22.5px;
   }
 }
@@ -778,6 +831,9 @@ body {
     margin: 15px 0 15px 22.5px;
     max-width: 50%;
   }
+  #page main #main-content {
+    text-align: justify;
+  }
   #page main #sidebar {
     position: unset;
     overflow: unset;
@@ -794,7 +850,7 @@ body {
 }
 @media (min-width: 1200px) {
   #page main #main-content {
-    padding: 30px 15px 30px 0;
+    padding: 30px 15px 30px 15px;
   }
   #page main #sidebar {
     padding: 30px 0 30px 15px;
