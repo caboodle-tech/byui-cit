@@ -229,6 +229,7 @@ var byui = ( function() {
                 if ( ! linkInPar ) {
                     // Replace the current link in place.
                     link.parentElement.replaceChild( html, link );
+                    insertAfter( fallback, html );
                 } else {
                     /**
                      * The original link was in a paragraph, delete the link and
