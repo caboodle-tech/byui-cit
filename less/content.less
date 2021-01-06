@@ -97,35 +97,13 @@ pre {
 }
 
 figure {
-    display: inline-block;
-
+    display: block;
+    margin: @spacing auto;
+    text-align: center;
+    
     img {
-        width: 100%;
-        height: auto;
-        .drop-shadow();
-    }
-
-    &.left {
-        max-width: 50%;
-        float: left;
-        margin: @spacing * 1.35 @spacing * 2 @spacing * 1.35 0;
-    }
-
-    &.right {
-        max-width: 50%;
-        float: right;
-        margin: @spacing * 1.35 0 @spacing * 1.35 @spacing * 2;
-    }
-
-    &.center {
-        display: block;
-        margin: @spacing auto;
-        text-align: center;
-        
-        img {
-            width: auto;
-            max-width: 90%;
-        }
+        width: auto;
+        max-width: 90%;
     }
 
     figcaption {
@@ -326,3 +304,40 @@ li, dd, p {
 }
 
 @import "lists.less";
+
+@media ( min-width: 768px ) {
+
+    figure {
+        display: inline-block;
+
+        img {
+            width: 100%;
+            height: auto;
+            .drop-shadow();
+        }
+
+        &.left {
+            max-width: 50%;
+            float: left;
+            margin: @spacing * 1.35 @spacing * 2 @spacing * 1.35 0;
+        }
+    
+        &.right {
+            max-width: 50%;
+            float: right;
+            margin: @spacing * 1.35 0 @spacing * 1.35 @spacing * 2;
+        }
+
+        &.center {
+            display: block;
+            margin: @spacing auto;
+            text-align: center;
+            
+            img {
+                width: auto;
+                max-width: 90%;
+            }
+        }
+    }
+
+}

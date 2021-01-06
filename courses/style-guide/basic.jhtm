@@ -92,12 +92,7 @@ ${{description}} = "This is a style guide reference page for developers working 
                             Do not place video links like the one below inside paragraph (<code>p</code>) tags. They should be treated like a <code>div</code> tag.
                         </p>
                     </div>
-                    <p>
-                        <span>
-                            This is a test:
-                            <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
-                        </span>
-                    </p>
+                    <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
 <pre class="lang-html">
 <code class="lang-html">&lt;a href="https://video-source.com" target="_blank" data-video="YouTube"&gt;
     Title of the video / video information.
