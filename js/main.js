@@ -107,6 +107,19 @@ var byui = ( function() {
 
     };
 
+    var convertTables = function() {
+
+        var tables = document.querySelectorAll( 'table' );
+
+        tables.forEach( function( tbl ) {
+            var div = document.createElement( 'DIV' );
+            div.style.overflowX = 'auto';
+            div.innerHTML = tbl.outerHTML;
+            tbl.parentNode.replaceChild( div, tbl );
+        } );
+
+    };
+
     var convertVideoLinks = function() {
 
         var videos = document.querySelectorAll( '[data-video]' );
@@ -160,6 +173,8 @@ var byui = ( function() {
         }, 500 );
 
         attachCollapsible();
+
+        convertTables();
 
         convertImages();
 

@@ -161,6 +161,19 @@ body {
   text-align: center;
   line-height: normal;
 }
+#page main #main-content figure {
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+}
+#page main #main-content figure img {
+  width: auto;
+  max-width: 90%;
+}
+#page main #main-content figure figcaption {
+  text-align: center;
+  margin: 7.5px 0 0 0;
+}
 #page main #main-content h1 {
   font-size: 2.1rem;
   line-height: 2.58rem;
@@ -208,18 +221,25 @@ body {
   display: block;
   clear: both;
 }
-#page main #main-content figure {
-  display: block;
-  margin: 15px auto;
-  text-align: center;
+#page main #main-content table {
+  border-collapse: collapse;
 }
-#page main #main-content figure img {
-  width: auto;
-  max-width: 90%;
+#page main #main-content table th {
+  white-space: nowrap;
+  border-bottom: 1px solid #9ba5ae;
 }
-#page main #main-content figure figcaption {
-  text-align: center;
-  margin: 7.5px 0 0 0;
+#page main #main-content table th,
+#page main #main-content table td {
+  min-width: 125px;
+  padding: 2px 15px 2px 2px;
+  text-align: left;
+  vertical-align: top;
+}
+#page main #main-content table tr:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+#page main #main-content table tr:first-of-type {
+  background-color: transparent;
 }
 #page main #main-content .callout {
   padding: 7.5px 15px;
