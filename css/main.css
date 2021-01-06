@@ -76,7 +76,7 @@ body {
   height: 1.2rem;
 }
 #page .highlight {
-  background-color: rgba(255, 243, 141, 0.4);
+  background-color: rgba(255, 243, 141, 0.6);
 }
 #page header {
   position: fixed;
@@ -197,15 +197,12 @@ body {
 #page main #main-content h6 a {
   text-decoration: none;
 }
+#page main #main-content i {
+  padding-right: 5px;
+}
 #page main #main-content p {
   overflow: auto;
   margin: 15px 0;
-}
-#page main #main-content p code,
-#page main #main-content p kbd {
-  display: inline;
-  color: #b58900;
-  font-weight: bold;
 }
 #page main #main-content pre {
   display: block;

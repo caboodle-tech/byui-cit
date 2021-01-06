@@ -121,7 +121,7 @@ var byui = ( function() {
                 video.setAttribute( 'target', '_blank' );
                 video.setAttribute( 'rel', 'noopener noreferrer' );
                 type = type.trim();
-                processVideo( type.toUpperCase(), video );
+                processVideo( type, video );
             }
         } );
 
@@ -167,6 +167,11 @@ var byui = ( function() {
 
     };
 
+    // https://stackoverflow.com/a/4793630/3193156
+    var insertAfter = function( newNode, referenceNode ) {
+        referenceNode.parentNode.insertBefore( newNode, referenceNode.nextSibling );
+    }
+
     var passToMore = function() {
         var more = this.nextElementSibling;
         if ( more ) {
@@ -178,9 +183,18 @@ var byui = ( function() {
 
     var processVideo = function( type, link ) {
 
-        console.log( 'A', type, link );
+        // Set a flag if this video is inside a paragraph tag.
+        var current   = link.parentElement;
+        var linkInPar = false;
+        while ( current != null ) {
+            if ( current.tagName == 'P' ) {
+                linkInPar = true;
+                break;
+            }
+            current = current.parentElement;
+        }
 
-        switch ( type ) {
+        switch ( type.toUpperCase() ) {
             case 'YOUTUBE':
                 // Get the video source or bail.
                 var src = link.href;
@@ -196,23 +210,38 @@ var byui = ( function() {
                 frame.setAttribute( 'allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' );
                 frame.setAttribute( 'frameborder', '0' );
                 frame.setAttribute( 'src', 'https://www.youtube-nocookie.com/embed/' + src );
-                // Make a new link.
+                // Make the fallback link.
                 var a = document.createElement( 'A' );
                 a.setAttribute( 'href', link.href );
                 a.setAttribute( 'target', '_blank' );
                 a.setAttribute( 'rel', 'noopener noreferrer' );
                 a.innerHTML = '&#x2139;&nbsp;&nbsp;' + link.innerHTML;
-                // Make the fallback link div and add it after the existing link.
+                // Make the fallback link div.
                 var fallback = document.createElement( 'DIV' );
                 fallback.classList.add( 'video-fallback' );
                 fallback.innerHTML = '&mdash;&nbsp;&nbsp;';
                 fallback.appendChild( a );
-                link.parentElement.insertBefore( fallback, link.nextSibling );
-                // Swap out the link and replace with the video and fallback divs.
+                // Make the video wrapper div and add the frame to it.
                 var html = document.createElement( 'DIV' );
                 html.classList.add( 'video' );
                 html.appendChild( frame );
-                link.parentElement.replaceChild( html, link );
+                // Swap out the link and replace with the video and fallback divs.
+                if ( ! linkInPar ) {
+                    // Replace the current link in place.
+                    link.parentElement.replaceChild( html, link );
+                } else {
+                    /**
+                     * The original link was in a paragraph, delete the link and
+                     * add the video wrapper after the paragraph.
+                     */
+                    var current = link;
+                    while ( current.tagName != 'P' ) {
+                        current = current.parentElement
+                    }
+                    link.parentElement.removeChild( link );
+                    insertAfter( html, current );
+                    insertAfter( fallback, html );
+                }
                 break;
         }
     };
@@ -234,7 +263,7 @@ var byui = ( function() {
                 anchor.classList.add( 'highlight' );
 
                 setTimeout( function() {
-                    var anchor = document.querySelector( 'li.highlight' );
+                    var anchor = document.querySelector( '.highlight' );
                     if ( anchor ) {
                         anchor.classList.remove( 'highlight' );
                     }

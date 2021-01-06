@@ -1,0 +1,50 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Basic Web Dev - BYUI";
+${{keywords}}    = "Basic, Web, Dev, Development, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Basic Web Development Concepts</h1>
+                    <p>
+                        To start the semester off we need to make sure you understand basic web development concepts at a high level. We will build on this foundation throughout the semester.
+                    </p>
+                    <h2>Assignment</h2>
+                    <p>
+                        Please watch the following video below <strong>before</strong> our first day of class. As you watch the video ponder and consider these questions:
+                    </p>
+                    <ul class="smaller">
+                        <li><p>What is the Internet?</p></li>
+                        <li><p>What is a browser?</p></li>
+                        <li><p>What is a server?</p></li>
+                        <li><p>What languages are used to create websites?</p></li>
+                        <li><p>What is a client and who does it talk to?</p></li>
+                    </ul>
+                    <p>
+                        Note any questions, comments, or concerns you have as you watch the video so we can discuss them together in class.
+                    </p>
+                    <a href="https://youtu.be/FXqTHsPaY0A" data-video="YouTube" target="_blank" rel="noopener noreferrer">Basic Web Development Concepts</a>
+                    {{COMPILED}}
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

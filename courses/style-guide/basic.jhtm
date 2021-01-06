@@ -53,6 +53,27 @@ ${{description}} = "This is a style guide reference page for developers working 
 &lt;h5&gt;Header 5&lt;/h5&gt;
 &lt;h6&gt;Header 6&lt;/h6&gt;
 </code></pre>
+                    <h3>Horizontal Rule</h3>
+                    <p>
+                        Horizontal rules allow you to draw a line across the page to separate sections of content. You should use this when you want to create space or a break between content and a header does not make sense to use.
+                    </p>
+                    <hr>
+<pre class="lang-html"><code class="lang-html">&lt;hr&gt;</code></pre>
+                    <h3>Mark</h3>
+                    <p>
+                        The mark tag allows you to <mark>highlight</mark> a word or words to call attention to them:
+                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;mark&gt;highlight&lt;/mark&gt;</code></pre>
+                    <h3>Kbd</h3>
+                    <p>
+                        The kdb tag is used to define keyboard input: <kbd>&uarr;</kbd> <kbd>&uarr;</kbd> <kbd>&darr;</kbd> <kbd>&darr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd> <kbd>&larr;</kbd> <kbd>&rarr;</kbd> <kbd>B</kbd> <kbd>A</kbd>
+                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;kbd&gt;Konami Code&lt;/kbd&gt;</code></pre>
+                    <h3>Code</h3>
+                    <p>
+                        The code tag <code>code</code> can be used for short snippets of inline code. It looks similar to the <kbd>kbd</kbd> tag but uses a monospace font, bold font, and has no drop shadow. If you plan to use larger blocks of code use a <a href="advanced.html#code-block">code block</a> instead:
+                    </p>
+<pre class="lang-html"><code class="lang-html">&lt;code&gt;inline code here&lt;/code&gt;</code></pre>
                     <h3>Images</h3>
                     <p>
                         You can also easily include images into your pages or assignments. We use JavaScript to automatically generate the HTML for this to work since the HTML can be rather complex. All you need to add is a class of <code>left</code>, <code>right</code>, or <code>center</code> and we will handle image alignment for you. If you do not provide a class <code>center</code> will be used automatically. If you would like to add a figure caption to the image you can do so with the <code>data-caption</code> attribute. Below is an example of a centered image using the figure caption. Please note all images should be included relatively if they are in the course content. Absolute URLs should only be used for images outside of the course on other websites.
@@ -68,21 +89,20 @@ ${{description}} = "This is a style guide reference page for developers working 
                     <div class="callout">
                         <h2>Warning:</h2>
                         <p>
-                            Do not place video links like the one below inside <code>p</code> (paragraph) tags. They should be treated like a <code>div</code> tag.
+                            Do not place video links like the one below inside paragraph (<code>p</code>) tags. They should be treated like a <code>div</code> tag.
                         </p>
                     </div>
-                    <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
+                    <p>
+                        <span>
+                            This is a test:
+                            <a href="https://youtu.be/NpEaa2P7qZI" target="_blank" data-video="YouTube">Video Placeholder</a>
+                        </span>
+                    </p>
 <pre class="lang-html">
 <code class="lang-html">&lt;a href="https://video-source.com" target="_blank" data-video="YouTube"&gt;
     Title of the video / video information.
 &lt;/a&gt;
 </code></pre>
-                    <h3>Horizontal Rule</h3>
-                    <p>
-                        Horizontal rules allow you to draw a line across the page to separate sections of content. You should use this when you want to create space or a break between content and a header does not make sense to use.
-                    </p>
-                    <hr>
-<pre class="lang-html"><code class="lang-html">&lt;hr&gt;</code></pre>
                 </section>
                 <aside id="sidebar">
                     {{NAVIGATION/MAIN}} 

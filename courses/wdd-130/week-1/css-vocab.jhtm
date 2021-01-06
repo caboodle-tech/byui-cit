@@ -49,13 +49,13 @@ ${{description}} = "This is a homework assignment for WDD 130.";
 &lt;p class="green"&gt;This paragraph has a class&lt;/p&gt;
 &lt;p class="green" id="paragraph3"&gt;This paragraph has a class and an id&lt;/p&gt;
 </code></pre>
-                                    We could select all of the paragraphs by using the element selector <code>p</code>. Notice that there is no preface such as <code>.</code> or <code>#</code>, we simply use the tag name.
+                                    We could select all of the paragraphs by using the element selector <mark>p</mark>. Notice that there is no preface such as <mark>.</mark> or <mark>#</mark>, we simply use the tag name.
                                     <br><br>
-                                    We could select just the second and third paragraphs by using the class attribute on them as a selector like this: <code>.green</code> Notice that we preface the class name with a period this time.
+                                    We could select just the second and third paragraphs by using the class attribute on them as a selector like this: <mark>.green</mark> Notice that we preface the class name with a period this time.
                                     <br><br>
-                                    We could also select just the last paragraph by using its ID as a selector like this: <code>#paragraph3</code> Notice that we preface the ID with a number sign (hashtag) this time.
-<pre class="lang-html">
-<code class="lang-html">p /* element selector: all paragraphs */
+                                    We could also select just the last paragraph by using its ID as a selector like this: <mark>#paragraph3</mark> Notice that we preface the ID with a number sign (hashtag) this time.
+<pre class="lang-css">
+<code class="lang-css">p /* element selector: all paragraphs */
 .green /* class selector: all paragraphs with an attribute class="green" */
 #paragraph3 /* id selector: the paragraph with the attribute id="paragraph3" */
 </code></pre>
@@ -65,8 +65,8 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     What we want to change about the element(s) selected by our selector. For example:
-<pre class="lang-html">
-<code class="lang-html">background-color
+<pre class="lang-css">
+<code class="lang-css">background-color
 </code></pre>
                                 </dd>
                                 <dt>
@@ -74,8 +74,8 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     How we want to change a property. For example here we provide a value of green for the background-color property:
-<pre class="lang-html">
-<code class="lang-html">background-color: green;
+<pre class="lang-css">
+<code class="lang-css">background-color: green;
 </code></pre>
                                 </dd>
                                 <dt>
@@ -83,8 +83,8 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     A combination of a property and it's value with a colon. Declarations must 
-<pre class="lang-html">
-<code class="lang-html">background-color: green;
+<pre class="lang-css">
+<code class="lang-css">background-color: green;
 </code></pre>
                                 </dd>
                                 <dt>
@@ -92,8 +92,8 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     One or more declarations will be combined into a block using curly braces ({}):
-<pre class="lang-html">
-<code class="lang-html">{
+<pre class="lang-css">
+<code class="lang-css">{
     background-color: green;
     margin: 5px;    
 }
@@ -104,8 +104,8 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 </dt>
                                 <dd>
                                     A rule is the combination of a selector and declaration block. The example below would select all elements with a class="green" and turn their background green:
-<pre class="lang-html">
-<code class="lang-html">.green {
+<pre class="lang-css">
+<code class="lang-css">.green {
     background-color: green;
     margin: 5px;    
 }

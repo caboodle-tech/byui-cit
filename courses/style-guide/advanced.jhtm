@@ -39,7 +39,7 @@ ${{description}} = "This is a style guide reference page for developers working 
     &lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
-                    <h3>Code Blocks</h3>
+                    <h3 id="code-block">Code Blocks</h3>
                     <p>
                         Throughout this style guide we have used several HTML code examples. Code examples can be added to any page or assignment using the code below. Please keep the following in mind:
                     </p>

@@ -63,10 +63,10 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                     </ol>
                     <h2>Template</h2>
                     <p>
-                        My GitHub profile URL is: <code>[URL to your GitHub profile. Example: https://github.com/blizzardengle]</code>
+                        My GitHub profile URL is: <mark>[URL to your GitHub profile. Example: https://github.com/blizzardengle]</mark>
                     </p>
                     <p>
-                        My Glitch profile URL is: <code>[URL to your Glitch profile. Example: https://glitch.com/@keersc]</code>
+                        My Glitch profile URL is: <mark>[URL to your Glitch profile. Example: https://glitch.com/@keersc]</mark>
                     </p>
                     <p>
                         Here is a screenshot of my desktop showing that I have successfully installed VS Code or VS Codium:
