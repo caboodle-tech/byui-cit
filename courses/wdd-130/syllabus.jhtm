@@ -224,8 +224,8 @@ ${{description}} = "This is the course syllabus for WDD 130 Web Fundamentals.";
                     <p>
                         Go to the Student Resources module to review the university policies regarding honesty, online etiquette, communication expectations, etc.
                     </p>
+                    {{COMPILED}}
                 </section>
-                {{COMPILED}}
             </div>
         </main>
         {{FOOTER}}
