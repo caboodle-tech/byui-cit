@@ -98,7 +98,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                     Internal
                                 </dt>
                                 <dd>
-                                    In the context of web development <em>internal</em> refers to styles or scripts added inside (internal) to the file they are used in. Well this convenient for small style rules or scripts, it makes maintaining and updating code harder. External files should be used as much as possible.
+                                    In the context of web development <em>internal</em> refers to styles or scripts added inside (internal to) the file they are used in. Well this convenient for small style rules or scripts, it makes maintaining and updating code harder. External files should be used as much as possible.
                                 </dd>
                                 <dt>
                                     Link
