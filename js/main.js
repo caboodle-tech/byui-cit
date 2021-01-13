@@ -51,15 +51,15 @@ var byui = ( function() {
     var attachListeners = function() {
 
         // Is the sidebar on this page?
-        if ( document.getElementById('sidebar' ) ) {
+        if ( document.getElementById('jamsedu-sidebar' ) ) {
             // Yes, if it exists attach the listener to the mobile nav button.
-            if ( document.getElementById('mobile-nav-button' ) ) {
-                document.getElementById( 'mobile-nav-button' ).addEventListener( 'click', toggleNav );
+            if ( document.getElementById('jamsedu-mobile-nav-button' ) ) {
+                document.getElementById( 'jamsedu-mobile-nav-button' ).addEventListener( 'click', toggleNav );
             }
         } else {
             // No, hide the mobile nav button if it exists.
-            if ( document.getElementById('mobile-nav-button' ) ) {
-                document.getElementById( 'mobile-nav-button' ).style.display = 'none';
+            if ( document.getElementById('jamsedu-mobile-nav-button' ) ) {
+                document.getElementById( 'jamsedu-mobile-nav-button' ).style.display = 'none';
             }
         }
 
