@@ -73,7 +73,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         <li>
                             <h2>Additional Study</h2>
                             <p>
-                                Spend at least 15 minutes reading and reviewing the following resources:
+                                Spend at least 10 minutes reading and reviewing the following resources:
                             </p>
                             <ul>
                                 <li>
@@ -98,7 +98,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             <div class="rubric">
                                 <h2>Grading:</h2>
                                 <p>
-                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your the live site.
+                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your live site.
                                 </p>
                             </div>
                         </li>
