@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Christopher Keers">
+    <meta name="keywords" content="Wireframe, Introduction, Glitch, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+    <meta name="description" content="This is a homework assignment for WDD 130.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wireframe Introduction - BYUI</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../../js/stem.js"></script>
+    <script src="../../../js/main.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                <a href="../../../courses/wdd-130/index.html">
+    <img src="../../../assets/byui-logo.jpg" alt="BYUI Logo" id="logo">
+</a>
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Wireframe Introduction</h1>
+                    <p>
+                        Wireframes are like a blueprint for your web or application design. They provide a clear overview of the pages structure, layout, information, flow, functionality, and intended behaviors. Just like designing an actual building, our wireframe should start simple. If you were going to design a new apartment complex for example, we should probably start with the size and layout of the property and not the units themselves. Wireframes are the same, start simple and with each iteration add more and more functionality to the site or application.
+                    </p>
+                    <p>
+                        In this assignment your goal is to take a wireframe and translate it to the pages HTML layout. We are not adding any styles to this HTML page yet. Here is the wireframe you will be using. Please note that we have drawn in red on this wireframe to indicate the thought process a web developer would go through when they receive a wireframe.
+                    </p>
+                    <button type="button" class="collapsible">Wireframe Image</button>
+                    <div class="collapsible-content">
+                        <p>
+                            <img src="assets/wireframe.jpg">
+                        </p>
+                    </div>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Header</h2>
+                            <p>
+                                Let's work on creating this wireframe from the top down. First we need a file to work in. You may work on this file directly in the Glitch editor or locally (on your computer) using VS Code. If you create the file locally you will need to copy-paste the code into Glitch later. Lets make the Glitch file now. Open your Glitch project and click on <mark>New File</mark> in the upper left sidebar. Name the file: <mark>wireframe.html</mark>
+                            </p>
+                            <p>
+                                Now lets add the bare bones of this new HTML document. Please copy-paste the following code into your <mark>wireframe.html</mark> document; if your working locally that is fine, once this is assignment is done don't forget to copy the code for this page to Glitch.
+                            </p>
+<pre class="lang-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en-us"&gt;
+&lt;head&gt;
+    &lt;title&gt;Wireframe Demo&lt;/title&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>           
+                        <p>
+                            Now according to the wireframe we need a <code>header</code> which contains the sites <code>logo</code> and main <code>nav</code> (navigation). It is good practice to wrap elements in parent containers when we plan to alter them in big ways. For example the sites navigation will be an <code>ul</code> (unordered list) which normally stacks vertically. We'll need to change it with CSS later to be horizontal. The <code>nav</code> block will be the wrapper for the <code>ul</code>. Now we just need to make sure to add a wrapper for our logo so we can more easily keep the logo on the left side of the page away for the navigation links. This was probably a hard paragraph to follow, so here is the completed code you can add to the page:
+                        </p>
+<pre class="lang-html"><code>&lt;!-- HEADER --&gt;
+&lt;header&gt;
+    &lt;div id="logo-wrapper"&gt;
+        &lt;img id="logo" src="https://via.placeholder.com/100x50"&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+        &lt;!-- We are not copying all the links from the wireframe --&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                Home
+            &lt;/li&gt;
+            &lt;li&gt;
+                About Me
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</code></pre>
+                        <p>
+                            You will notice we used a service called <a href="https://placeholder.com/" target="_blank" rel="noopener noreferrer">Placholder</a> to load a temporary logo image. We also did not copy all the navigation links from the wireframe. Because this is our first iteration of the wireframe we don't need them all yet; they will probably change before we reach production (public release) anyways. Don't forget to indent (tab) your code properly.
+                        </p>
+                        </li>
+                        <li>
+                            <h2>Banner Image</h2>
+                            <p>
+                                The next part of the wireframe appears to be a large banner image. This is a common design for the home page of a website. Sometimes an image carousel is used for the banner image. Image carousels cycle between images by rotating different banners in and out of view. For now lets setup the HTML for this banner area. If the design team decides to add an image carousel in the future, we can update the HTML to work with it then.
+                            </p>
+                            <p>
+                                Here is the HTML for the banner image area, please add this to your file. Do you notice anything similar about this HTML code? This code mimics the same code we used for the sites logo, the main difference being we are not wrapping this code in anything else, whereas the logo code was placed inside the <code>header</code>.
+                            </p>
+<pre class="lang-html"><code>&lt;!-- BANNER IMAGE --&gt;
+&lt;div id="banner-wrapper"&gt;
+    &lt;img id="banner" src="https://via.placeholder.com/1000x150"&gt;
+&lt;/div&gt;
+</code></pre>
+                        </li>
+                        <li>
+                            <h2>The First Row</h2>
+                            <p>
+                                After the banner image the page continues to layout content in rows but splits the content into two columns. Remember to put your developer hat on and approach the design by visualizing it from the outside in. Starting from the outside we need a container that will wrap the inner contents. We could use a <code>div</code> element, or the semantic <code>section</code> element since this wireframe is for our home page. <code>section</code> elements should be used for a specific purpose and often contain a headline: <code>h1</code> &ndash; <code>h6</code>. This is the exception to the headline rule. Well headings normally should not be used out of order, <code>section</code>'s are treated as isolated areas independent from the rest of the document; at least as far as headings are concerned. The following quote from the specs for the <code>section</code> element provides a little more guidance:
+                            </p>
+                            <blockquote cite="https://link-to-source.com">
+                                <p>
+                                    The <code>section</code>element is not a generic container element. When an element is needed only for styling purposes or as a convenience for scripting, authors are encouraged to use the <code>div</code>element instead. A general rule is that the <code>section</code>element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.
+                                </p>
+                                <cite>
+                                    <a href="https://html.spec.whatwg.org/multipage/sections.html#the-section-element" target="_blank" rel="noopener noreferrer">The section element specifications</a>
+                                </cite>
+                            </blockquote>
+                            <p>
+                                To put that in simpler terms, <code>section</code> elements should only be used when the content inside them would make sense completely on their own. If the rest of the pages content suddenly disappeared, ask yourself, would this <code>section</code> still make sense and be complete on it's own?
+                            </p>
+                            <hr>
+                            <p>
+                                Next we will need a container for our left and right column of content. This should be a <code>div</code> element. Inside these inner containers we add the column content similar to how we have done previously. Here is what the completed code for the first row looks like. Notice how we keep nesting elements inside each other, working our way inward:
+                            </p>
+<pre class="lang-html"><code>&lt;!-- FIRST ROW --&gt;
+&lt;section&gt;
+    &lt;div class="left-column"&gt;
+        &lt;h2&gt;We run rivers to relax&lt;/h2&gt;
+        &lt;p&gt;
+            ...
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="right-column"&gt;
+        &lt;img src="https://via.placeholder.com/300x300"&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                        </li>
+                        <li>
+                            <h2>On Your Own Now</h2>
+                            <p>
+                                Now that you have a little experience creating the HTMl layout from a wireframe, continue until you complete the rest of the document. You have a couple more rows of content to add including the pages footer. Don't forget to use <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">semantic elements</a> when they make sense to, and don't forget to add a comment for each section (row) you add to the page.
+                            </p>
+                            <p>
+                                Once you have finished, if you were coding your page outside of Glitch, make sure to copy the pages HTML into the <mark>wireframe.html</mark> file we created earlier in our Glitch project. You will then need to update the <mark>index.html</mark> files navigation to include a link to the new wireframe page.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Complete Assignment</h2>
+                            <p>
+                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <mark>Show</mark> in the upper left and then <mark>New Window</mark>. When the new tab loads with your live site copy the URL from the address bar.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to the wireframe page on your live site.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        <footer>
+    <div class="content">
+        This work was created by the <a href="https://www.byui.edu/computer-information-technology" target="_blank">Computer Information Technology Department</a> at <a href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho</a> and is licensed under a <a href="../../../LICENSE-CC-BY-NC-SA.txt" target="_blank">Creative Commons BY-NC-SA 4.0 License</a> unless noted otherwise. The <a href="https://github.com/caboodle-tech/byui-cit" target="_blank">source code</a> for this website is licensed under the <a href="../../../LICENSE-MIT.txt" target="_blank">MIT License</a> unless noted otherwise.
+    </div>
+</footer>
+    </div>
+</body>
+</html>
