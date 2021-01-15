@@ -61,6 +61,7 @@ jobs:
       - name: Pushing to gh pages
         run: |
           rm * -r
+          git rm -r --cached .
           echo "Copy release files into website branch"
           cp ../release/* . -r
           rm ../release -r
