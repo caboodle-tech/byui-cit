@@ -1,0 +1,265 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Grid Layout - BYUI";
+${{keywords}}    = "Grid, Flexbox, Layout, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Introduction to CSS Grid Layouts</h1>
+                    <p>
+                        In this assignment we will explore the newest method for web layouts: <mark>grid</mark>. As it's name implies CSS grid treats the web page as a grid and allows you to specify with CSS how elements should stretch and span to fill this grid. You can even leave grid squares empty if you choose.
+                    </p>
+                    <div class="callout">
+                        <h2>W3Schools Resource</h2>
+                        <p>
+                            Before you start this assignment you might want to spend some time learning about <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank" rel="noopener noreferrer">CSS Grid Layout Module</a> from W3Schools. This is a valuable resource you may need to refer to while completing this assignment.
+                        </p>
+                    </div>
+                    <p>
+                        Your instructor will demo CSS grid in class. If you are working ahead or forgot what was taught in the demonstration, here is a crash course video to remind you of the important parts of CSS grid:
+                    </p>
+                    <a href="https://youtu.be/ojKbYz0iKQE" target="_blank" rel="noopener noreferrer" data-video="YouTube">CSS Grid Explained Quickly (with diagrams and code)</a>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Setup</h2>
+                            <p>
+                                For this assignment you will need to <a href="source/grid-position-code.zip" download>download this ZIP folder</a> of files. Extract this ZIP file into a location of your choosing. You may want to create a folder for it in your VS Code workspace. Once extracted you should see the <code>position.html</code> and <code>position.css</code> file along with an <code>image</code> directory of images.
+                            </p>
+                            <p>
+                                You will work on this assignment locally in VS code and upload the requested files to Glitch for grading later. Please open <code>position.html</code> in your web browser and <code>position.css</code> in VS Code so we can begin.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Exercise 1: Introduction</h2>
+                            <p>
+                                To help get you started we will solve exercise 1 together. If you have the exercise page (position.html) open in another tab, click on the collapsible box under exercise 1 titled <i>Picture</i> and you should see the same image as this:
+                            </p>
+                            <img src="assets/grid-layout-img-1.png" alt="Exercise 1 Image" data-caption="Exercise 1">
+                            <p>
+                                For this first exercise we've given you a little extra information with the image. It includes the grid lines so you can easily see how it is structured. We can quickly see that this is a grid with two columns and 4 rows. There is also a gap between the rows and columns. Here is the HTML we have to work with:
+                            </p>
+<pre class="lang-html">
+<code class="lang-html">&lt;div id="content-1" class="content-area"&gt;
+    &lt;div class="red"&gt;&lt;/div&gt;
+    &lt;div class="green"&gt;&lt;/div&gt;
+    &lt;div class="green"&gt;&lt;/div&gt;
+    &lt;div class="yellow"&gt;&lt;/div&gt;
+    &lt;div class="yellow"&gt;&lt;/div&gt;
+    &lt;div class="blue"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>          
+                        <p>
+                            The first step with using CSS grid is to identify which elements we are trying to move (the grid items or children) and then find their parent (the grid container or parent element). In our exercise CSS grid should be turned on at the parent. Once we do that all of the direct children of that element become grid items. Because of this it is helpful if all of the elements we need to position share a common parent.
+                        </p>
+                        <p>
+                            In this exercise we want to move the colored boxes (children) <code>.red</code>, <code>.green</code>, <code>.yellow</code>, and <code>.blue</code> which all share a common parent of <code>#content-1</code>.
+                        </p>
+                        </li>
+                        <li>
+                            <h2>Exercise 1: Adjust the Box Sizes</h2>
+                            <p>
+                                Before we start our grid, let's take a moment and make sure the boxes are all the right size and shape. The image above shows that <code>.red</code> and <code>.blue</code> should be full width. An easy way to make something full width is to set it's width to 100%. Make that change to <code>.red</code> and <code>.blue</code> now in the <code>position.css</code> file under exercise 1; make sure not to add your code to the wrong exercise.
+                            </p>
+                            <p>
+                                <code>.green</code> and <code>.yellow</code> currently look to be about twice their size, so let's change their height and width to be <code>200px</code>. The CSS code you started with should look like this:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 .red { 
+    width: 100px; 
+    height: 100px; 
+    background-color: red; 
+} 
+
+#content-1 .green {
+    width: 100px; 
+    height: 100px; 
+    background-color: green; 
+} 
+
+#content-1 .yellow {
+    width: 100px; 
+    height: 100px; 
+    background-color: gold; 
+} 
+
+#content-1 .blue {
+    width: 100px; 
+    height: 100px; 
+    background-color: blue; 
+}</code></pre>
+                            <p>
+                                Now after the changes you have made so far it should be:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 .red { 
+    width: 100%; 
+    height: 100px; 
+    background-color: red; 
+} 
+
+#content-1 .green {
+    width: 200px; 
+    height: 200px; 
+    background-color: green; 
+} 
+
+#content-1 .yellow {
+    width: 200px; 
+    height: 200px; 
+    background-color: gold; 
+} 
+
+#content-1 .blue {
+    width: 100%; 
+    height: 100px; 
+    background-color: blue; 
+}</code></pre>
+                        </li>
+                        <li>
+                            <h2>Exercise 1: Turn on CSS Grid</h2>
+                            <div class="callout">
+                                <h2>Helpful Resource:</h2>
+                                <p>
+                                    For the rest of this exercise it might be helpful if you open this link <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS-Tricks Guide to Grid</a> and keep it handy.
+                                </p>
+                            </div>
+                            <p>
+                                Enable CSS grid for exercise 1 by adding <code>display: grid;</code> to the styles for <code>#content-1</code>; which should currently be empty of any style rules. Your CSS should now look like:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 { 
+    display: grid;
+}</code></pre>
+                            <p>
+                                If you refresh the exercise page (make sure to save the style sheet file first) you will notice that nothing changed. We have to define at least the columns of the grid we need before anything happens. Let's do that next. If you review the example image again you will see that we need two equal columns for our grid. That is easy to do with the <code>fr</code> unit and the <code>grid-template-columns property</code>. The <mark>fr</mark> unit is available only in CSS grids and represents a fraction of the available space in the grid container. If we add these, our rule set should look like the following:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}</code></pre>
+                            <div class="callout">
+                                <p>
+                                    Glitch might mark the <code>grid-template-columns</code> as an error. It's not, if you look at the page you should see that it worked.
+                                </p>
+                            </div>
+                            <p>
+                                As soon as you define those columns and refresh the exercise page you should see a change. It should look similar to the figure below. Although it may not appear like it you are almost done.
+                            </p>
+                            <img src="assets/grid-layout-img-2.png" alt="Exercise 2 Image" data-caption="Exercise 1 with CSS Gird On: 50% Completed">
+                        </li>
+                        <li>
+                            <h2>Exercise 1: Finish Up</h2>
+                            <p>
+                                To get our layout to match the image we really only have three steps left. The first is to tell <code>red</code> and <code>blue</code> that they should take up two columns instead of the default one. And then we need to adjust the horizontal alignment of the <code>yellow</code> and <code>green</code> boxes. Finally we need to add some space between the columns and rows.
+                            </p>
+                            <p>
+                                We can use the <code>grid-column property</code> to specify how many columns an element should span. Remember that when using this property we specify the column by describing the grid lines it falls between. If you look at the example image again you will notice that there are numbers along the top edge. If we want something in column one, we would place it between line 1 and line 2. If we want something to take up all of column 1 and 2 then we would place it between lines 1 and 3. Look at the CSS below to see what this would look like for the <code>red</code> box:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 .red { 
+    width: 100%; 
+    height: 100px; 
+    background-color: red; 
+    grid-column: 1/3;
+}</code></pre>  
+                            <p>
+                                Now do the same for the <code>blue</code> box.
+                            </p>
+                            <hr>
+                            <p>
+                                Horizontal Alignment is controlled with the <code>justify-</code> properties. In this case the specific one we want is <code>justify-items</code>. We can add this to our grid container to center the yellow and green boxes. My rule now looks like this:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}</code></pre>
+                            <p>
+                                Almost there! One last item. We are supposed to have some space (called a gap) between our rows and columns. We can use the <code>grid-gap</code> property to add this. I think about 20px should be good. My final CSS for my grid container looks like this:
+                            </p>
+<pre class="lang-css">
+<code class="lang-css">#content-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 20px;
+}</code></pre>
+                        </li>
+                        <li>
+                            <h2>Exercises 2 - 6</h2>
+                            <p>
+                                Now follow the instructions and hints to complete the rest of the exercises. Don't forget to work with your team and help each other out. Here are a few final tips as well:
+                            </p>
+                            <ol>
+                                <li>
+                                    <p>
+                                        Don't overuse <code>position</code>. At first it might seem to be the answer to your positioning prayers, but it can quickly become a nightmare if overused. Try to solve layout problems with other methods first and fallback to position only if they don't work.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Remember that <code>margin</code> is a great way to shift things around short distances. For example <code>margin-top: -50px;</code> would move an element up by 50px.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        When using <code>float</code> remember that the element that you are floating must come before the other elements in the HTML. Also remember to <code>clear</code> your floats when you want things to stop floating.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        CSS grid is a great way to position elements. Most designs can easily be solved by using it. Remember that to use css grid first find the elements you want to adjust, then find their parent. Use <code>display: grid;</code> on that parent. Also, here are a couple of good resources to help you with CSS grid: <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS-Tricks Guide to Grid</a> and <a href="http://cssgridgarden.com/" target="_blank">Grid Garden</a>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        You will be able to solve all of these positioning problems <strong>without modifying the HTML</strong>. If you find yourself tempted to tweak the HTML your working too hard and missing the mark. 
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        If you are struggling with an activity, start by simply making the boxes the right size and shape. It will often help you to see where to go next.
+                                    </p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Publish</h2>
+                            <p>
+                                We had you work locally in VS Code for this assignment, but your final code and files should be on Glitch. Please create two new files in your Glitch project (<code>position.html</code> and <code>position.css</code>) and copy-paste your local code into them. Next add a link to your home page's  (<code>index.html</code>) navigation to the <code>position.html</code> page. View the live Glitch site and navigate to your <code>position.html</code> page to make sure the web page displays correctly. Pay special attention to whether your styles are displaying correctly for all exercises; the images in will be missing but that is okay. Once verified, submit the URL to your live <code>position.html</code> page on Glitch to Canvas.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    You will be graded at your instructor's or teaching assistant's discretion on how well you followed instructions and made each exercise match the image with CSS.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
