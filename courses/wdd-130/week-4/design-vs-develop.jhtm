@@ -1,0 +1,71 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Web Designer vs. Web Developer - BYUI";
+${{keywords}}    = "Web, Designer, Developer, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Web Designer vs. Web Developer</h1>
+                    <p>
+                        This is your first assignment studying some of the jobs roles that fall under the Web Fundamentals umbrella. We are starting with Web Designers and Web Developers because their job roles are often confused or combined in industry. This assignment aims to show you that Web Designers and Web Developers are two distinct job roles requiring their own skill sets.
+                    </p>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Web Designer</h2>
+                            <p>
+                                Career Explorer has a fantastic online article on <a href="https://www.careerexplorer.com/careers/web-designer/" target="_blank" rel="noopener noreferrer">Web Designers</a>. Please read the overview section (page 1) for this assignment. You may want to return later to study all the sections.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Web Developer</h2>
+                            <p>
+                                Career Explorer has a fantastic online article on <a href="https://www.careerexplorer.com/careers/web-developer/" target="_blank" rel="noopener noreferrer">Web Developers</a>. Please read the overview section (page 1) for this assignment. You may want to return later to study all the sections.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Overview</h2>
+                            <p>
+                                A Web Designer focuses on the design (look and feel) of a site. Web Designers have various titles that usually include the word <mark>designer</mark> in their name, such as User Experience (UX) Designer or User Interface (UI) Designer. Other tiles include Digital Content Curator, Usability Designer, Digital Director, and so on. These advanced titles are meant to differentiate the responsibilities and expertise of a designer. A UX/UI Designer for example probably has experience in one or more wire framing tools and software applications like Photoshop.
+                            </p>
+                            <p>
+                                A Web Developer focuses on creating the actual website or application. In other words a Web Developer makes the design work in the real world. Web Developers primarily work with HTML, CSS, and JavaScript. A more advanced developer would also work with a backend programming language like PHP, a database language of some kind like MySQL, and possibly a pre-processor of some kind like LESS or SASS for CSS. Developers with advanced skill sets often go by different titles like Software Developer, Backend Developer, Frontend Developer, Full Stack Developer, and so on. These advanced titles are meant to differentiate the responsibilities and expertise of a developer. Software Developers for example know how to program software for various applications, not just the web.  
+                            </p>
+                            <p>
+                                In industry it is common to mix titles to denote a combination of skills and responsibilities. For example a UX/UI Developer is both a designer and developer in one role. When searching for jobs read the job descriptions carefully, the job tile is sometimes incorrect or does not accurately reflect your expected skills and responsibilities.
+                            </p>
+                            <p>
+                                The following video is a quick overview of Web Designer vs. Web Developer. You may want to refer back to it later in the semester:
+                            </p>
+                            <a href="https://youtu.be/H0VHuW2QRtg" target="_blank" rel="noopener noreferrer" data-video="YouTube">Web design & web development: What's the difference? (CharliMarieTV)</a>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                You will be quizzed on this material later in the semester. You will have an opportunity to return and study this material before your quiz.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
