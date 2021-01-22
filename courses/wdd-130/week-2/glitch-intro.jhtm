@@ -160,7 +160,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             <div class="rubric">
                                 <h2>Grading:</h2>
                                 <p>
-                                    Before your second class this week you will need to submit the URL to your live Glitch page in Canvas as proof of completing this assignment. <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your live site.
+                                    Before your second class this week you will need to submit the URL to your live Glitch page in Canvas as proof of completing this assignment. Do not submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your live site.
                                 </p>
                             </div>
                         </li>

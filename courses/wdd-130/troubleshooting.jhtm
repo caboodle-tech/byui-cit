@@ -25,7 +25,7 @@ ${{description}} = "This is a course resource for WDD 130 Web Fundamentals.";
                     <p>
                         Anyone who writes code or creates software will eventually master the art of troubleshooting. Often we will run into two questions when we write code: <em>Why is this not working?</em> and <em>How is this working?</em>. The first question (why) is what builds our troubleshooting skills and the second (how) is what helps us become troubleshooting masters. In this article we will share with you some of the common mistakes developers make and the troubleshooting skills to fix them.
                     </p>
-                    <h2>Naming Conventions </h2>
+                    <h2>Naming Conventions</h2>
                     <p>
                         How you name things matters. Well not always true, it's safe to assume anything you code or name is case sensitive. Here is an example of 3 different file names. They all have the same spelling but are considered different because of case sensitivity:
                     </p>

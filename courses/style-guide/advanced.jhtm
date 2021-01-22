@@ -57,9 +57,8 @@ ${{description}} = "This is a style guide reference page for developers working 
                             You must replace any greater than (<) or less than symbols (>) with their HTML entities: <code>&#38;lt;</code> = < and <code>&#38;gt;</code> = >
                         </li>
                     </ul>
-<pre class="lang-html">
-<code class="lang-html">&lt;pre class="lang-html"&gt;
-&lt;code class="lang-html"&gt;Your code inside here. This demo uses HTML.
+<pre class="lang-html"><code>&lt;pre class="lang-html"&gt;&lt;code&gt;
+Your code inside here. This demo uses HTML.
 &lt;/code&gt;&lt;/pre&gt;
 </code></pre>
                     <h3>Katex (Math)</h3>

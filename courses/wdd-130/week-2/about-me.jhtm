@@ -181,7 +181,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             <div class="rubric">
                                 <h2>Grading:</h2>
                                 <p>
-                                    <strong>Do not</strong> submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your <mark>About Me</mark> page on the live site.
+                                    Do not submit the URL to your Glitch profile or your Glitch editor, it must be the URL to your <mark>About Me</mark> page on the live site.
                                 </p>
                             </div>
                         </li>

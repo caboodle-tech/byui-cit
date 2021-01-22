@@ -1,0 +1,113 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Complete The Home Page - BYUI";
+${{keywords}}    = "Home, Page, Wireframe, Layout, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Complete The Home Page</h1>
+                    <p>
+                        In this assignment we are going to complete your Glitch sites home page. You should have a completed building all of the HTML for this page during last weeks wireframe assignment. If you find yourself struggling with this assignment please review past assignments for help, check the <a href="../troubleshooting.html" target="_blank">troubleshooting</a> page for assistance, and then follow these steps:
+                    </p>
+                    <ol class="smaller">
+                        <li>Reach out to your study group for help.</li>
+                        <li>Note specifically what you are struggling with and see if you can find a solution or help online.</li>
+                        <li>Come with specific questions to our next class.</li>
+                    </ol>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Wireframe Changes</h2>
+                            <p>
+                                The design team has not had time to send you an updated wireframe but you have been told the design is 99% the same. Later in the day you final receive the following email: 
+                            </p>
+                            <hr>
+                            <p class="indent">
+                                Jane,<br><br>
+                                We have decided we will need the following links in the header navigation. The sites logo should act as the link back to the home page. Please make sure these are the only header links in the production site:
+                            </p>
+                            <ul class="smaller indent">
+                                <li>About Us</li>
+                                <li>Services</li>
+                            </ul>
+                            <p class="indent">
+                                We have also decided not to use social media links in the footer, instead can you please replace them with these links:
+                            </p>
+                            <ul class="smaller indent">
+                                <li>Resources</li>
+                                <li>Position</li>
+                                <li>About Me</li>
+                                <li>Image</li>
+                            </ul>
+                            <p class="indent">
+                                Thanks!<br><br>
+                                ~Emma
+                            </p>
+                            <hr>
+                            <p>
+                                Make these changes in the HTML for your <mark>index.html</mark> page (home page) now. Keep in mind that the <mark>About Us</mark> page is not the same as your <mark>About Me</mark> page which already exists. You may want to create empty pages for every link that does not have an existing page already. If you choose not to create empty pages now, make sure to still include the links in your HTML.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Add Content</h2>
+                            <p>
+                                Before we start to style our page it will be helpful to have content in place. When a web site is missing content it makes styling hard because images and text usually alter the feel and flow of a web page. Web Developers usually use place holder images and text to mimic what the final site might look like. Thankfully for us, the design team has already created the content. Take a look at the <a href="../dry-oar.html" target="_blank">Dry Oar Content</a> page to see what we have to work with.
+                            </p>
+                            <p>
+                                You will not use all of this pre-generated content and you may decide to create some of you own. Go ahead and add the appropriate text content and images to your home page following the wireframe design.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>CSS Grid</h2>
+                            <p>
+                                Now that you have the sites logo, links, images, and content in place lets actually organize the page to match the wireframe. If you forgot what the wireframe looked like you can review it in the collapsible section below:
+                            </p>
+                            <button type="button" class="collapsible">Wireframe Image</button>
+                            <div class="collapsible-content">
+                                <p>
+                                    <img src="assets/wireframe.jpg">
+                                </p>
+                            </div>
+                            <p>
+                                Using your knowledge of CSS grid layouts, add CSS rule-sets and rules to your <mark>styles.css</mark> file to complete the home page. When you are done with this step your home page's layout should match the wireframe.
+                            </p>
+                            <p>
+                                If you would like a refresher on how CSS grid works, W3Schools has a 3 part tutorial on <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank" rel="noopener noreferrer">CSS Grid Layout</a>.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Publish</h2>
+                            <p>
+                                If you worked locally in VS Code for this assignment make sure your final code and files have been added to Glitch; don't forget to upload images into your Glitch project and update their <code>src</code>. View the live Glitch site to make sure the web page displays correctly. Pay special attention to whether your styles are displaying correctly and all images are loading. Once verified, submit the URL to your live home page in Canvas.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    You will be graded at your instructor's or teaching assistant's discretion on how well you followed instructions and made each exercise match the image with CSS.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
