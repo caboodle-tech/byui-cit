@@ -32,88 +32,61 @@
                     </div>
                     <h1>Image Optimization</h1>
                     <p>
-                        ...
+                        We love seeing images in websites! They make websites more interesting and appealing, but they can also make them slow. A typical mobile phone camera will take an image that is over 2000px wide and 1-3MB in size. Just to put that into perspective a typical resolution for a 23" monitor is about 2000px and on a typical cellular connection 2 MB will take 5-10 seconds to download! Can you imagine what would happen if you placed several such images in your site? Many users, especially those with a slow internet connection or on a mobile device, would experience a sever drop in the loading speed of your site. For many it would quickly become unacceptable.
                     </p>
-                    <ol class="smaller">
-                        <li>Reach out to your study group for help.</li>
-                        <li>Note specifically what you are struggling with and see if you can find a solution or help online.</li>
-                        <li>Come with specific questions to our next class.</li>
-                    </ol>
+                    <p>
+                        We can easily use CSS and adjust the sizes at which those images appear, but the browser will still have to download the whole image before it can shrink it. A better solution is to use an image editing program and change its size to just what we need.
+                    </p>
+                    <p>
+                        Optimizing images online is necessary and easy, you do not need to have expensive software like Photoshop. If you have ever tried to load an image heavy website and it took forever, you understand the need to optimize images for a better user experience. Do not forget though that image optimization is still about image quality, creating images that are to small in size still ruins the user experience.
+                    </p>
                     <h2>Assignment</h2>
                     <ol>
                         <li>
-                            <h2>Wireframe Changes</h2>
+                            <h2>Learn</h2>
                             <p>
-                                The design team has not had time to send you an updated wireframe but you have been told the design is 99% the same. Later in the day you final receive the following email: 
+                                Now days there are lots of image editing software at your disposal. An older online service that is still useful is: <a href="https://picresize.com/" target="_blank" rel="noopener noreferrer">picresize.com</a> If you have never resized an image before you should watch the following video that teaches you about the process using the pic resize website.
                             </p>
-                            <hr>
-                            <p class="indent">
-                                Jane,<br><br>
-                                We have decided we will need the following links in the header navigation. The sites logo should act as the link back to the home page. Please make sure these are the only header links in the production site:
+                            <a href="https://youtu.be/ilOKyKWOhK0" target="_blank" rel="noopener noreferrer" data-video="YouTube">How to Optimize Images for the Web Online for Free</a>
+                            <p>
+                                You are not required to follow or complete the examples in this article, but you should spend some time reviewing <a href="https://www.keycdn.com/blog/optimize-images-for-web" target="_blank" rel="noopener noreferrer">Optimize Images for Web by Martin Williams</a>. These are advanced concepts that a graphic designer, web designer, and web developer should be aware of.
                             </p>
-                            <ul class="smaller indent">
-                                <li>About Us</li>
-                                <li>Services</li>
-                                <li>FAQ</li>
+                        </li>
+                        <li>
+                            <h2>Practice</h2>
+                            <p>
+                                Your goal for this assignment is to download and resize <a href="assets/rexburg-temple.jpg" download>this picture</a>. Please resize this image to 250 x 313 pixels; this is 250 pixels wide by 313 pixels tall.  You can use any image editing software at your disposal including these additional online resources:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://pixlr.com/x/" target="_blank" rel="noopener noreferrer">Pixlr eXpress</a>: super easy image edits.
+                                </li>
+                                <li>
+                                    <a href="https://pixlr.com/e/" target="_blank" rel="noopener noreferrer">Pixlr Editor</a>: advanced online image editing.
+                                </li>
+                                <li>
+                                    <a href="https://resizeimage.net/" target="_blank" rel="noopener noreferrer">Resize Image Network</a>: simple step by step image editing.
+                                </li>
                             </ul>
-                            <p class="indent">
-                                We have also decided not to use social media links in the footer, instead can you please replace them with these links:
-                            </p>
-                            <ul class="smaller indent">
-                                <li>About Me</li>
-                                <li>Resources</li>
-                                <li>Position</li>
-                                <li>Wireframe</li>
-                                <li>Image</li>
-                            </ul>
-                            <p class="indent">
-                                Thanks!<br><br>
-                                ~Emma
-                            </p>
-                            <hr>
+                        </li>
+                        <li>
+                            <h2>Upload</h2>
                             <p>
-                                Make these changes in the HTML for your <mark>index.html</mark> page (home page) now. Keep in mind that the <mark>About Us</mark> page is not the same as your <mark>About Me</mark> page which already exists. You may want to create empty pages for every link that does not have an existing page already. If you choose not to create empty pages now, make sure to still include the links in your HTML.
+                                Once you have resized and/or downloaded your image you will need to add it to your Glitch website. In the Glitch Editor click in the <mark>assets</mark> folder in the left sidebar; it is the top option in your list of website files. Next click on the <mark>Upload an Asset</mark> button to add this image to your Glitch site. Once the image is added to your asset gallery, please click on it to display its URL. Copy this URL for the next step.
+                            </p>
+                            <p>
+                                Please add a link on your home page to this image with a <code>target</code> value of <code>_blank</code>. Normally we place image URL's in an image tag but we can also provide them as the <code>href</code> value in a link. This will load just the image in a new tab.
                             </p>
                         </li>
                         <li>
-                            <h2>Add Content</h2>
+                            <h2>Complete Assignment</h2>
                             <p>
-                                Before we start to style our page it will be helpful to have content in place. When a web site is missing content it makes styling hard because images and text usually alter the feel and flow of a web page. Web Developers usually use place holder images and text to mimic what the final site might look like. Thankfully for us, the design team has already created the content. Take a look at the <a href="../dry-oar.html" target="_blank">Dry Oar Content</a> page to see what we have to work with.
-                            </p>
-                            <p>
-                                You will not use all of this pre-generated content and you may decide to create some of you own. Go ahead and add the appropriate text content and images to your home page following the wireframe design.
-                            </p>
-                        </li>
-                        <li>
-                            <h2>CSS Grid</h2>
-                            <p>
-                                Now that you have the sites logo, links, images, and content in place lets actually organize the page to match the wireframe. If you forgot what the wireframe looked like you can review it in the collapsible section below:
-                            </p>
-                            <button type="button" class="collapsible">Wireframe Image</button>
-                            <div class="collapsible-content">
-                                <p>
-                                    <img src="assets/wireframe.jpg">
-                                </p>
-                            </div>
-                            <p>
-                                Using your knowledge of CSS grid layouts, add CSS rule-sets and rules to your <mark>styles.css</mark> file to complete the home page. When you are done with this step your home page's layout should match the wireframe.
-                            </p>
-                            <p>
-                                If you would like a refresher on how CSS grid works, W3Schools has a 3 part tutorial on <a href="https://www.w3schools.com/css/css_grid.asp" target="_blank" rel="noopener noreferrer">CSS Grid Layout</a>.
-                            </p>
-                        </li>
-                        <li>
-                            <h2>Publish</h2>
-                            <p>
-                                If you worked locally in VS Code for this assignment make sure your final code and files have been added to Glitch; don't forget to upload images into your Glitch project and update their <code>src</code>. View the live Glitch site to make sure the web page displays correctly. Pay special attention to whether your styles are displaying correctly and all images are loading. Once verified, submit the URL to your live home page in Canvas.
-                            </p>
-                            <p>
-                                Don't forget you should validate your code before <em>sending it to production</em>; putting it on the internet for everyone to see. For HTML files you can use the <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validation Service</a> and for CSS files you can use the <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">W3C CSS Validation Service</a>.
+                                Follow the instructions in canvas to prove you have completed this assignment. To get the URL to your live Glitch site click on <mark>Show</mark> in the upper left and then <mark>New Window</mark>. When the new tab loads with your live site copy the URL from the address bar. Make sure the URL you submit for grading is to your home page that contains a link to the image.
                             </p>
                             <div class="rubric">
-                                <h2>Grading</h2>
+                                <h2>Grading:</h2>
                                 <p>
-                                    You will be graded at your instructor's or teaching assistant's discretion on how well you followed instructions and made each exercise match the image with CSS.
+                                    Do not submit the URL to your Glitch profile or your Glitch editor, it must be the URL to the home  page on your live site. There must be a link on this page to your resized image uploaded to Glitch.
                                 </p>
                             </div>
                         </li>
