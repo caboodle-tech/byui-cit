@@ -23,13 +23,13 @@ ${{description}} = "This is a course resource for WDD 130 Web Fundamentals.";
                     </div>
                     <h1>Image Optimization</h1>
                     <p>
-                        We love seeing images in websites! They make websites more interesting and appealing, but they can also make them slow. A typical mobile phone camera will take an image that is over 2000px wide and 1-3MB in size. Just to put that into perspective a typical resolution for a 23" monitor is about 2000px and on a typical cellular connection 2 MB will take 5-10 seconds to download! Can you imagine what would happen if you placed several such images in your site? Many users, especially those with a slow internet connection or on a mobile device, would experience a sever drop in the loading speed of your site. For many it would quickly become unacceptable.
+                        We love seeing images in websites! They make websites more interesting and appealing, but they can also make them slow. A typical mobile phone camera will take an image that is over 2000px wide and 1-3MB in size. Just to put that into perspective a typical resolution for a 23" monitor is about 2000px and on a typical cellular connection 2 MB will take 5-10 seconds to download! Can you imagine what would happen if you placed several of these large images in your site? Many users, especially those with a slow internet connection or on a mobile device, would experience a severe drop in the loading speed of your site. For many it would quickly become unacceptable.
                     </p>
                     <p>
-                        We can easily use CSS and adjust the sizes at which those images appear, but the browser will still have to download the whole image before it can shrink it. A better solution is to use an image editing program and change its size to just what we need.
+                        We can easily use CSS to adjust the sizes at which those images appear, but the browser will still have to download the whole image before it can shrink it. A better solution is to use an image editing program and change its size to just what we need.
                     </p>
                     <p>
-                        Optimizing images online is necessary and easy, you do not need to have expensive software like Photoshop. If you have ever tried to load an image heavy website and it took forever, you understand the need to optimize images for a better user experience. Do not forget though that image optimization is still about image quality, creating images that are to small in size still ruins the user experience.
+                        If you have ever tried to load an image heavy website and it took forever, you understand the need to optimize images for a better user experience. Optimizing images for websites is necessary and easy, you do not need to have expensive software like Photoshop. Do not forget though that image optimization is still about image quality, creating images that are to small in size still can also ruin the user experience. Focus on decreasing image size to a reasonable size for the websites design.
                     </p>
                     <h2>Assignment</h2>
                     <ol>
@@ -63,10 +63,10 @@ ${{description}} = "This is a course resource for WDD 130 Web Fundamentals.";
                         <li>
                             <h2>Upload</h2>
                             <p>
-                                Once you have resized and/or downloaded your image you will need to add it to your Glitch website. In the Glitch Editor click in the <mark>assets</mark> folder in the left sidebar; it is the top option in your list of website files. Next click on the <mark>Upload an Asset</mark> button to add this image to your Glitch site. Once the image is added to your asset gallery, please click on it to display its URL. Copy this URL for the next step.
+                                Once you have resized and downloaded your image you will need to add it to your Glitch website. In the Glitch Editor click on the <mark>assets</mark> folder in the left sidebar; it is the top option in your list of website files. Next click on the <mark>Upload an Asset</mark> button to add this image to your Glitch site. Once the image is added to your asset gallery, please click on it to display its URL. Copy this URL for the next step.
                             </p>
                             <p>
-                                Please add a link on your home page to this image with a <code>target</code> value of <code>_blank</code>. Normally we place image URL's in an image tag but we can also provide them as the <code>href</code> value in a link. This will load just the image in a new tab.
+                                Please add a link on your home page to this image with a <code>target</code> value of <code>_blank</code>. Normally we place image URL's in an <code>img</code> tag but we can also provide them as the <code>href</code> value in <code>a</code> (link) tags. This will load just the image in a new tab for easy grading.
                             </p>
                         </li>
                         <li>
