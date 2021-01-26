@@ -32,15 +32,22 @@
                     </div>
                     <h1>Wireframe Introduction</h1>
                     <p>
-                        Wireframes are like a blueprint for your web or application design. They provide a clear overview of the pages structure, layout, information, flow, functionality, and intended behaviors. Just like designing an actual building, our wireframe should start simple. If you were going to design a new apartment complex for example, we should probably start with the size and layout of the property and not the units themselves. Wireframes are the same, start simple and with each iteration add more and more functionality to the site or application.
+                        Wireframes are like a blueprint for your web or application design. They provide a clear overview of the pages structure, layout, information, flow, functionality, and intended behaviors. Just like designing an actual building, our wireframe should start simple. If you were going to design a new apartment complex for example, we should probably start with the size and layout of the property and not the units themselves. Wireframes are the same, start simple and with each iteration add more and more functionality to the site or application. This week we will focus <strong>only</strong> on the HTML. In a real web development project you would follow a similar pattern, build the HTML first, and then adding CSS.
                     </p>
                     <p>
-                        In this assignment your goal is to take a wireframe and translate it to the pages HTML layout. We are not adding any styles to this HTML page yet. Here is the wireframe you will be using. Please note that we have drawn in red on this wireframe to indicate the thought process a web developer would go through when they receive a wireframe.
+                        In this assignment your goal is to take a wireframe and translate it to the pages HTML layout. <strong>We are not adding any styles (CSS) to this HTML page yet. Everything will stack vertically for now and look nothing like the finished wireframe.</strong> Here is the wireframe you will be using. Please note that we have drawn in red on this wireframe to indicate the thought process a web developer would go through when they receive a wireframe.
                     </p>
-                    <button type="button" class="collapsible">Wireframe Image</button>
+                    <button type="button" class="collapsible">Wireframe (what we are working towards)</button>
                     <div class="collapsible-content">
                         <p>
                             <img src="assets/wireframe.jpg">
+                        </p>
+                    </div>
+                    <br>
+                    <button type="button" class="collapsible">Wireframe HTML (what we are doing for now, the red outlines from the last wireframe image)</button>
+                    <div class="collapsible-content">
+                        <p>
+                            <img src="assets/wireframe-html.png">
                         </p>
                     </div>
                     <h2>Assignment</h2>
@@ -48,7 +55,7 @@
                         <li>
                             <h2>Header</h2>
                             <p>
-                                Let's work on creating this wireframe from the top down. First we need a file to work in. You may work on this file directly in the Glitch editor or locally (on your computer) using VS Code. If you create the file locally you will need to copy-paste the code into Glitch later. Lets make the Glitch file now. Open your Glitch project and click on <mark>New File</mark> in the upper left sidebar. Name the file: <mark>wireframe.html</mark>
+                                Let's work on creating the HTML for this wireframe working from the top down. First we need a file to work in. You may work on this file directly in the Glitch editor or locally (on your computer) using VS Code. If you create the file locally you will need to copy-paste the code into Glitch later. Lets make the Glitch file now. Open your Glitch project and click on <mark>New File</mark> in the upper left sidebar. Name the file: <mark>wireframe.html</mark>
                             </p>
                             <p>
                                 Now lets add the bare bones of this new HTML document. Please copy-paste the following code into your <mark>wireframe.html</mark> document; if your working locally that is fine, once this is assignment is done don't forget to copy the code for this page to Glitch.
@@ -62,12 +69,15 @@
     &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    ...
+    ...&lt;!-- Remember the rest of the pages HTML will go in here. --&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>           
                         <p>
-                            Now according to the wireframe we need a <code>header</code> which contains the sites <code>logo</code> and main <code>nav</code> (navigation). It is good practice to wrap elements in parent containers when we plan to alter them in big ways. For example the sites navigation will be an <code>ul</code> (unordered list) which normally stacks vertically. We'll need to change it with CSS later to be horizontal. The <code>nav</code> block will be the wrapper for the <code>ul</code>. Now we just need to make sure to add a wrapper for our logo so we can more easily keep the logo on the left side of the page away from the navigation links. This was probably a hard paragraph to follow, so here is the completed code you can add to the page:
+                            Now according to the wireframe we need a <code>header</code> which contains the sites <code>logo</code> and main <code>nav</code> (navigation). It is good practice to wrap elements in parent containers when we plan to alter them in big ways. For example the sites navigation will be an <code>ul</code> (unordered list) which normally stacks vertically. We'll need to change it with CSS later to be horizontal. The <code>nav</code> block will be the wrapper for the <code>ul</code>. Now we just need to make sure to add a wrapper for our logo so we can more easily keep the logo on the left side of the page away from the navigation links. The completed code you can add to the page is below.
+                        </p>
+                        <p>
+                            Do not just blindly copy-paste this code. Take a minute to deconstruct it and understand what it's doing.
                         </p>
 <pre class="lang-html"><code>&lt;!-- HEADER --&gt;
 &lt;header&gt;
@@ -142,10 +152,13 @@
                         <li>
                             <h2>On Your Own Now</h2>
                             <p>
-                                Now that you have a little experience creating the HTMl layout from a wireframe, continue until you complete the rest of the document. You have a couple more rows of content to add including the pages footer. Don't forget to use <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">semantic elements</a> when they make sense to, and don't forget to add a comment for each section (row) you add to the page.
+                                Now that you have a little experience creating the HTML for a wireframe, continue creating the HTML until you complete the rest of the design. Remember all you are creating is the HTML for the wireframe, we will add the CSS later; please reread the introduction section of this page if you are confused about these instructions.
                             </p>
                             <p>
-                                Once you have finished, if you were coding your page outside of Glitch, make sure to copy the pages HTML into the <mark>wireframe.html</mark> file we created earlier in our Glitch project. You will then need to update the <mark>index.html</mark> files navigation to include a link to the new wireframe page.
+                                You will need to create the second row, third row, and footer HTML. Don't forget to use <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank" rel="noopener noreferrer">semantic elements</a> when they make sense to, and don't forget to add a comment for each section (row) of HTML that you add to the page.
+                            </p>
+                            <p>
+                                Once you have finished, if you were coding your page outside of Glitch, make sure to copy the pages HTML into the <mark>wireframe.html</mark> file we created earlier in our Glitch project. You will then need to update the <mark>index.html</mark> files navigation to include a link to the new wireframe page. If you do not remember how to do that, open the <mark>index.html</mark> page and take a look at what is inside the <code>nav</code> element.
                             </p>
                         </li>
                         <li>
