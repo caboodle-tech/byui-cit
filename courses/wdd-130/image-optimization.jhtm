@@ -1,8 +1,8 @@
 ${{course}}      = "wdd-130";
 ${{author}}      = "Christopher Keers";
-${{title}}       = "Complete The Home Page - BYUI";
-${{keywords}}    = "Home, Page, Wireframe, Layout, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
-${{description}} = "This is a homework assignment for WDD 130.";
+${{title}}       = "Image Optimization - BYUI";
+${{keywords}}    = "Image, Optimization, Editors, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a course resource for WDD 130 Web Fundamentals.";
 
 {{HEAD}}
 <body>
@@ -19,11 +19,11 @@ ${{description}} = "This is a homework assignment for WDD 130.";
             <div class="content">
                 <section id="main-content">
                     <div id="go-back">
-                        <a href="../index.html">&#10554; Go Back</a>
+                        <a href="index.html">&#10554; Go Back</a>
                     </div>
-                    <h1>Complete The Home Page</h1>
+                    <h1>Image Optimization</h1>
                     <p>
-                        In this assignment we are going to complete your Glitch sites home page. You should have a completed building all of the HTML for this page during the week 3 wireframe assignment; you created the <mark>wireframe.html</mark> page. If you find yourself struggling with this assignment please review past assignments for help, check the <a href="../troubleshooting.html" target="_blank">troubleshooting</a> page for assistance, and then follow these steps:
+                        ...
                     </p>
                     <ol class="smaller">
                         <li>Reach out to your study group for help.</li>
