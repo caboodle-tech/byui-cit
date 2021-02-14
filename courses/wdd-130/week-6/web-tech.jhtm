@@ -1,0 +1,99 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Web Technology - BYUI";
+${{keywords}}    = "Web, Technology, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Web Technology</h1>
+                    <p>
+                        So far in this course we have primarily focused on web design and web development. Today we want to spend some time discussing web technology, or the programming, networking, and tools that support design and development as a whole. This assignment aims to broaden your view of web fundamentals and introduce you to some advanced roles in design and development. It will also help you better understand similar careers and skills from fields besides Web Development.
+                    </p>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Computer Programmer</h2>
+                            <p>
+                                Career Explorer has a fantastic online article on <a href="https://www.careerexplorer.com/careers/computer-programmer/" target="_blank" rel="noopener noreferrer">Computer Programmers</a>. Please read the overview section (page 1) for this assignment. You may want to return later to study all the sections.
+                            </p>
+                            <p>
+                                As you study about Computer Programmers pay special attention to the additional training, skills, and responsibilities they have compared to a Web Designer or Web Developer. Remember, the terms Computer Programmer or Programmer are generic umbrella terms meant to cover several advanced job roles.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Site Reliability Engineer</h2>
+                            <p>
+                                Open Source (supported by RedHat) has a fantastic online article on <a href="https://opensource.com/article/18/10/what-site-reliability-engineer" target="_blank" rel="noopener noreferrer">Site Reliability Engineers</a>. Please read the article for this assignment. You may want to return later to study all the sections.
+                            </p>
+                            <p>
+                                In summary a good Sight Reliability Engineer is a software engineer with a good administration background or a highly skilled system administrator with knowledge of coding and automation. Their responsibility is not web design or web development, but to provide teams with the tools and processes that help them excel at development.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Network & Hardware</h2>
+                            <p>
+                                Another aspect of software development and design to consider is the infrastructures that support them. It takes servers, workstations, customized hardware (computers) sometimes, and various specialized software tools to support all the jobs that fall under the Web Fundamentals, Software Development, and Applications Development umbrellas.
+                            </p>
+                            <p>
+                                One of the learning outcomes for this course is to help you decide if a Web Design and Development degree is the educational path you should pursue. Please review some of the following job roles and keep in mind that a Web Design and Development degree may help with some but is probably not the degree you should pursue for these careers:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/computer-network-architect/" target="_blank" rel="noopener noreferrer">Network Architect</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/network-administrator/" target="_blank" rel="noopener noreferrer">Network Administrator</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/database-administrator/" target="_blank" rel="noopener noreferrer">Database Administrator</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/database-architect/" target="_blank" rel="noopener noreferrer">Database Architect</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/cytotechnologist/" target="_blank" rel="noopener noreferrer">Cytotechnologist</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/technical-artist/" target="_blank" rel="noopener noreferrer">Technical Artist</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/information-security-analyst/" target="_blank" rel="noopener noreferrer">Information Security Analyst</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/it-security-consultant/" target="_blank" rel="noopener noreferrer">IT Security Consultant</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.careerexplorer.com/careers/security-engineer/" target="_blank" rel="noopener noreferrer">Security Engineer</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                You will be quizzed on this material later this week. You will have an opportunity to return and study this material before your quiz.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

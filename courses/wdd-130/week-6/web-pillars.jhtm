@@ -1,0 +1,84 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "The 3 Web Pillars - BYUI";
+${{keywords}}    = "The 3 Web Pillars, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>The 3 Web Pillars</h1>
+                    <p>
+                        This is a summary page meant to bring together your Week 4 reading assignment <a href="../week-4/design-vs-develop.html" target="_blank">Web Designer vs. Web Developer</a> and your Week 6 reading assignment <a href="../week-6/web-tech.html" target="_blank">Web Technology</a>. Together these assignments have taught you about the 3 Web Pillars:
+                    </p>
+                    <ul class="smaller">
+                        <li>
+                            <strong>Technology</strong>
+                            <ul>
+                                <li>
+                                    Advanced Programming
+                                </li>
+                                <li>
+                                    Hardware & Software Tools
+                                </li>
+                                <li>
+                                    Networks & Workstations
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Design</strong>
+                            <ul>
+                                <li>
+                                    Wire Framing
+                                </li>
+                                <li>
+                                    Graphic Design
+                                </li>
+                                <li>
+                                    Typography & Color
+                                </li>
+                                <li>
+                                    User Experience / User Interface
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Development</strong>
+                            <ul>
+                                <li>
+                                    Programming (Coding)
+                                </li>
+                                <li>
+                                    Data Storage (Databases)
+                                </li>
+                                <li>
+                                    User Experience
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>
+                        Please review the reading assignments and all the material they refer you to, then take the 3 Web Pillars quiz in Canvas.
+                    </p>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
