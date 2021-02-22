@@ -1,0 +1,63 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Graphic Design - BYUI";
+${{keywords}}    = "Graphic Design, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Graphic Design</h1>
+                    <p>
+                        Graphic Design is a broad disciple with many job roles and skills. For this course we focus on basic graphic design principles that are useful for developers. In this assignment you will learn how color, layout, images, composition, typography, branding, and more relate to graphic design. If you are interested in perusing a Graphic Design career the skills will we cover in this assignment are the foundations for a good web designer. Some of this skills are also useful for digital and print designers.
+                    </p>
+                    <div class="license">
+                        <p>
+                            The material linked to in this assignment was developed by <a href="https://en.wikipedia.org/wiki/Fair_use" rel="noreferrer noopener">Goodwill Community Foundation</a> and is subject to their license(s). The license listed in this pages footer does not apply to this material.
+                        </p>
+                    </div>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Videos</h2>
+                            <p>
+                                The next step for this assignment will have you read the accompanying articles to the the following videos. Please watch the following playlist of videos (6 videos) without spending to much time re-watching parts you might not understand. If you have questions please write them down and we can discuss them in class. The accompanying articles may also answer your questions.
+                            </p>
+                            <a href="https://youtube.com/playlist?list=PLpQQipWcxwt8vVzFpoJS5TtCh8Ktke9TH" target="_blank" data-video="YouTube">
+                                Beginning Graphic Design by GCFLearnFree.org
+                            </a>
+                        </li>
+                        <li>
+                            <h2>Articles</h2>
+                            <p>
+                                The videos from the previous step are part of the <a href="https://edu.gcfglobal.org/en/beginning-graphic-design/" rel="noreferrer noopener">Beginning Graphic Design</a> series by Goodwill Community Foundation. Please go to the main page for the <a href="https://edu.gcfglobal.org/en/beginning-graphic-design/" rel="noreferrer noopener">Beginning Graphic Design</a> series and study all 6 parts.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                There is nothing to turn in for this study assignment but you will be quizzed on this material later in the week.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

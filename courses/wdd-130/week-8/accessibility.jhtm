@@ -1,0 +1,61 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Accessibility - BYUI";
+${{keywords}}    = "Accessibility, Visual, Impairment, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Accessibility</h1>
+                    <p>
+                        User accessibility has been mentioned several times in this course, however given that this course is meant to be an introductory to web fundamentals, we have not explored this topic in great detail. In this study assignment you will receive a crash course in designing software for user accessibility. Please study the following resources keeping in mind that we do not expect you to understand or apply some of these advanced concepts in this course.
+                    </p>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>HTML vs HTML5</h2>
+                            <p>
+                                HTML5 semantic elements are useful for user accessibility but they are more a byproduct than an intention. HTML5 was designed to replace earlier versions of HTML and standardize web development globally. Now that HTML5 is the defacto standard for web development it has continued to evolve gaining more and more accessibility support. Please read the following article to learn more about the history of HTML5: <a href="https://www.keycdn.com/blog/html-vs-html5#:~:text=Therefore%2C%20HTML5%20was%20implemented%20to,Technology%20Working%20Group%2C%20or%20WHATWG." rel="noreferrer noopener">HTML vs HTML5 - What Is the Difference?</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h2>ARIA</h2>
+                            <p>
+                                ARIA stands for: Accessible Rich Internet Applications. Many of the interactive web features you use on a daily basis would be impossible for assistive technology to operate and interact with without ARIA. For example, without ARIA an impaired user wanting to navigate the same websites you do on a daily basis, would need assistive technology specially adapted and designed for each website. ARIA allows developers to indicate with HTML and JavaScript how interactive elements should behave for users that can not interact with them in a standard way. Please review the following article introducing ARIA, note any questions you have, and ask your instructor about them in class: <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA" rel="noreferrer noopener">MDN Web Docs: ARIA</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h2>What Visual Impairment Means for Your Software</h2>
+                            <p>
+                                Well there are many types of disabilities and user impairments, you will complete your crash course in designing for user accessibility by reading an article about designing websites for visually impaired users. Please note any questions you have about this article so you can ask your instructor about them in class: <a href="https://paper-leaf.com/insights/software-accessibility-visually-impaired/" rel="noreferrer noopener">Understanding What Visual Impairment Means for Your Software</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                There is nothing to turn in for this study assignment but you will be quizzed on this material later in the week.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

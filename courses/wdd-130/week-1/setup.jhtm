@@ -73,7 +73,6 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         <br>
                         <img class="left" src="https://via.placeholder.com/450x250">
                     </p>
-                    </div>
                     {{COMPILED}}
                 </section>
             </div>
