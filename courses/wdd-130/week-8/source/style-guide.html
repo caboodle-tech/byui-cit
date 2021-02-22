@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Christopher Keers">
+        <meta name="keywords" content="Site, Planning, Style, Guide, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+        <meta name="description" content="This is a homework assignment for WDD 130.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Site Planning - BYUI</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+        <!-- END EDITS -->
+        <link rel="stylesheet" href="style-guide.css">
+    </head>
+    <body>
+        <h1>Final Project Style Guide</h1>
+        <button>Toggle Dark Mode</button>
+        <div>
+            <h2>Normal Colors</h2>
+            <div class="color-wrapper">
+                <div class="title">
+                    Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Dark Mode Colors</h2>
+            <div class="color-wrapper">
+                <div class="title">
+                    Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Background
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+            <div class="color-wrapper">
+                <div class="title">
+                    Alt Primary
+                </div>
+                <div class="color"></div>
+                <div>
+                    #value
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Fonts</h2>
+            <p>
+                I have chosen to use the following fonts for my site:
+            </p>
+            <ul>
+                <li>
+                    FONT NAME 1 HERE: Used for headlines.
+                </li>
+                <li>
+                    FONT NAME 2 HERE: Used for the primary font.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Elevator Pitch</h2>
+            <p>
+                Please replace this text with your Elevator Pitch.
+            </p>
+        </div>
+        <div>
+            <h2>Purpose Statement</h2>
+            <p>
+                Please replace this text with your Purpose Statement.
+            </p>
+        </div>
+        <div>
+            <h2>Audience Statement</h2>
+            <p>
+                Please replace this text with your Audience Statement.
+            </p>
+        </div>
+        <div>
+            <h2>Misson Statement</h2>
+            <p>
+                Please replace this text with your Misson Statement.
+            </p>
+        </div>
+        <div>
+            <h2>Persona and Scenario Ideas</h2>
+            <p>
+                Please replace this text with your ideas. Use multiple paragraph tags as needed.
+            </p>
+        </div>
+        <script>
+            /**
+             * This script adds a listener to the dark mode toggle button.
+             * When it is clicked the class .dark-mode is added or removed
+             * from the body. In our CSS file we added specific rules to
+             * the page when the .dark-mode class is present.
+             */
+            var toggle = document.querySelector('button');
+            if ( toggle ) {
+                toggle.addEventListener( 'click', toggleDarkMode );
+            }
+
+            function toggleDarkMode() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+    </body>
+</html>
