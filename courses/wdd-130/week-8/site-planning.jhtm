@@ -99,14 +99,47 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             <p>
                                 Once you have chosen your colors you will need to edit the HTML and CSS files with your choices. Open the <mark>style-guide.html</mark> file and replace all the <code>#value</code>'s with their appropriate values. For example, each color is wrapped by a div with the class of <code>color-wrapper</code>, inside this div is several other div's, the top div with the class of <code>.title</code> tells you what this color is for. The first div you will come across in the HTML file is for the pages background color. You would replace <code>#value</code> with the HEX or RGB value for the color you choose for the pages background. Repeat this process for each <code>#value</code> in the file.
                             </p>
+<pre class="lang-html"><code>&lt;!-- What the HTML we're referring to looks like. --&gt;
+&lt;div class="color-wrapper"&gt;
+    &lt;div class="title"&gt;
+        Background &lt;!-- Here is the title we mentioned. --&gt;
+    &lt;/div&gt;
+    &lt;div class="color"&gt;&lt;/div&gt;
+    &lt;div&gt;
+        #value &lt;!-- Here is the value you replace. --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
                             <p>
                                 Now open the <mark>style-guide.css</mark> file and change the CSS colors to your chosen values. We used CSS names instead of HEX or RGB codes so they would be easy to spot, we also added comments in the file to assist you. You will only need to make changes to the top of the file. We did not place color rules anywhere else in the document. Please note that this CSS file is using an advanced concept: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" rel="noreferrer noopener">CSS custom properties</a>.
                             </p>
+<pre class="lang-css"><code>/* You will update all of these colors. */
+:root {
+    /* Normal Colors */
+    --background-color: white;
+    --alt-background-color: gainsboro;
+    --primary-color: black;
+    --alt-primary-color: darkslategray;
+    /* Dark Mode Colors */
+    --dark-background-color: black;
+    --dark-alt-background-color: darkslategray;
+    --dark-primary-color: white;
+    --dark-alt-primary-color: gainsboro;
+}
+</code></pre>
                         </li>
                         <li>
                             <h2>Choose Your Fonts</h2>
                             <p>
-                                Coming Soon!
+                                You will need to select two different fonts for this assignment. One font will be used as the pages general font, the second is for your headings. Please choose your fonts from <a href="https://fonts.google.com/" rel="noreferrer noopener" target="_blank">Google Fonts</a>. If you need help with this step please refer back to the <a href="../week-3/fonts-part-1.html" target="_blank">Fonts: Part 1</a> assignment from week 3.
+                            </p>
+                            <p>
+                                When you copy the <code>link</code> code over from Google Fonts pay careful attention to what your copying! The following code is part of every font you choose but it is only needed once. Do not duplicate the following code in your file:
+                            </p>
+<pre class="lang-html"><code>&lt;link rel="preconnect" href="https://fonts.gstatic.com"&gt;
+</code></pre>
+                            <p>
+                                Now make sure to update the fonts in the correct spots in the CSS file. We've added the CSS comment <code>/* EDIT */</code> where you need to place the <code>font-family</code> rule. Pay careful attention to where you place your fonts. Two rules should be the general font for the page and two rules should be for headings.
                             </p>
                         </li>
                         <li>
@@ -118,7 +151,13 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         <li>
                             <h2>Persona and Scenario Ideas</h2>
                             <p>
-                                Coming Soon!
+                                User personas and stores, scenarios, and storyboards are fundamental to great UX design. If possible you should use real users and information, but assumptions about who is going to be using your site and/or products is better than nothing. Please <a href="https://www.justinmind.com/blog/user-personas-scenarios-user-stories-and-storyboards-whats-the-difference/" rel="noreferrer noopener">read this article</a> by Justinmind to learn more about personas, stores, scenarios, and storyboards. You should also watch the following video before moving on to the next instructions:
+                            </p>
+                            <a href="https://youtu.be/vZ578SqL1oA" target="_blank" data-video="YouTube">
+                                How To Create User Personas by Robert Smith
+                            </a>
+                            <p>
+                                Now that you have a better understanding about personas and scenarios, please brainstorm some for your final project site. These do not have to be fully developed. Write out your ideas in a word document for submission. Then copy this content into the HTML for this assignment under the Persona and Scenario section. Use appropriate HTML to display your information in an organized way; paragraph tags, lists, etc.
                             </p>
                         </li>
                         <li>
