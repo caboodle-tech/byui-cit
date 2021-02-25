@@ -1,0 +1,152 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Git Ready - BYUI";
+${{keywords}}    = "Git, GitHub, Download, Install, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Git Ready</h1>
+                    <p>
+                        Starting this week we will begin learning about and using <mark>git</mark> and <mark>GitHub</mark> to manage your final project website and code. So what exactly is git? Here is a brief summary from Wikipedia:
+                    </p>
+                    <blockquote cite="https://en.wikipedia.org/wiki/Git">
+                        <p>
+                            Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows (thousands of parallel branches running on different systems).
+                        </p>
+                        <cite>
+                            Wikipedia entry: Git
+                        </cite>
+                    </blockquote>
+                    <p>
+                        In short git is a version control system that allows you to <em>control versions</em> of your code. When used properly version control systems can record a permanent history of a software project. Did someone accidentally delete important code? Did a new update contain a fatal bug that is breaking your website or application? If your using a version control system like git you can easily roll back changes to previous versions of the code. You can also look back into the history of the code if you need to find something you deleted a long time ago, and then copy it back into the latest version. Since this is an introductory course this is all you need to know about version control systems. Keep in mind git makes working with many users on the same project a simple process, but there are some additional rules and features you will need to learn when working with multiple people on a single project.
+                    </p>
+                    <h2>Terminology</h2>
+                    <p>
+                        For now take a look at the following graphic. This is an example of a projects git history and branches. We explain some important concepts using this image:
+                    </p>
+                    <img src="assets/git-example.png" alt="Git history and branch example" data-caption="Git History and Branch Example">
+                    <dl>
+                        <dt>
+                            repository 
+                        </dt>
+                        <dd>
+                            This entire image represents the history of one git repository. It is an oversimplification but for this class a repository is simply a software project that contains a history of everything that has happened to its code.
+                        </dd>
+                        <dt>
+                            branches
+                        </dt>
+                        <dd>
+                            In this image we have 4 branches. Main, dev for the development version of our application, feature 1, and feature 2. It is common practice to create a new branch for each separate feature you are adding to a software project. This is what allows multiple people to work on the same project without interfering with each other. Branches are like separate folders.
+                        </dd>
+                        <dt>
+                            versions
+                        </dt>
+                        <dd>
+                            In this image we have 4 versions of our application. The first 3 versions are probably beta versions since they are labeled 0.1, 0.2, and 0.3 respectively. The last version is our first major release and it is labeled as 1.0 or version 1. Notice that these are on the main branch of our repository. Other branches can be <em>ahead</em> of our main branch since all the new development is happening in them. The main branch is considers our production release; what is available to the public.
+                        </dd>
+                        <dt>
+                            commits
+                        </dt>
+                        <dd>
+                            Each dot you see in this image is a <em>commit</em>. You can think of a commit as a virtual sticky note that explains what has changed with the committed code. Commits are what makes up the history of a repository, what allows us to go back in time to any point in the project, and even restore the code from a specific point in time.
+                        </dd>
+                        <dt>
+                            push
+                        </dt>
+                        <dd>
+                            This is when you send (push) your local commits up to the main repository history. In this class push is sending the commits to GitHub which stores them for you in the cloud.
+                        </dd>
+                        <dt>
+                            pull
+                        </dt>
+                        <dd>
+                            This is when you receive (pull) new updates from the main repository history down to your your local computer. For this class you will only use this if you use multiple computers, this is normally a feature you need when working with multiple people on one project.
+                        </dd>
+                        <dt>
+                            merge
+                        </dt>
+                        <dd>
+                            This is when you take one branch and combine (merge) its code into another branch. Both branches still exist after the merge as separate branches with their own history but this allows you to easily update a branch with code changes; new features for example.
+                        </dd>
+                        <dt>
+                            A
+                        </dt>
+                        <dd>
+                            In the image there is a dot (commit) with the letter <mark>A</mark>. This commit is the start of a new branch called dev and it is starting with all the code from version 0.1 of the application. You'll notice that 3 different things have happened to this commit. First 2 new branches have been created from it: feature-1 and feature-2. Second there was some kind of update to the code in the dev branch and the code was updated. This is represented by the arrow moving to the right from <mark>A</mark>
+                        </dd>
+                        <dt>
+                            B
+                        </dt>
+                        <dd>
+                            In the image there is a dot (commit) with the letter <mark>B</mark>. You'll notice that 2 different things have happened to this commit. First all the changes that been made in the dev branch up to this point have been merged into the main branch; see letter <mark>C</mark> for more details. Second new code has been added to the dev branch indicated by the arrow moving to the right of <mark>B</mark>.
+                        </dd>
+                        <dt>
+                            C
+                        </dt>
+                        <dd>
+                            In the image there is a dot (commit) with the letter <mark>C</mark>. This commit marks a merge event where code from the dev branch (see <mark>B</mark>) was merged into the main branch and released as version 1 of the application. Notice that the dev branch is still moving forward with its own code changes after the merge. Eventually the code for the dev branch will be deemed ready for production and will be merged into main again.
+                        </dd>
+                    </dl>
+                    <h2>Install Git</h2>
+                    <p>
+                        You will need to install git on every computer you plan to use for this class. Please do this as soon as possible so you can follow the live demos in class.
+                    </p>
+                    <div class="callout">
+                        <h2>Close Applications:</h2>
+                        <p>
+                            When you install git it will not take effect in any applications until you restart them. Close VS Code and all terminals or command prompts before checking if git is working after you attempt to install it. For example, if you install git via terminal, the <code>git --help</code> command will always fail until your open a new terminal.
+                        </p>
+                    </div>
+                    <h2>Install Git: Windows</h2>
+                    <p>
+                        The following video is for an older version of git but it still works. Please watch the video to install and test that git is working on your Windows computer. You will need to make the following changes to the install (the video is wrong):
+                    </p>
+                    <ul class="smaller">
+                        <li>
+                            On the <mark>Adjusting your PATH environment</mark> page choose the following instead: <strong>Git from command line and also 3rd-party software</strong>
+                        </li>
+                        <li>
+                            On the <mark>Configuring extra options</mark> page you can use the default option for the <strong>credential manager</strong>. You do not need to pick the one shown in the video.
+                        </li>
+                    </ul>
+                    <a href="https://youtu.be/nbFwejIsHlY" target="_blank" data-video="YouTube">
+                        Git: How to Download & Install Git on Windows 10... by The Grok Shop
+                    </a>
+                    <h2>Install Git: Mac OS</h2>
+                    <p>
+                        Git should already be installed on your computer; it may be an older version. Open your terminal and run <code>git --version</code> and you should get a version string back. If you don't you will need to do the following:
+                    </p>
+                    <ol class="smaller">
+                        <li>
+                            Check that you have Homebrew (brew) installed. Open terminal and run the following <code>brew --version</code>. If you get a version string back move on to step 2. Otherwise visit <a href="https://brew.sh/" rel="" target="_blank">this page</a> and install Homebrew first.
+                        </li>
+                        <li>
+                            Run the following in your terminal <code>brew install git-gui</code>.
+                        </li>
+                        <li>
+                            Now test that you have git by running <code>git --version</code> in your terminal. If you do not get a version back troubleshoot by looking up YouTube videos, asking teammates for help, or visiting with a TA.
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
