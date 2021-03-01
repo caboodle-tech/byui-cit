@@ -1,0 +1,95 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Home Page Wireframe - BYUI";
+${{keywords}}    = "Home, Page, Wireframe, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Home Page Wireframe</h1>
+                    <p>
+                        This week you need to decide what the home page for your final projects website is going to look like. You do not need to create everything from scratch. Your site is going to use a provided template which includes the header and footer already. Your main focus will be how the page content is laid out. Take a look at the following wireframe that demonstrates what the project template looks like:
+                    </p>
+                    <button type="button" class="collapsible">Base Wireframe</button>
+                    <div class="collapsible-content">
+                        <img src="assets/base-wireframe.png" alt="Base wireframe example.">
+                    </div>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Plan</h2>
+                            <p>
+                                Plan a design for your sites home page that meets the following criteria. We have provided two examples of wireframes that meet these requirements below:
+                            </p>
+                            <ul>
+                                <li>
+                                    Must include 1 image in the pages content.
+                                </li>
+                                <li>
+                                    Must use at least 3 sections (headings) and include content for each section.
+                                </li>
+                                <li>
+                                    Completed home page wireframe must include the header and footer.
+                                </li>
+                            </ul>
+                            <br>
+                            <button type="button" class="collapsible">Wireframe Example 1</button>
+                            <div class="collapsible-content">
+                                <img src="assets/wireframe-1.png" alt="Wireframe example 1.">
+                            </div>
+                            <br>
+                            <button type="button" class="collapsible">Wireframe Example 2</button>
+                            <div class="collapsible-content">
+                                <img src="assets/wireframe-2.png" alt="Wireframe example 2.">
+                            </div>
+                            <br>
+                            <p>
+                                Keep in mind that your final project site must have two additional pages, listed as Page 1 and Page 2 in the Base Wireframe example. It would make sense to highlight these sections on your home page. You do not have to do this, but keeping this in mind might help when building your home page's wireframe...
+                            </p>
+                        </li>
+                        <!--
+https://app.diagrams.net/
+https://wireframe.cc/
+
+https://cloud.smartdraw.com/
+https://www.mockflow.com/
+https://draftium.com/
+https://www.figma.com/
+https://moqups.com/
+https://www.smartdraw.com/website-wireframe/wireframe-tool.htm
+                        -->
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                Your done with the repository for now. In class we will practice making changes to it and pushing those changes back to GitHub. For this assignment you will need to submit the URL to your GitHub repository. For example, the repository demoed in this assignment was: https://github.com/blizzardengle/keers-wdd-130
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    Submit the URL to your final project repository in Canvas. Please make sure this is the URL directly to your repository and not your GitHub user profile or some other page.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
