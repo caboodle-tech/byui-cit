@@ -1,0 +1,144 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Git Repository - BYUI";
+${{keywords}}    = "Git, Repository, Version Control, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Git Repository</h1>
+                    <p>
+                        Now that you have <mark>git</mark> installed on your computer(s) our next step is to create a repository for your final project website. In this assignment you will create a new repository on <mark>GitHub</mark>, clone it to your computer, make some changes, and push it back up to GitHub for safe keeping. If you are confused about the terminology used in this assignment make sure to revisit the <a href="../week-8/git-ready.html" target="_blank">Git Ready</a> assignment from last week.
+                    </p>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Create Repository</h2>
+                            <p>
+                                In a new tab please visit <a href="https://github.com" target="_blank" rel="">GitHub</a> and make sure you are logged-in. You should have created your GitHub account with your student email during Week 1. If you did not do this please revisit Week 1 and complete the <a href="../week-1/setup.html" target="_blank">account setup</a> process.
+                            </p>
+                            <img src="assets/create-new-repo.jpg" class="right" alt="Create new repo menu.">
+                            <p>
+                                On any page in GitHub (as long as you are logged-in) look in the upper right for a plus (+) icon. Click on this icon and a menu will appear. You need to select the first option in this list <em>New repository</em>, pictured here. Once you click on this option you will be taken to a new page to provide all the information for this new repository. Below is what this page looks like with markings added. These markings are explained below the image:
+                            </p>
+                            <img src="assets/new-repo-settings.jpg" alt="Create new repo page.">
+                            <ol>
+                                <li>
+                                    Unless you have used GitHub before as part of a business your username should be the only option for owner. If you have multiple options choose yourself. Next name the repository <mark>lastname-wdd-130</mark> where you <strong>replace</strong> <mark>lastname</mark> with your last name.
+                                </li>
+                                <li>
+                                    Add a simple description for this repository; you can copy what the image shows.
+                                </li>
+                                <li>
+                                    Keep the repository public. If you registered your account with GitHub correctly, you have free access to pro as a student. This offers you many additional features like private (hidden) repositories. We will not use that in this class but you can ask your instructor about them if your curious about them.
+                                </li>
+                                <li>
+                                    README files act as the public landing page for your repository. You can use this to tell people what your repository is all about. We could easily create this later but go ahead and check the box to create one now.
+                                </li>
+                                <li>
+                                    You are welcome to choose any license you like, just make sure you understand what your choosing. MIT is an open source license telling the world that your code (the repository) is safe to copy and use in other projects. You could add a license that is considered <em>closed source</em> but that would not make much sense here since the project is public. Public means everyone can see the source code, if they wanted to, anyone could take your code.
+                                </li>
+                                <li>
+                                    When you have completed steps 1-5 you can click on this green button to create and visit your new repository.
+                                </li>
+                            </ol>
+                            <hr>
+                            <p>
+                                If you followed all the steps correctly you should see a page similar to the following image. Depending on what you choose in the creation process some things may be different, like your username, readme file, and license:
+                            </p>
+                            <img src="assets/new-repo.png" alt="A new repository">
+                        </li>
+                        <li>
+                            <h2>Clone Repository</h2>
+                            <img src="assets/clone-url.jpg" class="right" alt="Cloning a repository by https.">
+                            <p>
+                                Now that you have successfully created a new repository we need to clone (copy) the repository down to your computer. You can repeat this process on multiple computers if you use more than one, but there is a much easier way we will teach you later, so you may want to hold off on cloning to multiple computers. Click on the green code button, the https tab, and then the clipboard to copy the repositories URL. This process is pictured here.
+                            </p>
+                            <hr>
+                            <p>
+                                With the URL copied to your clipboard there are multiple ways to clone the repository to your computer. One way is to use VS Code's clone repository feature. If you close all files, folder, and work spaces in VS Code you should see these options in the Explorer:
+                            </p>
+                            <img src="assets/vs-code-options.png" alt="VS Code Explorer options.">
+                            <p>
+                                Click on Clone Repository and paste the URL you copied into the box that appears. It should look something like this:
+                            </p>
+                            <img src="assets/vs-code-clone.png" alt="VS Code clone repository by URL.">
+                            <p>
+                                Next you will be prompted where to place the repository on your local machine. You can choose a new spot or add it to your existing workspace folder. If you can not use the Clone Repository button (the button is un-clickable) you have not installed git correctly. Ask a teammate, a TA, or your instructor for help. If you run into issues you may be able to do everything from the command line instead.
+                            </p>
+                            <hr>
+                            <p>
+                                Another way to clone the repository is to use the command line (terminal). The following screenshot shows how to do this using the terminal inside VS Code. To open the terminal in VS Code click on the Terminal menu option and then select New Terminal, or use the default shortcut <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>`</kbd>. Keep in mind that running the clone command will copy the repository to the current location you are at in the terminal. If you do not want the repository at the terminals current location make sure to navigate to the correct location first. Make sure you use the URL for your repository! Do not copy everything from the image below. All you need is <code>git clone</code> followed by your URL:
+                            </p>
+                            <img src="assets/clone-terminal.png" alt="Git clone via terminal.">
+                        </li>
+                        <li>
+                            <h2>What Visual Impairment Means for Your Software</h2>
+                            <p>
+                                Well there are many types of disabilities and user impairments, you will complete your crash course in designing for user accessibility by reading an article about designing websites for visually impaired users. Please note any questions you have about this article so you can ask your instructor about them in class: <a href="https://paper-leaf.com/insights/software-accessibility-visually-impaired/" rel="noreferrer noopener">Understanding What Visual Impairment Means for Your Software</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Setup Git Global Config</h2>
+                            <p>
+                                The last thing you need to do so you are prepared for the rest of the assignments this week is to setup git's configuration. There are far to many GUI (graphical user interface) tools that can do this for you, but we can not cover them all, instead we will teach you how to do it via the command line (terminal) since it will work for everyone. This is also a valuable skill to learn that will impress future employers.
+                            </p>
+                            <p>
+                                Open a command prompt (terminal) and type <code>git --version</code> to check that git is working. If you get an error message git is not working from your command line and you will need to troubleshoot this first. If your on Windows you might have made a mistake installing git and forgot to install (add) it to your PATH variable. You can try the installer again. Also look for an installed application called Git Bash. You can use this application instead of your computers built in command prompt or terminal.
+                            </p>
+                            <hr>
+                            <p>
+                                Add your name to the global config file for git with the following command. You must use double quotes to surround your name if it contains spaces. Keep in mind this name is publicly available. You may want to use your username from GitHub instead. Please note your name does not need to be in all caps and you should run only one of the following commands:
+                            </p>
+<pre class="lang-bash"><code># Option 1: Using your real name
+git config --global user.name "FIRST_NAME LAST_NAME"
+
+# Option 2: Using your GitHub user name
+git config --global user.name USERNAME
+</code></pre>
+                            <p>
+                                Now we need to add your email to the global config. Again, you have two options. We assume your using your BYUI email address for GitHub, if your not, make sure to use the same email registered with GitHub.
+                            </p>
+<pre class="lang-bash"><code># Option 1: Using your real email
+git config --global user.email YOUR_STUDENT_EMAIL@byui.edu
+
+# Option 2: Using your GitHub no-reply email
+# so your personal email isn't shown publicly
+git config --global user.email YOUR_GITHUB_USERNAME@users.noreply.github.com
+</code></pre>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                Your done with the repository for now. In class we will practice making changes to it and pushing those changes back to GitHub. For this assignment you will need to submit the URL to your GitHub repository. For example, the repository demoed in this assignment was: https://github.com/blizzardengle/keers-wdd-130
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    Submit the URL to your final project repository in Canvas. Please make sure this is the URL directly to your repository and not your GitHub user profile or some other page.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
