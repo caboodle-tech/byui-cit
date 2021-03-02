@@ -30,7 +30,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         <li>
                             <h2>Create Repository</h2>
                             <p>
-                                In a new tab please visit <a href="https://github.com" target="_blank" rel="">GitHub</a> and make sure you are logged-in. You should have created your GitHub account with your student email during Week 1. If you did not do this please revisit Week 1 and complete the <a href="../week-1/setup.html" target="_blank">account setup</a> process.
+                                In a new tab please visit <a href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a> and make sure you are logged-in. You should have created your GitHub account with your student email during Week 1. If you did not do this please revisit Week 1 and complete the <a href="../week-1/setup.html" target="_blank">account setup</a> process.
                             </p>
                             <img src="assets/create-new-repo.jpg" class="right" alt="Create new repo menu.">
                             <p>

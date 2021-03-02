@@ -44,7 +44,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                     Must use at least 3 sections (headings) and include content for each section.
                                 </li>
                                 <li>
-                                    Completed home page wireframe must include the header and footer.
+                                    Must include the header and footer in the wireframe.
                                 </li>
                             </ul>
                             <br>
@@ -59,29 +59,50 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             </div>
                             <br>
                             <p>
-                                Keep in mind that your final project site must have two additional pages, listed as Page 1 and Page 2 in the Base Wireframe example. It would make sense to highlight these sections on your home page. You do not have to do this, but keeping this in mind might help when building your home page's wireframe...
+                                Since your final project site will have additional pages it might make sense to reference them on your home page. For example, the first section could be a welcome to the website, the second section could talk about your services, and the third could lead to your contact page. Keep this in mind when your making your wireframe. You do not need all the pages text content or actual images yet, but if you do have resources you should include them in the wireframe so it matches your final website closer.
+                            </p>
+                            <p>
+                                Make sure to include the header and footer in your wireframe. You can alter the header and footer design to match the same style (colors, fonts, etc.) as your websites wireframe style. Remember that you will be making additional wireframes next week. Keep a copy of the work you make so you can keep the same header and footer design for every wireframe.
                             </p>
                         </li>
-                        <!--
-https://app.diagrams.net/
-https://wireframe.cc/
-
-https://cloud.smartdraw.com/
-https://www.mockflow.com/
-https://draftium.com/
-https://www.figma.com/
-https://moqups.com/
-https://www.smartdraw.com/website-wireframe/wireframe-tool.htm
-                        -->
+                        <li>
+                            <h2>Create</h2>
+                            <p>
+                                Using a wireframing tool or drawing application create the wireframe for your home page. The following list shows some of the top drawing and wireframing tools you could use. The first two options are the simplest to use. The remaining options are more advanced and usually require creating a free account:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://app.diagrams.net/" rel="noreferrer noopener" target="_blank">Draw IO</a>
+                                </li>
+                                <li>
+                                    <a href="https://wireframe.cc/" rel="noreferrer noopener" target="_blank">Wireframe CC</a>
+                                </li>
+                                <li>
+                                    <a href="https://cloud.smartdraw.com/" rel="noreferrer noopener" target="_blank">Smart Draw</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.mockflow.com/" rel="noreferrer noopener" target="_blank">Mock Flow</a>
+                                </li>
+                                <li>
+                                    <a href="https://draftium.com/" rel="noreferrer noopener" target="_blank">Draftium</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.figma.com/" rel="noreferrer noopener" target="_blank">Figma</a>
+                                </li>
+                                <li>
+                                    <a href="https://moqups.com/" rel="noreferrer noopener" target="_blank">Moqups</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li>
                             <h2>Complete</h2>
                             <p>
-                                Your done with the repository for now. In class we will practice making changes to it and pushing those changes back to GitHub. For this assignment you will need to submit the URL to your GitHub repository. For example, the repository demoed in this assignment was: https://github.com/blizzardengle/keers-wdd-130
+                                To prove that you have completed this assignment you will need to submit the home page wireframe you created to Canvas. You must submit an image file and not some other format like <code>xml</code> or <code>drawio</code>.
                             </p>
                             <div class="rubric">
                                 <h2>Grading</h2>
                                 <p>
-                                    Submit the URL to your final project repository in Canvas. Please make sure this is the URL directly to your repository and not your GitHub user profile or some other page.
+                                    Submit your home page wireframe as a <code>jpg</code>, <code>jpeg</code>, <code>svg</code>, or <code>png</code> image to this assignment in Canvas.
                                 </p>
                             </div>
                         </li>
