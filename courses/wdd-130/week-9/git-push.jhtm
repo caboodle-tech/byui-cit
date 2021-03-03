@@ -50,6 +50,25 @@ Semester: [Semester Year]
                                 Using VS Code's built-in git tool, push this change up to GitHub with the following commit message:
                             </p>
 <pre class="lang-markdown"><code>commit via gui</code></pre>
+                            <hr>
+                            <p>
+                                The following image and steps will walk you through using the GUI tools to create a commit and push: 
+                            </p>
+                            <img src="assets/gui-commit.jpg" alt="VS Code commit and push with GUI.">
+                            <ol>
+                                <li>
+                                    Click on the git icon in the sidebar. It should have a dot with a number inside it corresponding to how many files we have changed.
+                                </li>
+                                <li>
+                                    In the message panel type a message for this commit. Remember after choosing a message title you can press enter twice and type a longer message if you would like.
+                                </li>
+                                <li>
+                                    Press the check-mark icon to create (accept) the commit and then select stage all if a pop-up message appears.
+                                </li>
+                                <li>
+                                    In the footer of VS Code you should see this commit ready for pushing. Click on the up and down arrow icon to push your changes up.
+                                </li>
+                            </ol>
                         </li>
                         <li>
                             <h2>Push With Command Line</h2>
