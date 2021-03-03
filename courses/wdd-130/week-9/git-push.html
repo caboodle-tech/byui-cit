@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Christopher Keers">
+    <meta name="keywords" content="Git, Push, Version Control, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+    <meta name="description" content="This is a homework assignment for WDD 130.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git Push - BYUI</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="../../../favicon.jpg">
+    <script src="../../../js/stem.js"></script>
+    <script src="../../../js/main.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                <a href="../../../courses/wdd-130/index.html">
+    <img src="../../../assets/byui-logo.jpg" alt="BYUI Logo" id="logo">
+</a>
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Git Push</h1>
+                    <p>
+                        You will continue to practice <mark>pushing</mark> code up to GitHub this week in class. This assignment will allow you to prove to your instructor that you have mastered this skill. You will use the git GUI (graphical user interface) tools to push one change up to GitHub and then the command line (terminal) to send another.
+                    </p>
+                    <div class="callout">
+                        <h2>Get Help:</h2>
+                        <p>
+                            If you are still having trouble using git or pushing your changes to GitHub by the end of this assignment you need to reach out for help. Ask your teammates to help you, visit with a TA, or scheduled an appointment with your instructor. Next week we will be moving on to other topics.
+                        </p>
+                    </div>
+                    <p>
+                        Please note that you can not complete this assignment until you have finished the <a href="git-repo.html">Git Repository</a> assignment. If you have not completed that assignment already, go back and start with that assignment first.
+                    </p>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Push With GUI</h2>
+                            <p>
+                                Replace all the contents of your <code>README.md</code> file with the following. Make sure to replace the bracketed parts with their correct values. If you leave a bracket <code>[</code> or <code>]</code> in your submission you will be given a 0:
+                            </p>
+<pre class="lang-markdown"><code># WDD 130 Final Project
+Owner: [Full Name Here]
+
+Semester: [Semester Year]
+</code></pre>
+                            <p>
+                                Using VS Code's built-in git tool, push this change up to GitHub with the following commit message:
+                            </p>
+<pre class="lang-markdown"><code>commit via gui</code></pre>
+                            <hr>
+                            <p>
+                                The following image and steps will walk you through using the GUI tools to create a commit and push: 
+                            </p>
+                            <img src="assets/gui-commit.jpg" alt="VS Code commit and push with GUI.">
+                            <ol>
+                                <li>
+                                    Click on the git icon in the sidebar. It should have a dot with a number inside it corresponding to how many files we have changed.
+                                </li>
+                                <li>
+                                    In the message panel type a message for this commit. Remember after choosing a message title you can press enter twice and type a longer message if you would like.
+                                </li>
+                                <li>
+                                    Press the check-mark icon to create (accept) the commit and then select stage all if a pop-up message appears.
+                                </li>
+                                <li>
+                                    In the footer of VS Code you should see this commit ready for pushing. Click on the up and down arrow icon to push your changes up.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h2>Push With Command Line</h2>
+                            <p>
+                                Add the following content to the bottom of your <code>README.md</code> file. It is important for the look of your <code>README.md</code> file that you include the empty line in the code below. Do not remove the empty line, this separates the paragraph from the rest of the content in the file.
+                            </p>
+<pre class="lang-markdown"><code>
+The `website` branch contains the live website hosted with GitHub pages. The `dev` branch is where develpment for this website takes place.
+</code></pre>
+                            <p>
+                                Using the command line (terminal) push your changes up to GitHUb with the following commit message:
+                            </p>
+<pre class="lang-markdown"><code>commit via command line</code></pre>
+                            <hr>
+                            <p>
+                                Here are the command line steps. Please do not copy-paste this code. If you need help with the command line you are welcome to manually type the following commands. Make sure to press <kbd>Enter</kbd> after every command (line). Remember your terminal must be opened to the correct directory (your repositories root directory) for the following commands to work:
+                            </p>
+<pre class="lang-bash"><code>git add .
+git commit -m "commit via command line"
+git push
+</code></pre>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                You will prove your completion of this assignment by submitting the URL to your repositories commit history page. To navigate to this page click on the commit history icon from your repositories main page. Pictured below:
+                            </p>
+                            <img src="assets/commit-history-icon.jpg" alt="GitHub commit history icon.">
+                            <p>
+                                You should then be taken to a page similar to the following image. You may have many more commits than pictured, but the last two commits should be the ones from this assignment:
+                            </p>
+                            <img src="assets/commit-history.png" alt="GitHub commit history.">
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    Submit the URL to the commit history page of your repository to Canvas. If you submit a URL to any other page on GitHub, including to your main repository page, you may be given a 0.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        <footer>
+    <div class="content">
+        This work was created by the <a href="https://www.byui.edu/computer-information-technology" target="_blank">Computer Information Technology Department</a> at <a href="https://www.byui.edu/" target="_blank">Brigham Young University Idaho</a> and is licensed under a <a href="../../../LICENSE-CC-BY-NC-SA.txt" target="_blank">Creative Commons BY-NC-SA 4.0 License</a> unless noted otherwise. The <a href="https://github.com/caboodle-tech/byui-cit" target="_blank">source code</a> for this website is licensed under the <a href="../../../LICENSE-MIT.txt" target="_blank">MIT License</a> unless noted otherwise.
+    </div>
+</footer>
+    </div>
+</body>
+</html>
