@@ -99,12 +99,27 @@ var byui = ( function() {
             fig.innerHTML = img.outerHTML;
 
             if ( img.dataset.caption ) {
-                fig.innerHTML = fig.innerHTML + '<figcaption>' + img.dataset.caption + '</figcaption>';
+                fig.innerHTML = fig.innerHTML + '<figcaption>' + convertMdLink( img.dataset.caption ) + '</figcaption>';
             }
 
             img.parentNode.replaceChild( fig, img );
         } );
 
+    };
+
+    var convertMdLink = function( data ) {
+        var links = data.match(/\[([^\[\]]*)\]\((.*?)\)/g);
+        if ( links ) {
+            links.forEach( function( link ) {
+                var parts = link.match(/\[([^\[\]]*)\]\((.*?)\)/);
+                if ( parts.length == 3 ) {
+                    console.log(link)
+                    a = '<a href="' + parts[2] + '" target="_blank" rel="noreferrer noopener">' + parts[1] + '</a>';
+                    data = data.replace( link, a );
+                }
+            } );
+        }
+        return data;
     };
 
     var convertTables = function() {
