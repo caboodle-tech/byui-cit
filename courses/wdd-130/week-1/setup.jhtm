@@ -39,7 +39,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         </li>
                         <li>
                             <p>
-                                Install <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener">VS Code</a> on your machine; your instructor will demo in class how to install any extensions you need for this class.
+                                Install <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer noopener">VS Code</a> on your machine. You will need to add the Live Server extension to VS Code. Your instructor will demo in class how to install any additional extensions needed for this class.
                             </p>
                             <ul>
                                 <li>
@@ -48,6 +48,11 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                     </p>
                                 </li>
                             </ul>
+                            <hr>
+                            <p>
+                                If you would like to install extension(s) yourself before class the following video will help. Please note that this video does not support Closed Captions (CC). If you are in need of closed captioning please note that this video is not required for class and your instructor will do a live demonstration of the same material covered in this video.
+                            </p>
+                            <a href="https://youtu.be/SKcZ3cwX8lA" target="_blank" rel="noreferrer noopener" data-video="YouTube">Get started with VS Code Extensions by Visual Studio Code</a>
                         </li>
                         <li>
                             <p>
@@ -56,7 +61,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             <div class="rubric">
                                 <h2>Grading:</h2>
                                 <p>
-                                    Submit the following template with the correct changes as a <strong>Text Entry</strong> or <strong>Upload</strong> (create a word document) to this assignment in Canvas to prove you have completed these steps. You will need to use a <a href="https://youtu.be/LXJjN_nzYZQ" target="_blank" rel="noreferrer noopener">screen capture tool</a> to take a picture of your screen and replace the placeholder image in your submission by copy-pasting your new image into the submission. Please do not submit a URL to your screenshot.
+                                    Submit the following template with the correct changes as a <strong>Text Entry</strong> or <strong>Upload</strong> (create a word document) to this assignment in Canvas to prove you have completed these steps. You will need to use a <a href="https://youtu.be/LXJjN_nzYZQ" target="_blank" rel="noreferrer noopener">screen capture tool</a> to take a picture of your screen and replace the placeholder image in your submission by copy-pasting your new image into the submission. Please do not submit a URL to your screenshot. If you leave a bracket <code>[</code> or <code>]</code> in your submission you will be given a 0.
                                 </p>
                             </div>
                         </li>

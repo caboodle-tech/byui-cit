@@ -1,0 +1,89 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Prepare Repository - BYUI";
+${{keywords}}    = "Prepare, Repository, Repo, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Prepare Repository</h1>
+                    <p>
+                        This is a relatively simple assignment designed to give you a little more practice with <mark>git</mark>, <mark>GitHub</mark>, and pushing changes. You will need to copy several files into your existing repository for this assignment, make sure all the work you do is done in your <mark>dev</mark> (development) branch.
+                    </p>
+                    <div class="callout">
+                        <h2>Stop:</h2>
+                        <p>
+                            You must have completed the branches assignment before starting this assignment! Remember all your work must be done in the <mark>dev</mark> branch of your repository unless you are explicitly told otherwise.
+                        </p>
+                    </div>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Download Template Files</h2>
+                            <p>
+                                To assist you with your final project site we have prepared a template site for you to use. This site was designed to help you meet the bare minimum requirements for this class. You are encouraged to take this site and make it your own. Remember you will be graded on how well you demonstrate your growth in web development and design. Use this template as an opportunity to showcase your growth and skills.
+                            </p>
+                            <p>
+                                Download the <a href="source/source-repo.zip" target="_blank" download>template files</a> and extract all the files into your repository. Make sure you are on the <mark>dev</mark> branch when you do this! Please do not delete the <code>README.md</code> or <code>LICENSE</code> files.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Explore Files</h2>
+                            <p>
+                                There are quite a few files and directories in this download. Take a moment to open and explore these files in VS Code. Some brief highlights you should pay attention to are:
+                            </p>
+                            <ul>
+                                <li>
+                                    The assets directory has a directory for each of your pages. This is a less common way of saving asset (images, etc.) files, but we will use it for this project. Make sure to save images into their correct folder.
+                                </li>
+                                <li>
+                                    The CSS directory has a file called <code>normalize.css</code>. Can you tell what this file is for? Ask your instuctor if you can't figure it out. Make sure to include this file on every HTML page of your site.
+                                </li>
+                                <li>
+                                    The JS directory holds the JavaScript files for your site. You will need to include the <code>dark-mode.js</code> and <code>fake-send.js</code> in every HTML that makes sense to; ask you instructor if your unsure. <code>dark-mode.js</code> handles toggling dark mode on and off, <code>fake-send.js</code> is used by the contact page to <em>send</em> the form.
+                                </li>
+                                <li>
+                                    You will notice that <code>contact-us.html</code> has some code in it already. This is not a valid HTML file. You must include this code in your design of the Contact Us page.
+                                </li>
+                            </ul>
+                            <hr>
+                            <p>
+                                Now that you have explored the source files for this site, lets view it in your web browser. Please launch a Live Server session and explore the site in your browser. If you do not have the Live Server extension installed in VS Code please install it. If you need help refer back to the Week 1 assignment: <a href="../week-1/setup.html" target="_blank">Accounts and Software Setup</a>.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Push To Complete</h2>
+                            <p>
+                                Once you are done exploring all the source files and demoing the site in your web browser, push your changes to GitHub with the following commit message:
+                            </p>
+<pre class="lang-markdown"><code>added template source files</code></pre>
+                            <div class="rubric">
+                                <h2>Grading:</h2>
+                                <p>
+                                    You will submit the URL to your <mark>dev</mark> branch to Canvas. This is not the main URL to your repository but the URL to the development branch of your main repository. Your commit message must match what we asked you to use.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
