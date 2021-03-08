@@ -35,21 +35,21 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                             <p>
                                 The foundation for any web or graphic design is: contrast, alignment, repetition, and proximity. Each of these core design principles contains sub-principles that follow the core rule. For example, contrast teaches us the principles of color theory and size, which in turn reminds us that things like color and size of text could affect how easy or hard something is to view for a user. These principles are also coupled together. You may have text that is high contrast, meaning the size and color is easy for a user to read, but with bad alignment or placing the text over an element with a similar color we lose contrast. Please review the Principles of Design graphic below:
                             </p>
-                            <img src="assets/principles-of-design.jpg" alt="Principles of Design Graphic" class="center" data-caption="Principles of Design by Paper Leaf">
+                            <img src="assets/principles-of-design.jpg" alt="Principles of Design Graphic" class="center" data-caption="[Principles of Design](https://paper-leaf.com/insights/principles-of-design-quick-reference-poster/) by Paper Leaf">
                         </li>
                         <li>
                             <h2>Elements of Deisgn</h2>
                             <p>
                                 Elements of Design builds on the Principles of Design. Review the graphic below and identity which Elements of Design belong to which core Design Principle from the previous section:
                             </p>
-                            <img src="assets/elements-of-design.jpg" alt="Elements of Design Graphic" class="center" data-caption="Elements of Design by Paper Leaf">
+                            <img src="assets/elements-of-design.jpg" alt="Elements of Design Graphic" class="center" data-caption="[Elements of Design](https://paper-leaf.com/insights/elements-of-design-quick-reference-sheet/) by Paper Leaf">
                         </li>
                         <li>
                             <h2>Color Theory</h2>
                             <p>
                                 Color Theory is one specific Design Element and is related to the core Design Principle of contrast. Colors play a major role in how a user perceives something, especially when coupled with the principles of contrast, alignment, and proximity. Some colors do well next to each other, others look great as a backgrounds, and sometimes we can convey a meaning to the user by the color we use. In many countries for example, red is seen as danger, an intense warning, or the mark of doing something wrong. Keep your audience in mind when selecting colors and ask yourself: What am I conveying with this color? What mood or tone am I setting? Please review the following Color Theory graphic for more information:
                             </p>
-                            <img src="assets/color-theory.jpg" alt="Color Theory Graphic" class="center" data-caption="Color Theory by Paper Leaf">
+                            <img src="assets/color-theory.jpg" alt="Color Theory Graphic" class="center" data-caption="[Color Theory](https://paper-leaf.com/insights/color-theory-quick-reference-poster/) by Paper Leaf">
                         </li>
                         <li>
                             <h2>Complete</h2>
