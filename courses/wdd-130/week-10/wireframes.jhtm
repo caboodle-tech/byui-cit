@@ -1,0 +1,128 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "About Us and Contact Us Wireframe - BYUI";
+${{keywords}}    = "About Us, Contact Us, Page, Wireframe, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>About Us and Contact Us Wireframe</h1>
+                    <p>
+                        This week you need to decide what the about us and contact us pages are going to look like. Remember you do not need to create everything from scratch. Your site is going to use a provided template which includes the header and footer already. Your main focus will be how the page content is laid out. Take a look at the following wireframe that demonstrates what the project template looks like:
+                    </p>
+                    <button type="button" class="collapsible">Base Wireframe</button>
+                    <div class="collapsible-content">
+                        <img src="../week-9/assets/base-wireframe.png" alt="Base wireframe example.">
+                    </div>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Plan</h2>
+                            <p>
+                                Plan a design for your sites about us page that meets the following criteria. We have provided an example wireframe that meets these requirements below:
+                            </p>
+                            <ul>
+                                <li>
+                                    Must provide a history of the business below an <code>h1</code> headline.
+                                </li>
+                                <li>
+                                    Must provide at least 3 employee profiles which includes at a bare minimum the employee's name, title, and short biography.
+                                </li>
+                                <li>
+                                    Must include at least 3 <a href="https://www.w3schools.com/howto/howto_css_cards.asp" target="_blank" rel="noreferrer noopener">card style elements</a> on the page; these must look natural to your design, don't just toss them into the page for points.
+                                </li>
+                            </ul>
+                            <br>
+                            <button type="button" class="collapsible">About Us Wireframe Example</button>
+                            <div class="collapsible-content">
+                                <img src="assets/about-us-wireframe.png" alt="About Us page example wireframe.">
+                            </div>
+                            <hr>
+                            <p>
+                                Plan a design for your sites contact us page that meets the following criteria. We have provided an example wireframe that meets these requirements below:
+                            </p>
+                            <ul>
+                                <li>
+                                    Must provide an introduction to the page with calls to action; link to other parts of your site, have a mini frequently asked questions section, etc. Ask you instructor if you are confused about this requierment.
+                                </li>
+                                <li>
+                                    Must provide a contact form that accepts at a minimum the users name, subject of their message, and the message itself.
+                                </li>
+                            </ul>
+                            <br>
+                            <button type="button" class="collapsible">Contact Us Wireframe Example</button>
+                            <div class="collapsible-content">
+                                <img src="assets/contact-us-wireframe.png" alt="Contact Us page example wireframe.">
+                            </div>
+                            <hr>
+                            <p>
+                                Make sure to include the header and footer in your wireframe. You can alter the header and footer design to match the same style (colors, fonts, etc.) as your websites wireframe style. Remember that you will be making additional wireframes next week. Keep a copy of the work you make so you can keep the same header and footer design for every wireframe.
+                            </p>
+                            <p>
+                                Remember unlike your first semester project we are not doing additional assignments to help you create the content for these pages. As you work on your wireframes you might want to spend some time thinking about the content for these pages.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Create</h2>
+                            <p>
+                                Using a wireframing tool or drawing application create the wireframe for your about us and contact us pages. The following list shows some of the top drawing and wireframing tools you could use. The first two options are the simplest to use. The remaining options are more advanced and usually require creating a free account:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://app.diagrams.net/" rel="noreferrer noopener" target="_blank">Draw IO</a>
+                                </li>
+                                <li>
+                                    <a href="https://wireframe.cc/" rel="noreferrer noopener" target="_blank">Wireframe CC</a>
+                                </li>
+                                <li>
+                                    <a href="https://cloud.smartdraw.com/" rel="noreferrer noopener" target="_blank">Smart Draw</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.mockflow.com/" rel="noreferrer noopener" target="_blank">Mock Flow</a>
+                                </li>
+                                <li>
+                                    <a href="https://draftium.com/" rel="noreferrer noopener" target="_blank">Draftium</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.figma.com/" rel="noreferrer noopener" target="_blank">Figma</a>
+                                </li>
+                                <li>
+                                    <a href="https://moqups.com/" rel="noreferrer noopener" target="_blank">Moqups</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                To prove that you have completed this assignment you will need to submit the wireframes you created to Canvas. You must submit a <strong>document file</strong> this week and not some other format like <code>xml</code>, <code>drawio</code>, <code>jpg</code>, <code>png</code>, etc.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    Submit your wireframes by inserting them into a document and submitting the document to Canvas. Acceptable submission formats are <code>doc</code>, <code>docx</code>, <code>odt</code>, or <code>pdf</code>. Do not upload the images individually or you will receive a 0 for failing to follow instructions.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

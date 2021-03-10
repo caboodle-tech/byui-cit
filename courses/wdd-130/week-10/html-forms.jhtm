@@ -1,0 +1,70 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "HTML Forms - BYUI";
+${{keywords}}    = "HTML Forms, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>HTML Forms</h1>
+                    <p>
+                        This week you will design the wireframe for your contact us page. Next week you need to be ready to build the HTML for that page. In class your instructor will demonstrate the basics of HTML forms but this assignment will help teach you the concepts in greater depth. There is nothing to turn for this assignment but you will be quizzed on the concepts taught here.
+                    </p>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Study</h2>
+                            <p>
+                                <a href="https://jgthms.com/" target="_blank" rel="noreferrer noopener">Jeremy Thomas</a> has created a great resource called <a href="https://marksheet.io/" target="_blank" rel="noreferrer noopener">MarkSheet</a>. This is a 50 lesson crash course into web development with a focus on CSS and <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor" target="_balnk" rel="noreferrer noopener">CSS preprocessors</a>.
+                            </p>
+                            <p>
+                                You will need to study just the HTML Forms section: <a href="https://marksheet.io/html-forms.html" target="_blank" rel="noreferrer noopener">MakeSheet HTML Forms</a>.
+                            </p>
+                            <hr>
+                            <p>
+                                You should also review the additional resources below. Each resource teaches about HTML forms so there may be some overlap in concepts, but this can help you decide which online resource you find helpful and which ones you do not.
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.tutorialspoint.com/html/html_forms.htm" target="_blank" rel="noreferrer noopener">Tutorials Point: HTML Forms</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noreferrer noopener">W3Schools: HTML Forms</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Practice and Question</h2>
+                            <p>
+                                Make sure you understand what you studied from the previous section. Practice building your own HTML form to get ready for next week. If you have questions or concerns make sure to bring them up in class so you instructor can demonstrate the answer.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                There is nothing to turn in for this study assignment but you will be quizzed on this material later in the week.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

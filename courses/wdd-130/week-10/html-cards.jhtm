@@ -1,0 +1,58 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "HTML Cards - BYUI";
+${{keywords}}    = "HTML Cards, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>HTML Cards</h1>
+                    <p>
+                        This week you will design the wireframe for your about us page. Next week you need to be ready to build the HTML for that page. In class your instructor will demonstrate the basics of HTML cards but this assignment will help teach you the concepts in greater depth. There is nothing to turn for this assignment but you will be quizzed on the concepts taught here.
+                    </p>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Study</h2>
+                            <p>
+                                W3Schools has a simple to follow tutorial on HTML Cards split into 2 parts. You will need to study the <a href="https://www.w3schools.com/howto/howto_css_cards.asp" target="_blank" rel="noreferrer noopener">HTML part</a> and the <a href="https://www.w3schools.com/w3css/w3css_cards.asp" target="_blank" rel="noreferrer noopener">CSS part</a>. Please note that the CSS part is demonstrating W3Schools style guide. You can use the tutorials to see how all the styles work but you will need to use your inspector to view the actual CSS code.
+                            </p>
+                            <p>
+                                Free Frontend has built a collection of <a href="https://freefrontend.com/css-cards/" target="_blank" rel="noreferrer noopener">85 CSS Cards</a> that you might find helpful when its time to make the HTML for your about us page.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Practice and Question</h2>
+                            <p>
+                                Make sure you understand what you studied from the previous section. Practice building your own HTML cards to get ready for next week. If you have questions or concerns make sure to bring them up in class so you instructor can demonstrate the answer.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                There is nothing to turn in for this study assignment but you will be quizzed on this material later in the week.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
