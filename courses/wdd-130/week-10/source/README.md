@@ -1,0 +1,2 @@
+# Note to Instructors
+The source repository is imperfect by design! Students will demonstrate their skills by catching the mistakes and fixing them. For example, the company name section in the base wireframe image was not accounted for in the HTML. When students add this section it will break their design because the header uses a 2 column grid, not a 3 column grid.
