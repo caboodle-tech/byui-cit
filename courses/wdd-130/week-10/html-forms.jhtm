@@ -33,7 +33,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 <a href="https://jgthms.com/" target="_blank" rel="noreferrer noopener">Jeremy Thomas</a> has created a great resource called <a href="https://marksheet.io/" target="_blank" rel="noreferrer noopener">MarkSheet</a>. This is a 50 lesson crash course into web development with a focus on CSS and <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor" target="_balnk" rel="noreferrer noopener">CSS preprocessors</a>.
                             </p>
                             <p>
-                                You will need to study just the HTML Forms section: <a href="https://marksheet.io/html-forms.html" target="_blank" rel="noreferrer noopener">MakeSheet HTML Forms</a>.
+                                You will need to study just the HTML Forms section: <a href="https://marksheet.io/html-forms.html" target="_blank" rel="noreferrer noopener">MakeSheet HTML Forms</a>. The last time we checked there was an error in the code for <code>select</code> tags. Please review the following link for an example of a proper <a href="https://www.w3schools.com/tags/tag_select.asp" target="_blank" rel="noreferrer noopener">HTML select tag</a>.
                             </p>
                             <hr>
                             <p>

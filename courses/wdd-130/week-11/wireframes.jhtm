@@ -1,0 +1,99 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Child Page Wireframes - BYUI";
+${{keywords}}    = "Child, Page, Wireframe, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Child Page Wireframes</h1>
+                    <p>
+                        This week you need to decide what the child pages are going to look like. Remember you do not need to create everything from scratch. Your site is going to use a provided template which includes the header and footer already. Your main focus will be how the page content is laid out. Take a look at the following wireframe that demonstrates what the project template looks like:
+                    </p>
+                    <button type="button" class="collapsible">Base Wireframe</button>
+                    <div class="collapsible-content">
+                        <img src="../week-9/assets/base-wireframe.png" alt="Base wireframe example.">
+                    </div>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Plan</h2>
+                            <p>
+                                Plan a design for your sites child pages that meets the following criteria:
+                            </p>
+                            <ul>
+                                <li>
+                                    Must demonstrate the skills you have learned in this course.
+                                </li>
+                                <li>
+                                    Must have a functional and creative design.
+                                </li>
+                            </ul>
+                            <p>
+                                The requirements for the child pages are broad on purpose, this should allow you the flexibility to design pages that fit with your site plan. The grading for these pages will be subjective. You do not need to go over board with your designs but a wall of text does not demonstrate your skills. You might consider looking up website designs and borrowing ideas. You may need to research new skills and techniques for these pages. Use these pages as an opportunity to show your instructor you have grown in your skills.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Create</h2>
+                            <p>
+                                Using a wireframing tool or drawing application create the wireframe for your child pages. The following list shows some of the top drawing and wireframing tools you could use. The first two options are the simplest to use. The remaining options are more advanced and usually require creating a free account:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://app.diagrams.net/" rel="noreferrer noopener" target="_blank">Draw IO</a>
+                                </li>
+                                <li>
+                                    <a href="https://wireframe.cc/" rel="noreferrer noopener" target="_blank">Wireframe CC</a>
+                                </li>
+                                <li>
+                                    <a href="https://cloud.smartdraw.com/" rel="noreferrer noopener" target="_blank">Smart Draw</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.mockflow.com/" rel="noreferrer noopener" target="_blank">Mock Flow</a>
+                                </li>
+                                <li>
+                                    <a href="https://draftium.com/" rel="noreferrer noopener" target="_blank">Draftium</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.figma.com/" rel="noreferrer noopener" target="_blank">Figma</a>
+                                </li>
+                                <li>
+                                    <a href="https://moqups.com/" rel="noreferrer noopener" target="_blank">Moqups</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                To prove that you have completed this assignment you will need to submit the wireframes you created to Canvas. You must submit a <strong>document file</strong> this week and not some other format like <code>xml</code>, <code>drawio</code>, <code>jpg</code>, <code>png</code>, etc.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    Submit your wireframes by inserting them into a document and submitting the document to Canvas. Acceptable submission formats are <code>doc</code>, <code>docx</code>, <code>odt</code>, or <code>pdf</code>. Do not upload the images individually or you will receive a 0 for failing to follow instructions.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
