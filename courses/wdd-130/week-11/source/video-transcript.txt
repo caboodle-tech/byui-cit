@@ -1,0 +1,11 @@
+When should you use flexbox and when should you use CSS grids? For a long time we've been using HTML tables and floats to position boxes where we want them on the website, but now we have flexbox and CSS grid.
+
+This is not a guide of how to use either of them, there are plenty of guides out there, this is more when to use what. To be clear, the CSS grid can do a lot of things the flexbox can do, and flexbox can do a lot of things that CSS Grid can do. But in some areas the CSS grid is better and more convenient, and in other areas flexbox is more convenient and better.
+
+Flexbox is really good at aligning things on one axis. For example, the X axis called the Row, or the Y axis called the Column. But that only works in one dimension, if you want to do something, well like a grid using both X and Y axis, like this, CSS grid is much better. CSS grid is also much better like a whole page layout, imagine if this is your side menu, this is your content, and this is your footer, I would use CSS grid for this.
+
+But where they really shine is when you use them together. For example, you can use, flexbox inside of the CSS grid. If this is your website and you used the grid system layout for this, and this is a grid layout item, you can put flexbox [inside the item] to align things inside your footer or inside your grid item.
+
+And same thing goes with CSS grid inside of a flexbox, if you align this using flexbox, you can actually structure... have the same structure as you have in your website, inside the flexbox item. Alright. Honestly anyway you want.
+
+So this is how you should use them, you should use them together, and should learn both. Flexbox has slightly better browser support because its a little bit older than CSS grid, uh but I will link in the description down below on a full list of what supports what? But overall, this is how you use them. 

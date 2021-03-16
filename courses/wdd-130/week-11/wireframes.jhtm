@@ -43,9 +43,19 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 <li>
                                     Must have a functional and creative design.
                                 </li>
+                                <li>
+                                    At least one of the pages must use an HTML <a href="https://www.w3schools.com/tags/tag_table.asp" target="" rel="">table</a> that includes a properly formatted <a href="https://www.w3schools.com/tags/tag_thead.asp" target="_blank" rel="noreferrer noopener">table header</a> and <a href="https://www.w3schools.com/tags/tag_tbody.asp" target="_blank" rel="noreferrer noopener">table body</a></body>.
+                                </li>
                             </ul>
                             <p>
                                 The requirements for the child pages are broad on purpose, this should allow you the flexibility to design pages that fit with your site plan. The grading for these pages will be subjective. You do not need to go over board with your designs but a wall of text does not demonstrate your skills. You might consider looking up website designs and borrowing ideas. You may need to research new skills and techniques for these pages. Use these pages as an opportunity to show your instructor you have grown in your skills.
+                            </p>
+                            <hr>
+                            <p>
+                                Your website must have two child (sub) pages but you are free to decided the purpose of these pages. Common examples include a services page and a frequently asked questions (FAQ) page. Your service page could include a table of services at their prices and/or your FAQ page could use a table to display questions and answers. You could also look at using a <a href="https://www.w3schools.com/tags/tag_dl.asp" target="_blank" rel="noreferrer noopener">definition list</a> for the FAQ page, where questions are the list terms and the answers are their definitions.
+                            </p>
+                            <p>
+                                Remember these are just examples you could use. You are allowed to choose the purpose and content of these pages, but make sure to update everything in your project accordingly. For example the file names <code>subpage-1.html</code> and <code>subpage-2.html</code> should be changed to match the pages purpose. Navigation links, page titles, and so on will have to be updated to match.
                             </p>
                         </li>
                         <li>

@@ -1,0 +1,105 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Flexbox Introduction - BYUI";
+${{keywords}}    = "Flexbox, Introduction, Intro, Layout, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Introduction to CSS Flexbox</h1>
+                    <p>
+                        The final project template that you have been provided for this course uses a mix of CSS grid — which you have already learned — and CSS flexbox. This week your instructor will demonstrate the basics of CSS flexbox in class. This assignment will help you learn flexbox in greater depth. As you study the resources below and complete the required assignment make sure to note any questions you have. Coming to class with questions will allow your instructor to demonstrate the answers live in class.
+                    </p>
+                    <h2>Assignment</h2>
+                    <ol>
+                        <li>
+                            <h2>Study</h2>
+                            <p>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_balnk" rel="noreferrer noopener">Basic Concepts of Flexbox</a> is an article written for MDN Web Doc that will teach you the fundamentals of flexbox. Please read this article carefully, you will be quizzed on it later in the week.
+                            </p>
+                            <p>
+                                Another great resource you should review is <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noreferrer noopener">A Complete Guide to Flexbox</a> by CSS-Tricks. You will not be quizzed on this article but you may find it helpful for your final project site and/or future classes.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Watch</h2>
+                            <p>
+                                The following videos compare CSS flexbox with CSS grid. Both methods of page layout are useful but each has its own strengths and weaknesses:
+                            </p>
+                            <a href="https://youtu.be/hs3piaN4b5I" target="_blank" rel="noopener noreferrer" data-video="YouTube">Flexbox vs. CSS Grid — Which is Better?</a>
+                            <br>
+                            <a href="https://youtu.be/O7P3ps-7OGY" target="_blank" rel="noopener noreferrer" data-video="YouTube">Flexbox vs CSS Grid Layout</a>
+                            <p>
+                                The <em>Flexbox vs CSS Grid Layout</em> video does not have proper closed captioning. A transcript is provided below:
+                            </p>
+                            <button type="button" class="collapsible">Video Transcript</button>
+                            <div class="collapsible-content">
+                                <p>
+                                    When should you use flexbox and when should you use CSS grids? For a long time we've been using HTML tables and floats to position boxes where we want them on the website, but now we have flexbox and CSS grid.
+                                </p>
+                                <p>
+                                    This is not a guide of how to use either of them, there are plenty of guides out there, this is more when to use what. To be clear, the CSS grid can do a lot of things the flexbox can do, and flexbox can do a lot of things that CSS Grid can do. But in some areas the CSS grid is better and more convenient, and in other areas flexbox is more convenient and better.
+                                </p>
+                                <p>
+                                    Flexbox is really good at aligning things on one axis. For example, the X axis called the Row, or the Y axis called the Column. But that only works in one dimension, if you want to do something, well like a grid using both X and Y axis, like this, CSS grid is much better. CSS grid is also much better like a whole page layout, imagine if this is your side menu, this is your content, and this is your footer, I would use CSS grid for this.
+                                </p>
+                                <p>
+                                    But where they really shine is when you use them together. For example, you can use, flexbox inside of the CSS grid. If this is your website and you used the grid system layout for this, and this is a grid layout item, you can put flexbox [inside the item] to align things inside your footer or inside your grid item.
+                                </p>
+                                <p>
+                                    And same thing goes with CSS grid inside of a flexbox, if you align this using flexbox, you can actually structure... have the same structure as you have in your website, inside the flexbox item. Alright. Honestly anyway you want.
+                                </p>
+                                <p>
+                                    So this is how you should use them, you should use them together, and should learn both. Flexbox has slightly better browser support because its a little bit older than CSS grid, uh but I will link in the description down below on a full list of what supports what? But overall, this is how you use them. 
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h2>Practice</h2>
+                            <p>
+                                To practice flexbox you will need to complete at least the first 15 levels of <a href="https://flexboxfroggy.com/" target="_blank" rel="noreferrer noopener">Flexbox Froggy</a>. Remember to do all your work on the same computer, otherwise your progress will not be saved. Do not complete level 24! There is a bug that will wipe your progress. If you would like to complete all the levels make sure to prove you have successfully completed this assignment before completing additional levels.
+                            </p>
+                            <p>
+                                Another great resource you should review (that is optional) is <a href="http://www.flexboxdefense.com/" target="_blank" rel="noreferrer noopener">Flexbox Defense</a>. Using your flexbox skills you will place defensive towers to defend yourself from invading enemies.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Prove</h2>
+                            <p>
+                                You will prove your completion of this assignment by submitting a screenshot of the levels you have completed.
+                            </p>
+                            <ul>
+                                <li>Click on the arrow in the level selector and a level board will open; every successfully completed level will show as a green circle.</li>
+                                <li>Take a screenshot of the entire level board and submit it to this assignment.</li>
+                                <li>Do not submit multiple (more than one) screenshots.</li>
+                            </ul>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    Submit a single screenshot of at least the first 15 levels completed.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>
