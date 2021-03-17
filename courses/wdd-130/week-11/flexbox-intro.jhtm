@@ -72,7 +72,7 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                         <li>
                             <h2>Practice</h2>
                             <p>
-                                To practice flexbox you will need to complete at least the first 15 levels of <a href="https://flexboxfroggy.com/" target="_blank" rel="noreferrer noopener">Flexbox Froggy</a>. Remember to do all your work on the same computer, otherwise your progress will not be saved. Do not complete level 24! There is a bug that will wipe your progress. If you would like to complete all the levels make sure to prove you have successfully completed this assignment before completing additional levels.
+                                To practice flexbox you will need to complete all 24 levels of <a href="https://flexboxfroggy.com/" target="_blank" rel="noreferrer noopener">Flexbox Froggy</a>. Remember to do all your work on the same computer, otherwise your progress will not be saved. <strong>Do not click the next button on level 24!</strong> There is a bug that will wipe your progress. Make sure to take your screenshot before completing level 24.
                             </p>
                             <p>
                                 Another great resource you should review (that is optional) is <a href="http://www.flexboxdefense.com/" target="_blank" rel="noreferrer noopener">Flexbox Defense</a>. Using your flexbox skills you will place defensive towers to defend yourself from invading enemies.
