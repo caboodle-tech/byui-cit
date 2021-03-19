@@ -264,6 +264,9 @@ body {
   color: #212529;
   border: 0;
 }
+#page main #main-content .center {
+  text-align: center;
+}
 #page main #main-content .collapsible {
   position: relative;
   color: #ffffff;
@@ -306,6 +309,9 @@ body {
   margin: -2px -15px 0px;
   transition: max-height 0.2s ease-out;
 }
+#page main #main-content .left {
+  text-align: left;
+}
 #page main #main-content .license {
   position: relative;
   margin: 15px 0;
@@ -338,6 +344,9 @@ body {
   font-size: 1.38rem;
   text-transform: capitalize;
   color: #212529;
+}
+#page main #main-content .right {
+  text-align: right;
 }
 #page main #main-content .rubric {
   padding: 7.5px 15px;
