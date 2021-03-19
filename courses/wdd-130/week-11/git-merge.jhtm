@@ -1,0 +1,101 @@
+${{course}}      = "wdd-130";
+${{author}}      = "Christopher Keers";
+${{title}}       = "Git Megre - BYUI";
+${{keywords}}    = "Git, Megre, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI";
+${{description}} = "This is a homework assignment for WDD 130.";
+
+{{HEAD}}
+<body>
+    <div id="page">
+        <header>
+            <div class="content">
+                {{LOGO/COURSE}}
+                <div id="mobile-nav-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section id="main-content">
+                    <div id="go-back">
+                        <a href="../index.html">&#10554; Go Back</a>
+                    </div>
+                    <h1>Git Merge</h1>
+                    <p>
+                        If you recall from the <a href="../week-8/git-ready.html" target="_blank">Git Ready</a> assignment back in Week 8, the term <mark>merge</mark> refers to taking one branch and combining (merging) its code and history into another branch. To prepare ourselves to start publishing your website online using <mark>GitHub Pages</mark> we need to get comfortable performing merges. Throughout the rest of the semester you will be asked at specific times to merge one branch into another to facilitate grading. You are welcome to merge branches as often as you like but remember that your main branch should be updated less frequently than your dev branch.
+                    </p>
+                    <div class="callout">
+                        <h2>Stop:</h2>
+                        <p>
+                            You must have completed the branches assignment before starting this assignment! Remember all your work must be done in the <mark>dev</mark> branch of your repository unless you are explicitly told otherwise.
+                        </p>
+                    </div>
+                    <h2>Assignment:</h2>
+                    <ol>
+                        <li>
+                            <h2>Merge with the Command Line</h2>
+                            <p>
+                                Merging branches is a relatively straight forward process to do via the command line (terminal). VS Code and many other code editors offer ways to merge branches with the GUI (graphical user interface), but the steps are often cumbersome in contrast to the command line. For this step please start in your <code>dev</code> branch; this is the branch you should be working in most of the time so you should already be there. Make sure you have saved, committed, and pushed any outstanding changes to your <code>dev</code> branch before opening your command line and running the following code:
+                            </p>
+<pre class="lang-bash"><code># Change to the main branch
+git checkout main
+# Merge the dev branch into the main branch
+git merge dev
+# Push the changes to the main branch up
+git push
+</code></pre>
+                            <p>
+                                Assuming you encountered no errors, you have just successfully merged two branches. The <code>git checkout main</code> command switched your active branch to <code>main</code> (you should always switch to the branch you want to pull changes into), the <code>git merge dev</code> command performed the merge, and then <code>git push</code> pushed the changes up. Notice how you did not need to perform a <code>commit</code> on the merged branches? This is unnecessary because the merge is just merging already existing commit histories between the two branches, no new commit was made or needs to be created.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Merge with the GUI</h2>
+                            <p>
+                                Merging two branches with the GUI requires a few more steps. What we will practice now is merging the <code>main</code> branch into the <code>website</code> branch using the GUI. Keep in mind that this merge will only work if you have not previously merged a branch into your <code>website</code> branch. If you fell behind in class or did not do the branch assignment correctly your website branch may already contain everything from your <code>main</code> branch.
+                            </p>
+                            <p>
+                                Starting on your <code>main</code> branch (where we left off in the last step), switch into your <code>website</code> branch. You can do this by clicking on the branch name in the lower left corner and then selecting <code>website</code> for the drop down menu that appears.
+                            </p>
+                            <img src="assets/switch-branch.png" alt="Switching from main to website branch in VS Code.">
+                            <p>
+                                Next you will need to open the command palette. You can do this by clicking on <code>View</code> in the menu and selecting <code>Command Palette</code> or by using the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>; this shortcut may be different depending on your operating system.
+                            </p>
+                            <img src="assets/open-cmd-palette.png" alt="Opening the command palette in VS Code.">
+                            <p>
+                                Next you will need to type <mark>git</mark> into the command palette box and select the <mark>Git: Merge Branch</mark> option. This will open another drop down menu with all of your branches. Select the <code>main</code> branch as the branch you want to merge from. This will start the merging process, pulling in all the changes from <code>main</code> into the <code>website</code> branch.
+                            </p>
+                            <img src="assets/cmd-palette-merge.png" alt="Merging two branches using the command palette in VS Code.">
+                            <img class="right" src="assets/git-push-main.png" alt="What a queued push looks like in VS Code's GUI.">
+                            <p>
+                                Now all that is left for you to do is to push the changes. Remember that there is no need to perform a commit when you do a merge since a merge simply combines histories from the two branches. Pictured here is what a queued push looks like in VS Code's GUI. Note that this image is showing the <code>main</code> branch and not the website branch you should be in right now.
+                            </p>
+                            
+                        </li>
+                        <li>
+                            <h2>Check</h2>
+                            <p>
+                                Now that you have successfully merged several branches using the command line and the GUI, lets go see what it looks like on GitHub. Navigate to your repository on GitHub and switch between the 3 branches. You will notice that they are all the same now. Each branches latest commit message is also the same since we merged everything from the same history. Here is what it looks like when I completed this demo:
+                            </p>
+                            <img src="assets/compare.png" alt="Comparing 3 branches on GitHub that all have been merged into one another.">
+                        </li>
+                        <li>
+                            <h2>Complete</h2>
+                            <p>
+                                To prove you have successfully merged all your branches you will need to take a screenshot of the <code>dev</code> and <code>website</code> branches like demonstrated in step 3 above. It might help if you shrink your browser window so the page is not so wide. Please grab only the portion of the screen you need and paste the two screen captures into a document. Do not submit two images but a single document with two images inserted into it.
+                            </p>
+                            <div class="rubric">
+                                <h2>Grading</h2>
+                                <p>
+                                    Submit your screenshots by inserting them into a document and submitting the document to Canvas. Acceptable submission formats are <code>doc</code>, <code>docx</code>, <code>odt</code>, or <code>pdf</code>. Do not upload the images individually or you will receive a 0 for failing to follow instructions.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+        {{FOOTER}}
+    </div>
+</body>
+</html>

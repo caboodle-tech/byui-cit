@@ -20,7 +20,7 @@ ${{description}} = "This is the course syllabus for WDD 130 Web Fundamentals.";
                 <section id="main-content">
                     <h1>Syllabus: WDD 130 &ndash; Web Fundamentals</h1>
                     <p>
-                        Welcome to WDD 130 (Web Fundamentals). This course introduces students to the Word Wide Web and to careers in web design and development. The course is hands on with students participating in simple web designs and programming. Students are also introduced to version control tools using git and GitHub, wire framing, and other design related tools. It is anticipated that students who complete this course will understand the fields of wed design and development, have an understanding of the various industry roles, and have a good idea if they want to pursue this degree as a major.
+                        Welcome to WDD 130 (Web Fundamentals). This course introduces students to the Word Wide Web and to careers in web design and development. The course is hands on with students participating in simple web designs and programming. Students are also introduced to version control tools using git and GitHub, wire framing, and other design related tools. It is anticipated that students who complete this course will understand the fields of web design and development, have an understanding of the various industry roles, and have a good idea if they want to pursue this degree as a major.
                     </p>
                     <h2>Course Objectives</h2>
                     <p>
@@ -29,7 +29,7 @@ ${{description}} = "This is the course syllabus for WDD 130 Web Fundamentals.";
                     <ul class="smaller">
                         <li>
                             <p>
-                                Demonstrate basic proficiency in using current, valid, and semantic Hypertext Markup Language (HTML) syntax to define the structure and content of a webpage.
+                                Demonstrate basic proficiency in using current, valid, and semantic Hypertext Markup Language (HTML5) syntax to define the structure and content of a webpage.
                             </p>
                         </li>
                         <li>
@@ -39,7 +39,7 @@ ${{description}} = "This is the course syllabus for WDD 130 Web Fundamentals.";
                         </li>
                         <li>
                             <p>
-                                Demonstrate basic proficiency in using the <mark>git</mark> version control system with a cloud-based repository manager (<mark>GitHub</mark>).
+                                Demonstrate basic proficiency in using the <mark>git</mark> version control system with the cloud-based repository manager <mark>GitHub</mark>.
                             </p>
                         </li>
                         <li>
@@ -99,12 +99,15 @@ ${{description}} = "This is the course syllabus for WDD 130 Web Fundamentals.";
                     <p>
                         All of the software we will be using specifically for this course can be used for free. See the <a href="week-1/setup.html">Software Setup</a> page and course announcements for more details.
                     </p>
-                    <h2>Final Project</h2>
+                    <h2>Initial Project and Final Project</h2>
                     <p>
-                        The final project for this course consists of two primary phases. The first is the design of a complete 3 page web site on a topic of your choosing. This design will be organized and submitted in a detailed Site Plan. The second phase is the construction of the website in HTML and CSS. The Final Project grade will collectively be worth 30% of your grade.
+                        There are two major projects for this course. The first is the design of a complete 3 page web site for a white water rafting company. This design will be organized and submitted in a detailed Site Plan.
                     </p>
                     <p>
-                        The project will be due according to the due date on the Calendar. Due to the submission date for the project being near the last day of the semester, late submissions will not be accepted. Therefore, if you do not turn in your final project on time, you may automatically fail the course.
+                        The second project &mdash; your final project &mdash; is the construction of a 5+ page business website of your choosing. You will follow a similar pattern of planning this site as you did in the Initial Project. If you need help with a business idea you will use a partial made idea for a shipping store.
+                    </p>
+                    <p>
+                        The Initial Project and Final Project grades will collectively be worth 30% of your final grade. The project will be due according to the due date on the Calendar. Due to the submission date for the project being near the last day of the semester, late submissions will not be accepted. Therefore, if you do not turn in your final project on time, you may automatically fail the course.
                     </p>
                     <h2>Overall Grading</h2>
                     <p>

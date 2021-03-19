@@ -67,6 +67,9 @@ ${{description}} = "This is a homework assignment for WDD 130.";
                                 <p>
                                     So this is how you should use them, you should use them together, and should learn both. Flexbox has slightly better browser support because its a little bit older than CSS grid, uh but I will link in the description down below on a full list of what supports what? But overall, this is how you use them. 
                                 </p>
+                                <p class="center">
+                                    [ <a href="source/video-transcript.txt" target="_blank" download="">Download Transcript</a> ]
+                                </p>
                             </div>
                         </li>
                         <li>
