@@ -24,6 +24,8 @@
     "safeFileExtensions": [
         "7z",
         "css",
+        "doc",
+        "docx",
         "gif",
         "htaccess",
         "html",
@@ -35,6 +37,7 @@
         "mp3",
         "mp4",
         "ogg",
+        "pdf",
         "png",
         "svg",
         "ttf",
